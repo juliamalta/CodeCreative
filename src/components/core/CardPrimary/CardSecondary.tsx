@@ -1,6 +1,6 @@
 import { CardPrimaryProps } from '@/components/core/CardPrimary/CardPrimary.types'
 
-function CardPrimary2({ text, icon, title }: CardPrimaryProps) {
+function CardSecondary({ text, icon, title }: CardPrimaryProps) {
     return (
         <div className="mt-8 flex w-full flex-col items-center justify-center gap-5 rounded-lg px-6 py-5 transition-transform hover:scale-105">
             <div className="flex size-11 items-center justify-center rounded-lg bg-color-magnolia">{icon}</div>
@@ -14,4 +14,4 @@ function CardPrimary2({ text, icon, title }: CardPrimaryProps) {
     )
 }
 
-export default CardPrimary2
+export default CardSecondary

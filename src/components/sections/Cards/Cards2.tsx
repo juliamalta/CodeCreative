@@ -2,6 +2,7 @@
 import * as React from 'react'
 
 import { CardPrimary, CardPrimary2 } from '@/components/core/CardPrimary'
+import CardSecondary from '@/components/core/CardPrimary/CardSecondary'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
 function Card2({ cards }: CardSectionProps) {
@@ -10,7 +11,7 @@ function Card2({ cards }: CardSectionProps) {
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">
-                        Nossos Serviços
+                        Nossos valores
                     </p>
                     <p className="text-base font-normal text-color-storm">
                         Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio
@@ -18,7 +19,7 @@ function Card2({ cards }: CardSectionProps) {
                 </div>
                 <div className="mt-10 flex flex-col gap-8 2xl:flex-row">
                     {cards.map((card, index) => (
-                        <CardPrimary2 key={index} icon={card.icon} title={card.title} text={card.text} />
+                        <CardSecondary key={index} icon={card.icon} title={card.title} text={card.text} />
                     ))}
                 </div>
             </div>

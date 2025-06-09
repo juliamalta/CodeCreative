@@ -1,2 +1,3 @@
 export { default as CardPrimary } from './CardPrimary'
-export { default as CardPrimary2 } from './CardPrimary2'
+export { default as CardSecondary } from './CardSecondary'
+export { default as CardThree } from './CardThree'

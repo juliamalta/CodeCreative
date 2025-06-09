@@ -1,0 +1,27 @@
+import { CardPrimaryProps } from '@/components/core/CardPrimary/CardPrimary.types'
+
+import work1 from '../../../../public/images/work1.png'
+function CardThree({ text, icon, title, desc, img }: CardPrimaryProps) {
+    return (
+        <div className="w-2/8 flex items-center justify-between rounded-2xl bg-color-magnolia">
+            <div>
+                <div>
+                    <img src={img} alt="img" className="h-auto w-full rounded-xl" />
+                </div>
+                <div className="flex flex-col gap-4 p-6">
+                    <div className="text-color-studio">
+                        <p>{title}</p>
+                    </div>
+                    <div>
+                        <p className="text-2xl font-semibold">{text}</p>
+                    </div>
+                    <div className="w-2/3">
+                        <p className="text-sm text-color-storm">{desc}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default CardThree

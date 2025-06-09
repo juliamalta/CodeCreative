@@ -7,6 +7,7 @@ import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Contact from '@/components/sections/Contact/Contact'
 import { Features1 } from '@/components/sections/Features'
 import { HeroSection } from '@/components/sections/hero-section'
+import { OurWork } from '@/components/sections/OurWork'
 
 export default function Home() {
     return (
@@ -64,9 +65,23 @@ export default function Home() {
                     },
                 ]}
             />
-            <Features1
-                title="Sobre a Code Creative"
-                desc="Temos o privilégio de trabalhar com centenas de empresas inovadoras, incluindo muitas das maiores referências em hardware do mundo."
+            <OurWork
+                title="Nosso trabalho"
+                desc="Profissionais apaixonados por tecnologia e design"
+                cards={[
+                    {
+                        img: '/images/work1.png',
+                        title: 'Desenvolvimento Mobile',
+                        text: 'ProTracker',
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo',
+                    },
+                    {
+                        img: '/images/work2.png',
+                        title: 'Desenvolvimento Web',
+                        text: 'ProTracker',
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo',
+                    },
+                ]}
             />
             <Contact />
         </>
