@@ -41,7 +41,7 @@ function Footer({ info, rights }: FooterProps) {
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-between border-t border-color-studio py-12">
                     <div className="mb-6">
-                        <p className="text-color-blue text-sm md:text-base">{rights}</p>
+                        <p className="text-color-blue">{rights}</p>
                     </div>
                     <div className="mb-6 flex gap-10">
                         <p className="text-color-french">Termos de Uso </p>
