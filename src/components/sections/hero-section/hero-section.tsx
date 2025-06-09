@@ -12,9 +12,9 @@ export function HeroSection() {
                 <div className="items-center justify-center text-center">
                     <h1 className="mb-6 font-display text-display-lg font-normal leading-tight tracking-tight">
                         Transformamos <br></br>
-                        <span className="text-color-studio font-bold">ideias em realidades</span>
+                        <span className="font-bold text-color-studio">ideias em realidades</span>
                     </h1>
-                    <p className="text-color-storm mb-8 text-lg leading-relaxed">
+                    <p className="mb-8 text-lg leading-relaxed text-color-storm">
                         Somos uma agência especializada em desenvolvimento web,<br></br> mobile e design digital.
                         Criamos soluções inovadoras que<br></br> impulsionam o crescimento do seu negócio.
                     </p>

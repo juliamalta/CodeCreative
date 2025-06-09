@@ -12,7 +12,7 @@ function Card1({ cards }: CardSectionProps) {
                     <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">
                         Nossos Serviços
                     </p>
-                    <p className="text-color-storm text-base font-normal">
+                    <p className="text-base font-normal text-color-storm">
                         Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio
                     </p>
                 </div>
