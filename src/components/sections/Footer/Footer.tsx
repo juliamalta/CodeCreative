@@ -13,7 +13,7 @@ function Footer({ info, rights }: FooterProps) {
                     </Link>
                 </div>
                 <div>
-                    <p className="text-color-french text-sm font-normal text-white">
+                    <p className="text-color-french text-sm font-normal">
                         Transformamos ideias em soluções digitais<br></br> inovadoras. Desenvolvimento web, mobile
                         <br></br> e design digital de alta qualidade.
                     </p>
@@ -41,11 +41,11 @@ function Footer({ info, rights }: FooterProps) {
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-between border-t border-color-studio py-12">
                     <div className="mb-6">
-                        <p className="text-color-blue text-sm text-white md:text-base">{rights}</p>
+                        <p className="text-color-blue text-sm md:text-base">{rights}</p>
                     </div>
                     <div className="mb-6 flex gap-10">
-                        <p className="text-color-french text-sm text-white md:text-base">Termos de Uso </p>
-                        <p className="text-color-french text-sm text-white md:text-base">Política de Privacidade</p>
+                        <p className="text-color-french text-sm md:text-base">Termos de Uso </p>
+                        <p className="text-color-french text-sm md:text-base">Política de Privacidade</p>
                     </div>
                 </div>
             </div>
