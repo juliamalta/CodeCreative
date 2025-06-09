@@ -72,7 +72,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                         <NavigationMenu>
                                             <NavigationMenuList>
                                                 <NavigationMenuItem>
-                                                    <NavigationMenuTrigger className="text-color-resolver text-base">
+                                                    <NavigationMenuTrigger className="text-base text-color-resolver">
                                                         <span>{text}</span>
                                                     </NavigationMenuTrigger>
                                                 </NavigationMenuItem>
