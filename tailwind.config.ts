@@ -75,6 +75,8 @@ const config: Config = {
                     alto: 'var( --alto-200)',
                     storm: 'var( --storm-dust-600)',
                     magnolia: 'var( --magnolia-50)',
+                    french: 'var( --french-lilac-400)',
+                    blue: 'var(--blue-chalk-100)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

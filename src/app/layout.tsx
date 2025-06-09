@@ -46,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSf7UDEd4o_ll21lRKERe2rf83vGASGW0e1vJukTut4rD1OuPg/viewform"
                 />
                 {children}
+                <Footer info={infoData} rights="© 2025 Code Creative. Todos os direitos reservados." />
             </body>
         </html>
     )
