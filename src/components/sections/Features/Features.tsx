@@ -2,37 +2,51 @@
 
 import { FeaturesProps } from '@/components/sections/Features/Features.types'
 
-import FeaturesImg1 from '../../../../public/images/features1.png'
-import FeaturesImg from '../../../../public/images/features2.png'
+import FeaturesImg1 from '../../../../public/images/about.png'
 
 export function Features1({ title, desc, features }: FeaturesProps) {
     return (
-        <section className="relative py-32" style={{ backgroundColor: '#131C11' }}>
-            <div className="container mx-auto flex flex-col 2xl:flex-row">
-                {/* Image Section */}
-                <div className="relative hidden w-1/2 2xl:block">
-                    <img src={FeaturesImg1.src} className="absolute bottom-1/4" alt="img" />
-                    <img src={FeaturesImg.src} className="absolute left-1/4 top-1/4" alt="img" />
-                </div>
-
+        <section className="relative bg-white py-32">
+            <div className="container mx-auto flex flex-col justify-between 2xl:flex-row">
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/2">
                     <div className="flex flex-col gap-6">
-                        <h1 className="text-4xl text-white">{title}</h1>
-                        <p className="text-base font-semibold text-white">{desc}</p>
+                        <h1 className="text-2xl font-semibold text-black">{title}</h1>
                     </div>
+                    <div className="flex w-2/3 flex-col gap-8">
+                        <p className="text-base font-normal text-color-storm">
+                            Somos uma agência digital especializada em transformar ideias em soluções tecnológicas
+                            inovadoras. Com mais de 3 anos no mercado, já entregamos mais de 50 projetos para clientes
+                            de diversos segmentos.
+                        </p>
+                        <p className="text-base font-normal text-color-storm">
+                            Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções
+                            personalizadas que combinam design excepcional com desenvolvimento técnico de alta
+                            qualidade.
+                        </p>
+                    </div>
+                </div>
 
-                    {/* Features List */}
-                    <div className="flex flex-col gap-8">
-                        {features.map((feature, index) => (
-                            <div key={index} className="flex flex-row gap-4">
-                                <div className="rounded-full bg-black p-6">{feature.icon}</div>
-                                <div className="flex flex-col justify-center">
-                                    <p className="font-bold text-white">{feature.title}</p>
-                                    <p className="text-white">{feature.text}</p>
+                {/* Image Section */}
+                <div className="relative">
+                    <img src={FeaturesImg1.src} alt="img" className="h-auto w-full rounded-xl" />
+
+                    {/* Information about Experience */}
+                    <div className="absolute -bottom-12 -left-12 lg:-bottom-16 lg:-left-16">
+                        <div className="relative">
+                            <div className="rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-gray-100">
+                                <div className="flex items-center gap-6">
+                                    <div className="flex flex-col items-center">
+                                        <div className="text-5xl font-bold text-color-studio">+5</div>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-base font-medium text-color-storm">Anos de</span>
+                                        <span className="text-base font-medium text-color-storm">Experiência</span>
+                                        <span className="text-base text-gray-500">no mercado</span>
+                                    </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -35,6 +35,22 @@ export default function Home() {
                     },
                 ]}
             />
+            <Features1
+                title="Sobre a Code Creative"
+                desc="Temos o privilégio de trabalhar com centenas de empresas inovadoras, incluindo muitas das maiores referências em hardware do mundo."
+                features={[
+                    {
+                        icon: <CiCloud color="#8EE3AF" size="24" />,
+                        title: 'Soluções Flexíveis',
+                        text: 'Soluções personalizadas para cada necessidade de negócio.',
+                    },
+                    {
+                        icon: <CiSquareCheck color="#8EE3AF" size="24" />,
+                        title: 'Suporte 24/7 Ilimitado',
+                        text: 'Suporte contínuo para garantir a operação sem interrupções.',
+                    },
+                ]}
+            />
         </>
     )
 }
