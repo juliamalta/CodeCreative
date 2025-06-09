@@ -1,7 +1,6 @@
 'use client'
 import * as React from 'react'
 
-import { CardPrimary, CardPrimary2 } from '@/components/core/CardPrimary'
 import CardSecondary from '@/components/core/CardPrimary/CardSecondary'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
