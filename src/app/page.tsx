@@ -3,7 +3,7 @@ import { CiSquareCheck } from 'react-icons/ci'
 import { MdOutlinePhoneIphone } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
 
-import { Cards1 } from '@/components/sections/Cards'
+import { Cards1, Cards2 } from '@/components/sections/Cards'
 import { Features1 } from '@/components/sections/Features'
 import { HeroSection } from '@/components/sections/hero-section'
 
@@ -48,6 +48,30 @@ export default function Home() {
                         icon: <CiSquareCheck color="#8EE3AF" size="24" />,
                         title: 'Suporte 24/7 Ilimitado',
                         text: 'Suporte contínuo para garantir a operação sem interrupções.',
+                    },
+                ]}
+            />
+            <Cards2
+                cards={[
+                    {
+                        icon: <TbWorld size={20} color="#833ECC" />,
+                        title: 'Foco no Cliente',
+                        text: 'Cada projeto é tratado com dedicação exclusiva, sempre priorizando as necessidades e objetivos do cliente.',
+                    },
+                    {
+                        icon: <MdOutlinePhoneIphone size={20} color="#C2F6FF" />,
+                        title: 'Qualidade Premium',
+                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e pixel de design.',
+                    },
+                    {
+                        icon: <TbWorld size={20} color="#EE7432" />,
+                        title: 'Trabalho em Equipe',
+                        text: 'Nossa equipe multidisciplinar trabalha de forma integrada para entregar resultados excepcionais.',
+                    },
+                    {
+                        icon: <TbWorld size={20} color="#29AB59" />,
+                        title: 'Paixão por Tecnologia',
+                        text: 'Amamos o que fazemos e isso se reflete na qualidade e inovação de nossos projetos.',
                     },
                 ]}
             />
