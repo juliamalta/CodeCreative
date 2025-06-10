@@ -14,7 +14,13 @@ import { OurWork } from '@/components/sections/OurWork'
 export default function Home() {
     return (
         <>
-            <HeroSection />
+            <HeroSection
+                title="Transformamos"
+                text="ideias em realidades"
+                desc="Somos uma agência especializada em desenvolvimento web, mobile e design digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio."
+                button1text="Solicitar Orçamento"
+                button2text="Ver nossos trabalho"
+            />
             <Cards1
                 cards={[
                     {
