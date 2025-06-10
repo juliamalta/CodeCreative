@@ -11,7 +11,7 @@ function CardPrimary({ text, icon, title, iconBgColor }: CardProps) {
             <div>
                 <h1 className="text-lg font-semibold text-black">{title}</h1>
             </div>
-            <div className="w-10/12">
+            <div className="w-full 2xl:w-10/12">
                 <p className="text-sm font-normal text-black text-color-storm">{text}</p>
             </div>
         </div>

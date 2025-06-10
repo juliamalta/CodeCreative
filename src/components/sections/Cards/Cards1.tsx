@@ -16,7 +16,7 @@ function Card1({ cards }: CardSectionProps) {
                         Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio
                     </p>
                 </div>
-                <div className="mt-10 flex flex-col gap-8 2xl:flex-row">
+                <div className="mt-10 flex flex-col gap-8 lg:flex-row">
                     {cards.map((card, index) => (
                         <CardPrimary
                             key={index}

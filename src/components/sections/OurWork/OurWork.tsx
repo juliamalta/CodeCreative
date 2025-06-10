@@ -13,7 +13,7 @@ function OurWork({ cards, title, desc }: OurWorkProps) {
                     <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">{title}</p>
                     <p className="text-base font-normal text-color-storm">{desc}</p>
                 </div>
-                <div className="mt-10 flex flex-col justify-between gap-8 2xl:flex-row">
+                <div className="mt-10 flex flex-wrap justify-center gap-8">
                     {cards.map((card, index) => (
                         <CardThree key={index} img={card.img} title={card.title} text={card.text} desc={card.desc} />
                     ))}
