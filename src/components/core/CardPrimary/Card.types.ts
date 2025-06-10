@@ -1,4 +1,4 @@
-export type CardPrimaryProps = {
+export type CardProps = {
     text: string
     title: string
     desc?: string

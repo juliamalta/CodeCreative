@@ -1,6 +1,6 @@
-import { CardPrimaryProps } from '@/components/core/CardPrimary/CardPrimary.types'
+import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
-function CardPrimary({ text, icon, title, iconBgColor }: CardPrimaryProps) {
+function CardPrimary({ text, icon, title, iconBgColor }: CardProps) {
     return (
         <div className="mt-8 flex w-full flex-col gap-5 rounded-lg bg-white px-6 py-5 transition-transform hover:scale-105">
             <div

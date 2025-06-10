@@ -1,6 +1,6 @@
-import { CardPrimaryProps } from '@/components/core/CardPrimary/CardPrimary.types'
+import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
-function CardSecondary({ text, icon, title, iconBgColor }: CardPrimaryProps) {
+function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
     return (
         <div className="mt-8 flex w-full flex-col items-center justify-center gap-5 rounded-lg px-6 py-5 transition-transform hover:scale-105">
             <div

@@ -1,7 +1,7 @@
-import { CardPrimaryProps } from '@/components/core/CardPrimary/CardPrimary.types'
+import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 import work1 from '../../../../public/images/work1.png'
-function CardThree({ text, icon, title, desc, img }: CardPrimaryProps) {
+function CardThree({ text, icon, title, desc, img }: CardProps) {
     return (
         <div className="w-2/8 flex items-center justify-between rounded-2xl bg-color-magnolia">
             <div>
