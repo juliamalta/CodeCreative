@@ -51,7 +51,8 @@ export default function Home() {
             />
             <Features1
                 title="Sobre a Code Creative"
-                desc="Temos o privilégio de trabalhar com centenas de empresas inovadoras, incluindo muitas das maiores referências em hardware do mundo."
+                text1="Somos uma agência digital especializada em transformar ideias em soluções tecnológicas inovadoras. Com mais de 3 anos no mercado, já entregamos mais de 50 projetos para clientes de diversos segmentos"
+                text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
                 cards={[

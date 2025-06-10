@@ -4,7 +4,7 @@ import { FeaturesProps } from '@/components/sections/Features/Features.types'
 
 import FeaturesImg1 from '../../../../public/images/about.png'
 
-export function Features1({ title, desc, features }: FeaturesProps) {
+export function Features1({ title, text1, text2, features }: FeaturesProps) {
     return (
         <section className="relative bg-white py-32">
             <div className="container mx-auto flex flex-col justify-between gap-8 lg:flex-row">
@@ -14,16 +14,8 @@ export function Features1({ title, desc, features }: FeaturesProps) {
                         <h1 className="text-2xl font-semibold text-black">{title}</h1>
                     </div>
                     <div className="flex flex-col gap-8 2xl:w-2/3">
-                        <p className="text-base font-normal text-color-storm">
-                            Somos uma agência digital especializada em transformar ideias em soluções tecnológicas
-                            inovadoras. Com mais de 3 anos no mercado, já entregamos mais de 50 projetos para clientes
-                            de diversos segmentos.
-                        </p>
-                        <p className="text-base font-normal text-color-storm">
-                            Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções
-                            personalizadas que combinam design excepcional com desenvolvimento técnico de alta
-                            qualidade.
-                        </p>
+                        <p className="text-base font-normal text-color-storm">{text1}</p>
+                        <p className="text-base font-normal text-color-storm">{text2}</p>
                     </div>
                 </div>
 
@@ -44,7 +36,7 @@ export function Features1({ title, desc, features }: FeaturesProps) {
                                     <div className="flex flex-col">
                                         <span className="text-base font-medium text-color-storm">Anos de</span>
                                         <span className="text-base font-medium text-color-storm">Experiência</span>
-                                        <span className="text-base text-gray-500">no mercado</span>
+                                        <span className="text-base font-medium text-color-storm">no mercado</span>
                                     </div>
                                 </div>
                             </div>

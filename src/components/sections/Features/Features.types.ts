@@ -6,6 +6,7 @@ export interface featuresData {
 
 export interface FeaturesProps {
     title: string
-    desc: string
+    text1: string
+    text2: string
     features?: featuresData[]
 }
