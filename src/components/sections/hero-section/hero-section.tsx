@@ -9,16 +9,18 @@ export function HeroSection() {
     return (
         <>
             <section className="container mx-auto bg-white py-24">
-                <div className="items-center justify-center text-center">
-                    <h1 className="mb-6 font-display text-display-lg font-normal leading-tight tracking-tight">
-                        Transformamos <br></br>
-                        <span className="font-bold text-color-studio">ideias em realidades</span>
-                    </h1>
-                    <p className="mb-8 text-lg leading-relaxed text-color-storm">
-                        Somos uma agência especializada em desenvolvimento web,<br></br> mobile e design digital.
-                        Criamos soluções inovadoras que<br></br> impulsionam o crescimento do seu negócio.
-                    </p>
-                    <div className="flex justify-center gap-3">
+                <div className="flex flex-col items-center justify-center gap-8 text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
+                        <h1 className="mb-6 text-5xl font-normal">
+                            Transformamos <br></br>
+                            <span className="font-bold text-color-studio">ideias em realidades</span>
+                        </h1>
+                        <p className="w-full text-base font-normal text-color-storm lg:w-2/5">
+                            Somos uma agência especializada em desenvolvimento web, mobile e design digital. Criamos
+                            soluções inovadoras que impulsionam o crescimento do seu negócio.
+                        </p>
+                    </div>
+                    <div className="flex w-1/2 justify-center gap-3">
                         <Button variant="herobutton" size="hero">
                             Solicitar Orçamento <ArrowRight className="ml-2 size-4" />
                         </Button>
