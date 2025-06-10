@@ -4,4 +4,5 @@ export type CardPrimaryProps = {
     desc?: string
     icon?: React.ReactNode
     img?: string
+    iconBgColor?: string
 }

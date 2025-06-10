@@ -77,6 +77,7 @@ const config: Config = {
                     magnolia: 'var( --magnolia-50)',
                     french: 'var( --french-lilac-400)',
                     blue: 'var(--blue-chalk-100)',
+                    charlote: 'var(--charlotte-100)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

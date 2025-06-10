@@ -18,7 +18,13 @@ function Card1({ cards }: CardSectionProps) {
                 </div>
                 <div className="mt-10 flex flex-col gap-8 2xl:flex-row">
                     {cards.map((card, index) => (
-                        <CardPrimary key={index} icon={card.icon} title={card.title} text={card.text} />
+                        <CardPrimary
+                            key={index}
+                            icon={card.icon}
+                            title={card.title}
+                            text={card.text}
+                            iconBgColor={card.iconBgColor}
+                        />
                     ))}
                 </div>
             </div>
