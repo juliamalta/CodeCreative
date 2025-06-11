@@ -2,35 +2,30 @@ import Link from 'next/link'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaWhatsapp } from 'react-icons/fa'
 
+import { ContactProps } from '@/components/sections/Contact/Contact.types'
+
 import logo from '../../../../public/images/logoFooter.png'
 
-function Contact() {
+function Contact({ text1, text2, email, icon1, icon2, textEmail, wpp, textWpp }: ContactProps) {
     return (
         <section id="footer" className="overflow-hidden bg-color-magnolia">
             <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-24 md:flex-row">
                 <div className="flex flex-col items-start gap-4 md:w-1/4">
-                    <p className="text-2xl font-semibold">Vamos Conversar?</p>
-                    <p className="text-color-storm">
-                        Pronto para transformar sua ideia em realidade? Entre em contato conosco e vamos discutir seu
-                        projeto.
-                    </p>
+                    <p className="text-2xl font-semibold">{text1}</p>
+                    <p className="text-color-storm">{text2}</p>
                 </div>
                 <div className="flex gap-3">
-                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">
-                        <AiOutlineMail size={30} color="#833ECC" />
-                    </div>
+                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">{icon1}</div>
                     <div>
-                        <p className="font-bold">Email</p>
-                        <p className="text-base text-color-storm">contato@devcraft.com.br</p>
+                        <p className="font-bold">{email}</p>
+                        <p className="text-base text-color-storm">{textEmail}</p>
                     </div>
                 </div>
                 <div className="flex gap-3">
-                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">
-                        <FaWhatsapp size={30} color="#833ECC" />
-                    </div>
+                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">{icon2}</div>
                     <div>
-                        <p className="font-bold">Whatsapp</p>
-                        <p className="text-base text-color-storm">(11) 999999-0000</p>
+                        <p className="font-bold">{wpp}</p>
+                        <p className="text-base text-color-storm">{textWpp}</p>
                     </div>
                 </div>
             </div>

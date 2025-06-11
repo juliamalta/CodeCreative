@@ -1,15 +1,14 @@
-import { CiCloud } from 'react-icons/ci'
-import { CiSquareCheck } from 'react-icons/ci'
+import { AiOutlineMail } from 'react-icons/ai'
 import { CiMobile1 } from 'react-icons/ci'
-import { MdOutlinePhoneIphone } from 'react-icons/md'
+import { FaWhatsapp } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
 import { TfiMedallAlt } from 'react-icons/tfi'
 
+import { AboutUs1 } from '@/components/sections/AboutUs'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
+import Cards3 from '@/components/sections/Cards/Cards3'
 import Contact from '@/components/sections/Contact/Contact'
-import { Features1 } from '@/components/sections/Features'
 import { HeroSection } from '@/components/sections/hero-section'
-import { OurWork } from '@/components/sections/OurWork'
 
 export default function Home() {
     return (
@@ -22,6 +21,8 @@ export default function Home() {
                 button2text="Ver nossos trabalho"
             />
             <Cards1
+                title="Nossos serviços"
+                desc="Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio"
                 cards={[
                     {
                         icon: <TbWorld size={30} color="#833ECC" />,
@@ -49,12 +50,14 @@ export default function Home() {
                     },
                 ]}
             />
-            <Features1
+            <AboutUs1
                 title="Sobre a Code Creative"
                 text1="Somos uma agência digital especializada em transformar ideias em soluções tecnológicas inovadoras. Com mais de 3 anos no mercado, já entregamos mais de 50 projetos para clientes de diversos segmentos"
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
+                title="Nossos valores"
+                desc="Os princípios que guiam nosso trabalho e relacionamento com clientes"
                 cards={[
                     {
                         icon: <TbWorld size={30} color="#833ECC" />,
@@ -82,7 +85,7 @@ export default function Home() {
                     },
                 ]}
             />
-            <OurWork
+            <Cards3
                 title="Nosso trabalho"
                 desc="Profissionais apaixonados por tecnologia e design"
                 cards={[
@@ -100,7 +103,16 @@ export default function Home() {
                     },
                 ]}
             />
-            <Contact />
+            <Contact
+                text1="Vamos Conversar?"
+                text2="Pronto para transformar sua ideia em realidade? Entre em contato conosco e vamos discutir seu projeto."
+                email="Email"
+                textEmail="contato@devcraft.com.br"
+                icon1={<AiOutlineMail size={30} color="#833ECC" />}
+                wpp="Whatsapp"
+                textWpp="(11) 999999-0000"
+                icon2={<FaWhatsapp size={30} color="#833ECC" />}
+            />
         </>
     )
 }

@@ -3,11 +3,10 @@ import * as React from 'react'
 
 import { CardThree } from '@/components/core/CardPrimary'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
-import { OurWorkProps } from '@/components/sections/OurWork/OurWork.types'
 
-function OurWork({ cards, title, desc }: OurWorkProps) {
+function Cards3({ cards, title, desc }: CardSectionProps) {
     return (
-        <section id="CardsPrimary" className="bg-white py-24">
+        <section id="trabalho" className="bg-white py-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">{title}</p>
@@ -23,4 +22,4 @@ function OurWork({ cards, title, desc }: OurWorkProps) {
     )
 }
 
-export default OurWork
+export default Cards3

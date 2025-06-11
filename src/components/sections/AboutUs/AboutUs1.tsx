@@ -1,10 +1,10 @@
 'use client'
 
-import { FeaturesProps } from '@/components/sections/Features/Features.types'
+import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
 
 import FeaturesImg1 from '../../../../public/images/about.png'
 
-export function Features1({ title, text1, text2, features }: FeaturesProps) {
+export function AboutUs1({ title, text1, text2, about }: AboutProps) {
     return (
         <section className="relative bg-white py-32">
             <div className="container mx-auto flex flex-col justify-between gap-8 lg:flex-row">
