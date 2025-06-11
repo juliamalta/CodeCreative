@@ -1,5 +1,6 @@
 'use client'
 
+import { NumberTicker } from '@/components/magicui/number-ticker'
 import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
 
 import FeaturesImg1 from '../../../../public/images/about.png'
@@ -7,7 +8,7 @@ import FeaturesImg1 from '../../../../public/images/about.png'
 export function AboutUs1({ title, text1, text2, about }: AboutProps) {
     return (
         <section className="relative bg-white py-32">
-            <div className="container mx-auto flex flex-col justify-between gap-8 lg:flex-row">
+            <div className="container mx-auto flex flex-col justify-center gap-8 lg:flex-row">
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/2">
                     <div className="flex flex-col gap-6">
@@ -31,7 +32,10 @@ export function AboutUs1({ title, text1, text2, about }: AboutProps) {
                             <div className="rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-gray-100">
                                 <div className="flex items-center gap-6">
                                     <div className="flex flex-col items-center">
-                                        <div className="text-5xl font-bold text-color-studio">+5</div>
+                                        <div className="text-5xl font-bold text-color-studio">
+                                            +
+                                            <NumberTicker value={5} className="text-5xl font-bold text-color-studio" />
+                                        </div>
                                     </div>
                                     <div className="flex flex-col">
                                         <span className="text-base font-medium text-color-storm">Anos de</span>
