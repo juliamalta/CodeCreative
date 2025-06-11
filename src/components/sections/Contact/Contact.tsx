@@ -15,8 +15,8 @@ function Contact() {
                         projeto.
                     </p>
                 </div>
-                <div className="flex">
-                    <div className="flex size-11 items-center justify-center rounded-lg bg-color-magnolia">
+                <div className="flex gap-3">
+                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">
                         <AiOutlineMail size={30} color="#833ECC" />
                     </div>
                     <div>
@@ -24,8 +24,8 @@ function Contact() {
                         <p className="text-base text-color-storm">contato@devcraft.com.br</p>
                     </div>
                 </div>
-                <div className="flex">
-                    <div className="flex size-11 items-center justify-center rounded-lg bg-color-magnolia">
+                <div className="flex gap-3">
+                    <div className="flex size-16 items-center justify-center rounded-lg bg-color-blue">
                         <FaWhatsapp size={30} color="#833ECC" />
                     </div>
                     <div>
