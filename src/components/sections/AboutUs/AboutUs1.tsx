@@ -17,7 +17,7 @@ function AboutUs1({ title, text1, text2, about }: AboutProps) {
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/2">
                     <div className="flex flex-col gap-6">
-                        <TypingAnimation className="text-2xl font-semibold text-black">{title}</TypingAnimation>
+                        <TypingAnimation className="text-4xl font-semibold text-black">{title}</TypingAnimation>
                     </div>
                     <div className="flex flex-col gap-8 2xl:w-2/3">
                         <p className="text-base font-normal text-color-storm">{text1}</p>
