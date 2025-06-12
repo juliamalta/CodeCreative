@@ -56,7 +56,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                     </Link>
                 </div>
                 <div className="hidden justify-center lg:flex">
-                    <ul className="flex w-full items-center justify-stretch gap-4">
+                    <ul className="flex flex-row items-center justify-between gap-16">
                         {navs?.map(({ text, link }, index) => {
                             const isLastItem = index === navs.length - 1
 
@@ -72,9 +72,13 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                         <NavigationMenu>
                                             <NavigationMenuList>
                                                 <NavigationMenuItem>
-                                                    <NavigationMenuTrigger className="bg-color-haiti text-base text-color-blue">
-                                                        <span>{text}</span>
-                                                    </NavigationMenuTrigger>
+                                                    <NavigationMenuLink asChild>
+                                                        <Link
+                                                            href={link}
+                                                            className="bg-color-haiti text-base text-color-blue">
+                                                            {text}
+                                                        </Link>
+                                                    </NavigationMenuLink>
                                                 </NavigationMenuItem>
                                             </NavigationMenuList>
                                         </NavigationMenu>

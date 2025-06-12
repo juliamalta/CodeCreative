@@ -5,7 +5,7 @@ export const menuConfig = [
     },
     {
         text: 'Sobre',
-        link: '/',
+        link: '#sobre',
     },
     {
         text: 'Serviços',
@@ -13,10 +13,10 @@ export const menuConfig = [
     },
     {
         text: 'Projetos',
-        link: '/',
+        link: '#trabalho',
     },
     {
         text: 'Contato',
-        link: '/',
+        link: '#footer',
     },
 ]

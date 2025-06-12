@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 import { AuroraText } from '@/components/magicui/aurora-text'
 import { HeroProps } from '@/components/sections/hero-section/hero-section.types'
@@ -25,8 +26,8 @@ export function HeroSection({ title, text, desc, button1text, button2text }: Her
                         <Button variant="herobutton" size="hero">
                             {button1text} <ArrowRight className="ml-2 size-4" />
                         </Button>
-                        <Button variant="herobuttonsecondary" size="hero">
-                            {button2text}
+                        <Button variant="herobuttonsecondary" size="hero" asChild>
+                            <Link href="#trabalho"> {button2text}</Link>
                         </Button>
                     </div>
                 </div>

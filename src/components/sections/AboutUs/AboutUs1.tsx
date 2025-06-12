@@ -10,7 +10,7 @@ import FeaturesImg1 from '../../../../public/images/about.png'
 
 function AboutUs1({ title, text1, text2, about }: AboutProps) {
     return (
-        <section className="relative overflow-hidden py-32">
+        <section className="relative overflow-hidden py-32" id="sobre">
             <AnimatedTechBackground />
 
             <div className="container mx-auto flex flex-col items-center justify-center gap-8 lg:flex-row">
