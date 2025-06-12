@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 export function HeroSection({ title, text, desc, button1text, button2text }: HeroProps) {
     return (
         <>
-            <section className="mx-auto pt-16" style={{ backgroundColor: '#121133' }}>
+            <section className="mx-auto bg-color-haiti pt-16">
                 <div className="flex flex-col items-center justify-center gap-8 text-center">
                     <div className="flex flex-col items-center justify-center text-center">
                         <h1 className="mb-6 text-6xl font-normal leading-tight tracking-tight text-white">

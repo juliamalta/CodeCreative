@@ -103,16 +103,6 @@ export default function Home() {
                     },
                 ]}
             />
-            <Contact
-                text1="Vamos Conversar?"
-                text2="Pronto para transformar sua ideia em realidade? Entre em contato conosco e vamos discutir seu projeto."
-                email="Email"
-                textEmail="contato@devcraft.com.br"
-                icon1={<AiOutlineMail size={30} color="#833ECC" />}
-                wpp="Whatsapp"
-                textWpp="(11) 999999-0000"
-                icon2={<FaWhatsapp size={30} color="#833ECC" />}
-            />
         </>
     )
 }

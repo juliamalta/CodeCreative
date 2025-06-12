@@ -48,7 +48,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
     }
 
     return (
-        <section className="sticky top-0 z-50" style={{ backgroundColor: '#121133' }}>
+        <section className="sticky top-0 z-50 bg-color-haiti">
             <nav className="container flex items-center justify-between py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
