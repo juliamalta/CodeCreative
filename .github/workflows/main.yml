@@ -16,14 +16,14 @@ jobs:
 
       - name: 🛠 Build Project
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn build
 
       - name: 📁 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/ # ou o diretório onde seu site está hospedado
-          local-dir: ./out # ou ./build, dependendo do seu projeto
+          local-dir: ./out # ou ./build, dependendo do seu projeto
