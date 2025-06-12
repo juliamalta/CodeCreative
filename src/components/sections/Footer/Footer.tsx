@@ -5,7 +5,7 @@ import { FooterProps } from './Footer.types'
 
 function Footer({ info, rights }: FooterProps) {
     return (
-        <section id="footer" className="overflow-hidden bg-color-resolver">
+        <section id="footer" className="overflow-hidden bg-white">
             <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-24 md:flex-row">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
