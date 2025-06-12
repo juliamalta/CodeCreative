@@ -13,7 +13,7 @@ function CardThree({ text, icon, title, desc, img }: CardProps) {
                 <div className="inline-flex w-max items-center justify-center rounded-full bg-color-blue px-5 py-2">
                     <p className="text-xs font-semibold text-color-studio">{title}</p>
                 </div>
-                <div className="w-full 2xl:w-2/3">
+                <div className="w-full">
                     <p className="text-sm text-color-storm">{desc}</p>
                 </div>
             </div>
