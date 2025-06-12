@@ -1,18 +1,16 @@
 import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
-function CardPrimary({ text, icon, title, iconBgColor }: CardProps) {
+function CardPrimary({ text, icon, title }: CardProps) {
     return (
-        <div className="mt-8 flex w-full flex-col gap-5 rounded-lg bg-white px-6 py-5 transition-transform hover:scale-105">
-            <div
-                className="flex size-11 items-center justify-center rounded-lg"
-                style={{ backgroundColor: iconBgColor }}>
-                {icon}
-            </div>
-            <div>
-                <h1 className="text-lg font-semibold text-black">{title}</h1>
-            </div>
-            <div className="w-full 2xl:w-10/12">
-                <p className="text-sm font-normal text-black text-color-storm">{text}</p>
+        <div className="card-border-gradient rounded-lg p-[2px] transition-transform hover:scale-105">
+            <div className="bg-color-haiti flex w-full flex-col gap-5 rounded-lg px-6 py-5">
+                <div className="flex size-11 items-center justify-center rounded-lg">{icon}</div>
+                <div>
+                    <h1 className="text-lg font-semibold text-white">{title}</h1>
+                </div>
+                <div className="w-full 2xl:w-10/12">
+                    <p className="text-color-scampi text-sm font-normal">{text}</p>
+                </div>
             </div>
         </div>
     )

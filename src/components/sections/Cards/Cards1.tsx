@@ -7,20 +7,9 @@ import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
 function Card1({ cards, title, desc }: CardSectionProps) {
     return (
-        <section id="Serviços" className="bg-color-magnolia py-24">
+        <section id="Serviços" className="bg-color-haiti py-24">
             <div className="container mx-auto items-center justify-center">
-                <div className="text-center">
-                    <BlurFade delay={0.15} direction="down" inView>
-                        <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">
-                            {title}
-                        </p>
-                    </BlurFade>
-                    <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-base font-normal text-color-storm">{desc}</p>
-                    </BlurFade>
-                </div>
-
-                <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4">
                     {cards.map((card, index) => (
                         <CardPrimary
                             key={index}

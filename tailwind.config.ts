@@ -68,7 +68,7 @@ const config: Config = {
                     pickledBluewood: 'var(--pickled-bluewood-800)',
                     mercury: 'var(--mercury-200)',
                     mirage: 'var(--mirage-950)',
-                    persianBlue: 'var(--persian-blue-800)',
+                    persianBlue: 'var(--persian-blue-700)',
                     mischka: 'var(--mischka-200)',
                     studio: 'var(--studio-600)',
                     resolver: 'var(--revolver-950)',
@@ -78,6 +78,8 @@ const config: Config = {
                     french: 'var( --french-lilac-400)',
                     blue: 'var(--blue-chalk-100)',
                     charlote: 'var(--charlotte-100)',
+                    haiti: 'var(--haiti-950)',
+                    scampi: 'var(--scampi-700)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

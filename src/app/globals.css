@@ -6,7 +6,11 @@
     .text-balance {
         text-wrap: balance;
     }
+    .card-border-gradient {
+  background: linear-gradient(135deg, #833ECC, #3037BE);
 }
+}
+
 
 @layer base {
     :root {
@@ -149,17 +153,18 @@
         --mirage-900: #233657;
         --mirage-950: #101828; /*  text */
 
-        --persian-blue-50: #ecf7ff;
-        --persian-blue-100: #d5eaff;
-        --persian-blue-200: #b3dcff;
-        --persian-blue-300: #7fc8ff;
-        --persian-blue-400: #43a7ff;
-        --persian-blue-500: #1881ff;
-        --persian-blue-600: #005cff;
-        --persian-blue-700: #0045fb;
-        --persian-blue-800: #0335c1; /*  text */
-        --persian-blue-900: #0a349e;
-        --persian-blue-950: #0c215f;
+     --persian-blue-50: #eef4ff;
+--persian-blue-100: #e0ebff;
+--persian-blue-200: #c6d9ff;
+--persian-blue-300: #a4befd;
+--persian-blue-400: #7f9afa;
+--persian-blue-500: #6176f3;
+--persian-blue-600: #444fe7;
+--persian-blue-700: #3037be; /*  text */
+--persian-blue-800: #2e36a5;
+--persian-blue-900: #2d3582;
+--persian-blue-950: #1a1d4c;
+
 
         --mischka-50: #f6f7f8;
         --mischka-100: #eaecef;
@@ -269,7 +274,29 @@
 --charlotte-900: #144a65;
 --charlotte-950: #073045;
 
+--haiti-50: #edf3ff;
+--haiti-100: #dfe7ff;
+--haiti-200: #c5d3ff;
+--haiti-300: #a2b5ff;
+--haiti-400: #7d8dfc;
+--haiti-500: #5f67f5;
+--haiti-600: #4541ea;
+--haiti-700: #3a33cf;
+--haiti-800: #302ca7;
+--haiti-900: #2c2b84;
+--haiti-950: #121133; /* color   */
 
+--scampi-50: #f2f4fb;
+--scampi-100: #e8ecf7;
+--scampi-200: #d4dbf1;
+--scampi-300: #bac4e7;
+--scampi-400: #9ea7db;
+--scampi-500: #868ace;
+--scampi-600: #6d6dbe;
+--scampi-700: #6866ac;/* color   */
+--scampi-800: #4d4c87;
+--scampi-900: #42426d;
+--scampi-950: #27273f;
 
 
 
@@ -302,6 +329,9 @@
         --chart-4: 280 65% 60%;
         --chart-5: 340 75% 55%;
     }
+  .theme {
+        --animate-aurora: aurora 8s ease-in-out infinite alternate;
+    }
 }
 
 @layer base {
@@ -310,5 +340,30 @@
     }
     body {
         @apply bg-background text-foreground;
+    }
+}
+
+@theme inline {
+  @keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+        }
+  25% {
+    background-position: 50% 100%;
+    transform: rotate(5deg) scale(1.1);
+        }
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);
+        }
+  75% {
+    background-position: 50% 0%;
+    transform: rotate(3deg) scale(1.05);
+        }
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+        }
     }
 }

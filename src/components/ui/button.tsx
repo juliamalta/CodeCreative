@@ -15,8 +15,10 @@ const buttonVariants = cva(
                 secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
                 ghost: 'hover:bg-accent hover:text-accent-foreground',
                 link: 'text-primary underline-offset-4 hover:underline',
-                herobutton: 'bg-color-studio text-white',
-                herobuttonsecondary: 'border-color-studio text-color-studio border bg-white',
+                herobutton:
+                    'from-color-studio to-color-persianBlue hover:from-color-studio hover:to-color-persianBlue bg-gradient-to-r text-white',
+
+                herobuttonsecondary: 'border-color-white bg-color-haiti border text-white',
             },
             size: {
                 default: 'h-10 px-4 py-2',

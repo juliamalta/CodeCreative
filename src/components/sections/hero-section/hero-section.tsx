@@ -2,6 +2,7 @@
 
 import { ArrowRight } from 'lucide-react'
 
+import { AuroraText } from '@/components/magicui/aurora-text'
 import { HeroProps } from '@/components/sections/hero-section/hero-section.types'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Button } from '@/components/ui/button'
@@ -9,14 +10,16 @@ import { Button } from '@/components/ui/button'
 export function HeroSection({ title, text, desc, button1text, button2text }: HeroProps) {
     return (
         <>
-            <section className="container mx-auto bg-white py-24">
+            <section className="bg-color-haiti mx-auto pt-16">
                 <div className="flex flex-col items-center justify-center gap-8 text-center">
                     <div className="flex flex-col items-center justify-center text-center">
-                        <h1 className="mb-6 text-5xl font-normal leading-tight tracking-tight">
+                        <h1 className="mb-6 text-5xl font-normal leading-tight tracking-tight text-white">
                             {title} <br></br>
-                            <span className="font-bold text-color-studio">{text}</span>
+                            <AuroraText colors={['#833ECC', '#3037BE']}>
+                                <span className="font-bold text-color-studio">{text}</span>
+                            </AuroraText>
                         </h1>
-                        <p className="w-full text-base font-normal text-color-storm lg:w-2/5">{desc}</p>
+                        <p className="text-color-scampi w-full text-base font-normal lg:w-2/5">{desc}</p>
                     </div>
                     <div className="flex w-1/2 justify-center gap-3">
                         <Button variant="herobutton" size="hero">

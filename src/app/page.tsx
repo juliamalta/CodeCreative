@@ -31,19 +31,19 @@ export default function Home() {
                         iconBgColor: '#F3E8FF',
                     },
                     {
-                        icon: <CiMobile1 size={30} color="#2699D2" />,
+                        icon: <CiMobile1 size={30} color="#833ECC" />,
                         title: 'Desenvolvimento Mobile',
                         text: 'Apps nativos e híbridos para iOS e Android com performance excepcional.',
                         iconBgColor: '#C2F6FF',
                     },
                     {
-                        icon: <TbWorld size={30} color="#EE7432" />,
+                        icon: <TbWorld size={30} color="#833ECC" />,
                         title: 'Design Digital',
-                        text: 'Identidade visual, UI/UX design e materiais gráficos que convertem.',
+                        text: 'Consultoria especializada em arquitetura de software e boas práticas.',
                         iconBgColor: '#FFEDD5',
                     },
                     {
-                        icon: <TbWorld size={30} color="#29AB59" />,
+                        icon: <TbWorld size={30} color="#833ECC" />,
                         title: 'Consultoria Tech',
                         text: 'Consultoria especializada em arquitetura de software e boas práticas.',
                         iconBgColor: '#DCFCE7',

@@ -48,7 +48,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
     }
 
     return (
-        <section className="sticky top-0 z-50 border-b-2 border-color-alto bg-white">
+        <section className="bg-color-haiti sticky top-0 z-50">
             <nav className="container flex items-center justify-between py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
@@ -64,7 +64,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                 <li key={`nav-desk-${index}`}>
                                     {isLastItem ? (
                                         <Button
-                                            className="rounded-md bg-purple-700 px-6 py-2 text-white transition-all duration-300 ease-in-out hover:bg-purple-800"
+                                            className="rounded-md bg-gradient-to-r from-color-studio to-color-persianBlue px-6 py-2 text-white transition-all duration-300 ease-in-out hover:from-[#6f2db9] hover:to-[#2a2fa6]"
                                             onClick={() => (window.location.href = link)}>
                                             {text}
                                         </Button>
@@ -72,7 +72,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                         <NavigationMenu>
                                             <NavigationMenuList>
                                                 <NavigationMenuItem>
-                                                    <NavigationMenuTrigger className="text-base text-color-resolver">
+                                                    <NavigationMenuTrigger className="bg-color-haiti text-base text-color-blue">
                                                         <span>{text}</span>
                                                     </NavigationMenuTrigger>
                                                 </NavigationMenuItem>

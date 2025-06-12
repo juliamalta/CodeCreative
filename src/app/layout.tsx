@@ -10,7 +10,7 @@ import NavigationHeader from '@/components/sections/Navigations'
 import { configs } from '@/configs'
 import { cn } from '@/lib/utils'
 
-import LogoImage from '../../public/images/logo.png'
+import LogoImage from '../../public/images/logofooter.png'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
