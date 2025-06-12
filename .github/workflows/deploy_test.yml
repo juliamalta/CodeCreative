@@ -1,0 +1,41 @@
+name: 'Test Web Deploy'
+
+on:
+  push:
+      branches:
+          - master
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+    deploy-test:
+      name: 'Vercel Test CD'
+      runs-on: ubuntu-latest
+      environment:
+        name: Test
+        url: https://https://codecreative.vercel.app/
+
+      steps:
+        - name: 📚 Git Checkout
+          uses: actions/checkout@v4
+
+        - name: 🚀 Install Vercel CLI
+          run: npm install -g vercel@latest
+
+        - name: 📋 Pull Vercel Environment Information
+          run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+
+        - name: 🏗️ Build Project Artifacts
+          run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+
+        - name: 🌐 Deploy Project Artifacts to Vercel
+          run: |
+              vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} > domain.txt
+              vercel alias --scope=maltalabs --token=${{ secrets.VERCEL_TOKEN }} set `cat domain.txt` codecreative.vercel.app
