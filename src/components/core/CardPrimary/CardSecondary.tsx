@@ -2,7 +2,7 @@ import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
     return (
-        <div className="rounded-lg bg-gradient-to-r from-color-studio to-color-persianBlue p-[2px] transition-transform hover:scale-105">
+        <div className="rounded-sm bg-gradient-to-r from-color-studio to-color-persianBlue p-[2px] transition-transform hover:scale-105">
             <div className="flex flex-col items-center justify-center gap-3 rounded-lg bg-color-haiti px-6 py-5">
                 <div className="flex size-11 items-center justify-center rounded-lg bg-gradient-to-r from-color-studio to-color-persianBlue">
                     {icon}
