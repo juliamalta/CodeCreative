@@ -81,24 +81,7 @@ export default function Home() {
                     },
                 ]}
             />
-            <Cards3
-                title="Nosso trabalho"
-                desc="Profissionais apaixonados por tecnologia e design"
-                cards={[
-                    {
-                        img: '/images/work1.png',
-                        title: 'Desenvolvimento Mobile',
-                        text: 'ProTracker',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo',
-                    },
-                    {
-                        img: '/images/work2.png',
-                        title: 'Desenvolvimento Web',
-                        text: 'ProTracker',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo',
-                    },
-                ]}
-            />
+            <Cards3 title="Nosso trabalho" desc="Profissionais apaixonados por tecnologia e design" cards={[]} />
         </>
     )
 }
