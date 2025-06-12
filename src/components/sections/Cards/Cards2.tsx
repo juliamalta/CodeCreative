@@ -7,7 +7,7 @@ import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
 function Card2({ cards, title, desc }: CardSectionProps) {
     return (
-        <section id="Valores" className="bg-color-haiti py-24">
+        <section id="Valores" className="bg-color-haiti py-24 2xl:mx-8 2xl:rounded-2xl">
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <BlurFade delay={0.15} direction="down" inView>

@@ -1,17 +1,19 @@
 'use client'
 import * as React from 'react'
 
+import { AnimatedTechBackground } from '@/components/animations/background/AnimatedTechBackground'
 import { CardThree } from '@/components/core/CardPrimary'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
 function Cards3({ cards, title, desc }: CardSectionProps) {
     return (
-        <section id="trabalho" className="bg-white py-24">
+        <section id="trabalho" className="py-24">
+            <AnimatedTechBackground />
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <BlurFade delay={0.15} direction="down" inView>
-                        <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight">
+                        <p className="tracking-tightl mb-6 font-display text-3xl font-semibold leading-tight">
                             {title}
                         </p>
                     </BlurFade>
