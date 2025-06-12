@@ -16,7 +16,7 @@ function Card2({ cards, title, desc }: CardSectionProps) {
                         </p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-color-scampi text-base">{desc}</p>
+                        <p className="text-base text-color-scampi">{desc}</p>
                     </BlurFade>
                 </div>
                 <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4">
