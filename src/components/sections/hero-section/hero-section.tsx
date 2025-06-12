@@ -19,7 +19,7 @@ export function HeroSection({ title, text, desc, button1text, button2text }: Her
                                 <span className="font-bold text-color-studio">{text}</span>
                             </AuroraText>
                         </h1>
-                        <p className="text-color-scampi w-full text-base font-normal lg:w-2/5">{desc}</p>
+                        <p className="text-color-scampi w-full text-base lg:w-2/5">{desc}</p>
                     </div>
                     <div className="flex w-1/2 justify-center gap-3">
                         <Button variant="herobutton" size="hero">
