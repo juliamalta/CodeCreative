@@ -39,7 +39,7 @@ function Footer({ info, rights }: FooterProps) {
 
                         <a
                             className="flex h-11 items-center justify-center rounded-xl bg-gradient-to-r from-color-studio to-color-persianBlue p-4 text-gray-400 hover:text-gray-400"
-                            href="https://www.instagram.com/iemadalenabrandao/">
+                            href="https://www.instagram.com/codecreativebr/">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="#FFFFFF"
@@ -50,7 +50,7 @@ function Footer({ info, rights }: FooterProps) {
                         </a>
                         <a
                             className="flex h-11 items-center justify-center rounded-xl bg-gradient-to-r from-color-studio to-color-persianBlue p-4 text-gray-400 hover:text-gray-400"
-                            href="https://github.com/iemadalenabrandao">
+                            href="https://github.com">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="#FFFFFF"
