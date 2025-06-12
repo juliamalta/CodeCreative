@@ -33,19 +33,19 @@ export default function Home() {
                     {
                         icon: <CiMobile1 size={30} color="#833ECC" />,
                         title: 'Desenvolvimento Mobile',
-                        text: 'Apps nativos e híbridos para iOS e Android com performance excepcional.',
+                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
                         iconBgColor: '#C2F6FF',
                     },
                     {
                         icon: <TbWorld size={30} color="#833ECC" />,
                         title: 'Design Digital',
-                        text: 'Consultoria especializada em arquitetura de software e boas práticas.',
+                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
                         iconBgColor: '#FFEDD5',
                     },
                     {
                         icon: <TbWorld size={30} color="#833ECC" />,
                         title: 'Consultoria Tech',
-                        text: 'Consultoria especializada em arquitetura de software e boas práticas.',
+                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
                         iconBgColor: '#DCFCE7',
                     },
                 ]}

@@ -13,7 +13,7 @@ function AboutUs1({ title, text1, text2, about }: AboutProps) {
         <section className="relative overflow-hidden py-32">
             <AnimatedTechBackground />
 
-            <div className="container mx-auto flex flex-col justify-center gap-8 lg:flex-row">
+            <div className="container mx-auto flex flex-col items-center justify-center gap-8 lg:flex-row">
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/2">
                     <div className="flex flex-col gap-6">
