@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
 import { TfiMedallAlt } from 'react-icons/tfi'
 
-import { AboutUs1 } from '@/components/sections/AboutUs'
+import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
 import Contact from '@/components/sections/Contact/Contact'
@@ -60,28 +60,24 @@ export default function Home() {
                 desc="Os princípios que guiam nosso trabalho e relacionamento com clientes"
                 cards={[
                     {
-                        icon: <TbWorld size={30} color="#833ECC" />,
+                        icon: <TbWorld size={30} color="#FFFFFF" />,
                         title: 'Foco no Cliente',
                         text: 'Cada projeto é tratado com dedicação exclusiva, sempre priorizando as necessidades e objetivos do cliente.',
-                        iconBgColor: '#F3E8FF',
                     },
                     {
-                        icon: <TfiMedallAlt size={30} color="#833ECC" />,
+                        icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
                         title: 'Qualidade Premium',
                         text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e pixel de design.',
-                        iconBgColor: '#F3E8FF',
                     },
                     {
-                        icon: <TbWorld size={30} color="#833ECC" />,
+                        icon: <TbWorld size={30} color="#FFFFFF" />,
                         title: 'Trabalho em Equipe',
                         text: 'Nossa equipe multidisciplinar trabalha de forma integrada para entregar resultados excepcionais.',
-                        iconBgColor: '#F3E8FF',
                     },
                     {
-                        icon: <TbWorld size={30} color="#833ECC" />,
+                        icon: <TbWorld size={30} color="#FFFFFF" />,
                         title: 'Paixão por Tecnologia',
                         text: 'Amamos o que fazemos e isso se reflete na qualidade e inovação de nossos projetos.',
-                        iconBgColor: '#F3E8FF',
                     },
                 ]}
             />

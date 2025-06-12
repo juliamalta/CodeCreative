@@ -13,13 +13,13 @@ export function HeroSection({ title, text, desc, button1text, button2text }: Her
             <section className="mx-auto bg-color-haiti pt-16">
                 <div className="flex flex-col items-center justify-center gap-8 text-center">
                     <div className="flex flex-col items-center justify-center text-center">
-                        <h1 className="mb-6 text-6xl font-normal leading-tight tracking-tight text-white">
+                        <h1 className="mb-6 text-4xl font-normal leading-tight tracking-tight text-white md:text-6xl">
                             {title} <br></br>
                             <AuroraText colors={['#833ECC', '#3037BE']}>
                                 <span className="font-bold text-color-studio">{text}</span>
                             </AuroraText>
                         </h1>
-                        <p className="w-full text-base text-color-scampi lg:w-2/5">{desc}</p>
+                        <p className="text-color-scampi w-full text-sm sm:text-base lg:w-2/5">{desc}</p>
                     </div>
                     <div className="flex w-1/2 justify-center gap-3">
                         <Button variant="herobutton" size="hero">

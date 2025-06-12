@@ -1,18 +1,20 @@
 'use client'
 
+import { withAnimation } from '@/common/hocs'
 import { NumberTicker } from '@/components/magicui/number-ticker'
+import { TypingAnimation } from '@/components/magicui/typing-animation'
 import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
 
 import FeaturesImg1 from '../../../../public/images/about.png'
 
-export function AboutUs1({ title, text1, text2, about }: AboutProps) {
+function AboutUs1({ title, text1, text2, about }: AboutProps) {
     return (
         <section className="relative bg-white py-32">
             <div className="container mx-auto flex flex-col justify-center gap-8 lg:flex-row">
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/2">
                     <div className="flex flex-col gap-6">
-                        <h1 className="text-2xl font-semibold text-black">{title}</h1>
+                        <TypingAnimation className='text-black" text-2xl font-semibold'>{title}</TypingAnimation>
                     </div>
                     <div className="flex flex-col gap-8 2xl:w-2/3">
                         <p className="text-base font-normal text-color-storm">{text1}</p>
@@ -51,3 +53,5 @@ export function AboutUs1({ title, text1, text2, about }: AboutProps) {
         </section>
     )
 }
+
+export default withAnimation(AboutUs1, 'fade-up')
