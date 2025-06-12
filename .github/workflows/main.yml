@@ -1,0 +1,29 @@
+name: Deploy to Hostinger via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    name: 🚀 Deploy to Hostinger
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📚 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🛠 Build Project
+        run: |
+          npm install
+          npm run build
+
+      - name: 📁 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html/ # ou o diretório onde seu site está hospedado
+          local-dir: ./out # ou ./build, dependendo do seu projeto
