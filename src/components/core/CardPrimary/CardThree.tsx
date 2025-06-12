@@ -2,7 +2,7 @@ import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 function CardThree({ text, icon, title, desc, img }: CardProps) {
     return (
-        <div className="rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 lg:flex 2xl:flex-col">
+        <div className="rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 sm:w-2/3 lg:w-1/3 lg:flex-col">
             <div>
                 <img src={img} alt="img" className="h-auto w-full rounded-t-2xl object-cover" />
             </div>
