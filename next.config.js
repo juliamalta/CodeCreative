@@ -31,6 +31,12 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export',
+
+    images: {
+        unoptimized: true, // <<< adicionar essa linha para desabilitar otimização
+    },
+
     async headers() {
         return [
             {
@@ -41,4 +47,4 @@ const nextConfig = {
     },
 }
 
-export default nextConfig
+module.exports = nextConfig
