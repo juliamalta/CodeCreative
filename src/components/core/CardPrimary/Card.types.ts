@@ -5,4 +5,6 @@ export type CardProps = {
     icon?: React.ReactNode
     img?: string
     iconBgColor?: string
+    iconsocial1?: React.ReactNode
+    iconsocial2?: React.ReactNode
 }

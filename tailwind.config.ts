@@ -80,6 +80,8 @@ const config: Config = {
                     charlote: 'var(--charlotte-100)',
                     haiti: 'var(--haiti-950)',
                     scampi: 'var(--scampi-700)',
+                    moon: 'var(--moon-raker-200)',
+                    cblue: 'var(--chetwode-blue-500)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

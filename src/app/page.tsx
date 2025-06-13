@@ -1,13 +1,12 @@
-import { AiOutlineMail } from 'react-icons/ai'
 import { CiMobile1 } from 'react-icons/ci'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FiGithub } from 'react-icons/fi'
+import { GoArrowUpRight } from 'react-icons/go'
 import { TbWorld } from 'react-icons/tb'
 import { TfiMedallAlt } from 'react-icons/tfi'
 
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
-import Contact from '@/components/sections/Contact/Contact'
 import { HeroSection } from '@/components/sections/hero-section'
 
 export default function Home() {
@@ -90,12 +89,16 @@ export default function Home() {
                         title: 'Desenvolvimento Mobile',
                         text: 'ProTracker',
                         desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        iconsocial1: <GoArrowUpRight size={20} />,
+                        iconsocial2: <FiGithub size={20} />,
                     },
                     {
                         img: '/images/work1.png',
                         title: 'Desenvolvimento Mobile',
                         text: 'ProTracker',
                         desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        iconsocial1: <GoArrowUpRight size={20} />,
+                        iconsocial2: <FiGithub size={20} />,
                     },
                 ]}
             />
