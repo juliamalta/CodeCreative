@@ -21,7 +21,7 @@ function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: C
                         <p className="text-sm text-color-cblue">{desc}</p>
                     </div>
                 </div>
-                <div className="mx-auto flex gap-6">
+                <div className="mx-auto flex cursor-pointer gap-6">
                     <div className="flex h-11 items-center justify-center rounded-full bg-color-moon px-3">
                         {iconsocial1}
                     </div>
