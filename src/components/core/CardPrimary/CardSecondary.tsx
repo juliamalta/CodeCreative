@@ -2,8 +2,8 @@ import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
     return (
-        <div className="mt-10 rounded-sm transition-transform hover:scale-105">
-            <div className="flex flex-col items-center justify-center gap-3 rounded-lg bg-color-haiti px-6 py-5">
+        <div className="mt-8 rounded-sm transition-transform hover:scale-105">
+            <div className="flex flex-col items-center justify-center gap-3 rounded-lg bg-color-haiti px-6 2xl:w-10/12">
                 <div className="flex size-11 items-center justify-center rounded-lg bg-gradient-to-r from-color-studio to-color-persianBlue">
                     {icon}
                 </div>
