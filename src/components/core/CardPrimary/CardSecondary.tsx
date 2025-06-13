@@ -11,7 +11,7 @@ function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
                     <h1 className="text-lg font-semibold text-white">{title}</h1>
                 </div>
                 <div>
-                    <p className="text-color-cblue text-center text-sm font-normal">{text}</p>
+                    <p className="text-center text-sm font-normal text-color-cblue">{text}</p>
                 </div>
             </div>
         </div>

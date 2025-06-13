@@ -18,7 +18,7 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
                         </p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-color-cblue text-base font-normal">{desc}</p>
+                        <p className="text-base font-normal text-color-cblue">{desc}</p>
                     </BlurFade>
                 </div>
                 <div className="mt-10 flex flex-wrap justify-center gap-8">
