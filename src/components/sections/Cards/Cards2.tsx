@@ -2,12 +2,13 @@
 import * as React from 'react'
 
 import CardSecondary from '@/components/core/CardPrimary/CardSecondary'
+import { AnimatedList } from '@/components/magicui/animated-list'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 
 function Card2({ cards, title, desc }: CardSectionProps) {
     return (
-        <section id="Valores" className="bg-color-haiti py-32">
+        <section id="Valores" className="bg-color-haiti py-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <BlurFade delay={0.15} direction="down" inView>
@@ -19,16 +20,18 @@ function Card2({ cards, title, desc }: CardSectionProps) {
                         <p className="text-base text-color-cblue">{desc}</p>
                     </BlurFade>
                 </div>
-                <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4">
-                    {cards.map((card, index) => (
-                        <CardSecondary
-                            key={index}
-                            icon={card.icon}
-                            title={card.title}
-                            text={card.text}
-                            iconBgColor={card.iconBgColor}
-                        />
-                    ))}
+                <div className="">
+                    <AnimatedList>
+                        {cards.map((card, index) => (
+                            <CardSecondary
+                                key={index}
+                                icon={card.icon}
+                                title={card.title}
+                                text={card.text}
+                                iconBgColor={card.iconBgColor}
+                            />
+                        ))}
+                    </AnimatedList>
                 </div>
             </div>
         </section>
