@@ -7,6 +7,7 @@ import { TfiMedallAlt } from 'react-icons/tfi'
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
+import Contact from '@/components/sections/Contact/Contact'
 import { HeroSection } from '@/components/sections/hero-section'
 
 export default function Home() {
@@ -81,14 +82,14 @@ export default function Home() {
                 ]}
             />
             <Cards3
-                title="Nosso trabalho"
-                desc="Profissionais apaixonados por tecnologia e design"
+                title="Nosso Trabalho"
+                desc="Discover our latest projects where innovation meets execution. Each project represents our commitment to delivering exceptional digital solutions that drive business growth and user engagement."
                 cards={[
                     {
                         img: '/images/work1.png',
                         title: 'Desenvolvimento Mobile',
                         text: 'ProTracker',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        desc: 'Tenha sua própria loja virtual totalmente funcional, com sistema de pagamentos automatizado (Pix, cartão, boleto) e um painel administrativo fácil de usar para gerenciar produtos, pedidos, clientes e vendas. Tudo isso com design responsivo, segurança avançada e pronto para escalar seu negócio online.',
                         iconsocial1: <GoArrowUpRight size={20} />,
                         iconsocial2: <FiGithub size={20} />,
                     },
@@ -96,12 +97,13 @@ export default function Home() {
                         img: '/images/work1.png',
                         title: 'Desenvolvimento Mobile',
                         text: 'ProTracker',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        desc: 'Tenha sua própria loja virtual totalmente funcional, com sistema de pagamentos automatizado (Pix, cartão, boleto) e um painel administrativo fácil de usar para gerenciar produtos, pedidos, clientes e vendas. Tudo isso com design responsivo, segurança avançada e pronto para escalar seu negócio online.',
                         iconsocial1: <GoArrowUpRight size={20} />,
                         iconsocial2: <FiGithub size={20} />,
                     },
                 ]}
             />
+            <Contact />
         </>
     )
 }

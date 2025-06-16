@@ -11,17 +11,17 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
         <section id="trabalho" className="py-24">
             <AnimatedTechBackground />
             <div className="container mx-auto items-center justify-center">
-                <div className="text-center">
+                <div className="flex flex-col justify-center text-center">
                     <BlurFade delay={0.15} direction="down" inView>
                         <p className="tracking-tightl mb-6 font-display text-3xl font-semibold leading-tight">
                             {title}
                         </p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-base font-normal text-color-cblue">{desc}</p>
+                        <p className="text-colr-cblue mx-auto text-base font-normal 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
-                <div className="mt-10 flex flex-wrap justify-center gap-8">
+                <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-1 xl:grid-cols-2">
                     {cards.map((card, index) => (
                         <CardThree
                             key={index}
