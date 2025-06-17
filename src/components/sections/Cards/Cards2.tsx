@@ -20,7 +20,7 @@ function Card2({ cards, title, desc }: CardSectionProps) {
                         <p className="text-base text-color-cblue">{desc}</p>
                     </BlurFade>
                 </div>
-                <div className="mt-10">
+                <div className="mx-auto mt-10">
                     <AnimatedList>
                         {cards.map((card, index) => (
                             <CardSecondary

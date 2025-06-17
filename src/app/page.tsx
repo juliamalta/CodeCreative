@@ -65,14 +65,14 @@ export default function Home() {
                         text: 'Cada projeto é tratado com dedicação exclusiva, sempre priorizando as necessidades e objetivos do cliente.',
                     },
                     {
-                        icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
-                        title: 'Qualidade Premium',
-                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e pixel de design.',
-                    },
-                    {
                         icon: <TbWorld size={30} color="#FFFFFF" />,
                         title: 'Trabalho em Equipe',
                         text: 'Nossa equipe multidisciplinar trabalha de forma integrada para entregar resultados excepcionais.',
+                    },
+                    {
+                        icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
+                        title: 'Qualidade Premium',
+                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e pixel de design.',
                     },
                     {
                         icon: <TbWorld size={30} color="#FFFFFF" />,

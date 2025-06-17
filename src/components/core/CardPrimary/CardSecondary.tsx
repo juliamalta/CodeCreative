@@ -2,9 +2,7 @@ import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
     return (
-        <div
-            className="container mx-auto flex items-center justify-center gap-4 rounded-2xl p-12"
-            style={{ backgroundColor: '#0E0D2B' }}>
+        <div className="flex items-center justify-center gap-4 rounded-2xl p-12" style={{ backgroundColor: '#0E0D2B' }}>
             <div>
                 <div className="flex size-11 items-center justify-center rounded-lg bg-gradient-to-r from-color-studio to-color-persianBlue">
                     {icon}
