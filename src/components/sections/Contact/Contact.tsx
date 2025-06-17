@@ -1,3 +1,4 @@
+'use client'
 function Contact() {
     return (
         <section className="container mx-auto my-24">
