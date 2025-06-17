@@ -9,7 +9,7 @@ import { Progress } from '@/components/ui/progress'
 
 function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: CardProps) {
     return (
-        <div className="rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 lg:flex-col">
+        <div className="rounded-2xl border-2 border-color-blue bg-white drop-shadow-2xl transition-transform hover:scale-105 lg:flex-col">
             <div className="flex flex-col gap-8 p-6">
                 <div className="flex justify-between">
                     <div>
@@ -17,7 +17,7 @@ function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: C
                             <p className="text-xl font-semibold md:text-lg">{text}</p>
                         </div>
                         <div>
-                            <p className="text-sm text-color-studio">ProTracker</p>
+                            <p className="text-sm font-medium text-color-studio">ProTracker</p>
                         </div>
                     </div>
                     <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-color-studio to-color-persianBlue px-5 py-2">

@@ -83,7 +83,7 @@ export default function Home() {
             />
             <Cards3
                 title="Nosso Trabalho"
-                desc="Discover our latest projects where innovation meets execution. Each project represents our commitment to delivering exceptional digital solutions that drive business growth and user engagement."
+                desc="Profissionais apaixonados por tecnologia e design"
                 cards={[
                     {
                         img: '/images/work1.png',
@@ -103,7 +103,11 @@ export default function Home() {
                     },
                 ]}
             />
-            <Contact />
+            <Contact
+                title="Pronto para iniciar nosso próximo projeto?"
+                text="Deixe nós colocar suas ideias em pratica com tecnologia e design excepcionais."
+                buttontext="Entre em contato"
+            />
         </>
     )
 }
