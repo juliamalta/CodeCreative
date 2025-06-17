@@ -87,17 +87,17 @@ export default function Home() {
                 cards={[
                     {
                         img: '/images/work1.png',
-                        title: 'Desenvolvimento Mobile',
-                        text: 'ProTracker',
-                        desc: 'Tenha sua própria loja virtual totalmente funcional, com sistema de pagamentos automatizado (Pix, cartão, boleto) e um painel administrativo fácil de usar para gerenciar produtos, pedidos, clientes e vendas. Tudo isso com design responsivo, segurança avançada e pronto para escalar seu negócio online.',
+                        title: 'Mobile',
+                        text: 'Aplicativo para gestão de treinos',
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
                         iconsocial1: <GoArrowUpRight size={20} />,
                         iconsocial2: <FiGithub size={20} />,
                     },
                     {
                         img: '/images/work1.png',
-                        title: 'Desenvolvimento Mobile',
-                        text: 'ProTracker',
-                        desc: 'Tenha sua própria loja virtual totalmente funcional, com sistema de pagamentos automatizado (Pix, cartão, boleto) e um painel administrativo fácil de usar para gerenciar produtos, pedidos, clientes e vendas. Tudo isso com design responsivo, segurança avançada e pronto para escalar seu negócio online.',
+                        title: 'Mobile',
+                        text: 'Aplicativo para gestão de treinos',
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
                         iconsocial1: <GoArrowUpRight size={20} />,
                         iconsocial2: <FiGithub size={20} />,
                     },

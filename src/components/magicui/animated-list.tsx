@@ -45,7 +45,7 @@ export const AnimatedList = React.memo(({ children, className, delay = 1000, ...
     }, [index, childrenArray])
 
     return (
-        <div className={cn('mt-8 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4', className)} {...props}>
+        <div className={cn('grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2', className)} {...props}>
             <AnimatePresence>
                 {itemsToShow.map((item) => (
                     <AnimatedListItem key={(item as React.ReactElement).key}>{item}</AnimatedListItem>
