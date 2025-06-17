@@ -72,12 +72,12 @@ export default function Home() {
                     {
                         icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
                         title: 'Qualidade Premium',
-                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e pixel de design.',
+                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código, cada detalhe visual e em cada etapa do processo de desenvolvimento.',
                     },
                     {
                         icon: <TbWorld size={30} color="#FFFFFF" />,
                         title: 'Paixão por Tecnologia',
-                        text: 'Amamos o que fazemos e isso se reflete na qualidade e inovação de nossos projetos.',
+                        text: 'Amamos o que fazemos, e isso se reflete na qualidade, inovação e comprometimento presentes em cada projeto que entregamos com paixão.',
                     },
                 ]}
             />

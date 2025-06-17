@@ -21,7 +21,7 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
                         <p className="text-colr-cblue mx-auto text-base font-normal 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
-                <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-1 xl:grid-cols-2">
+                <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
                     {cards.map((card, index) => (
                         <CardThree
                             key={index}

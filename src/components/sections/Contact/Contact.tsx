@@ -1,7 +1,7 @@
 'use client'
 function Contact() {
     return (
-        <section className="container mx-auto my-24">
+        <section className="container mx-auto mb-24">
             <div className="flex flex-col rounded-3xl bg-color-haiti sm:flex-row">
                 <div className="mx-auto flex flex-col items-center justify-center gap-5 p-5 py-24 sm:p-8 lg:p-16">
                     <div>
