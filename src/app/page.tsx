@@ -88,18 +88,22 @@ export default function Home() {
                     {
                         img: '/images/work1.png',
                         title: 'Mobile',
+                        titleApp: 'ProTracker',
                         text: 'Aplicativo para gestão de treinos',
                         desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
-                        iconsocial1: <GoArrowUpRight size={20} />,
-                        iconsocial2: <FiGithub size={20} />,
+                        progress: 'Progresso',
+                        progressValue: '10%',
+                        progressValueX: 10,
                     },
                     {
                         img: '/images/work1.png',
                         title: 'Mobile',
-                        text: 'Aplicativo para gestão de treinos',
+                        titleApp: 'PrimeFlix',
+                        text: 'Gerenciador de séries e filmes',
                         desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
-                        iconsocial1: <GoArrowUpRight size={20} />,
-                        iconsocial2: <FiGithub size={20} />,
+                        progress: 'Progresso',
+                        progressValue: '5%',
+                        progressValueX: 5,
                     },
                 ]}
             />

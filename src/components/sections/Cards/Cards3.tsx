@@ -25,10 +25,12 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
                             key={index}
                             img={card.img}
                             title={card.title}
+                            titleApp={card.titleApp}
+                            progress={card.progress}
+                            progressvalue={card.progressValue}
+                            progressvalueX={card.progressValueX}
                             text={card.text}
                             desc={card.desc}
-                            iconsocial1={card.iconsocial1}
-                            iconsocial2={card.iconsocial2}
                         />
                     ))}
                 </div>

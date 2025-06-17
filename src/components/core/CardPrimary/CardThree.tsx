@@ -7,7 +7,7 @@ import { CardProps } from '@/components/core/CardPrimary/Card.types'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 
-function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: CardProps) {
+function CardThree({ text, icon, title, desc, titleApp, progress, progressvalue, progressvalueX }: CardProps) {
     return (
         <div className="rounded-2xl border-2 border-color-blue bg-white drop-shadow-2xl transition-transform hover:scale-105 lg:flex-col">
             <div className="flex flex-col gap-8 p-6">
@@ -17,7 +17,7 @@ function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: C
                             <p className="text-xl font-semibold md:text-lg">{text}</p>
                         </div>
                         <div>
-                            <p className="text-sm font-medium text-color-studio">ProTracker</p>
+                            <p className="text-sm font-medium text-color-studio">{titleApp}</p>
                         </div>
                     </div>
                     <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-color-studio to-color-persianBlue px-5 py-2">
@@ -32,14 +32,14 @@ function CardThree({ text, icon, title, desc, img, iconsocial1, iconsocial2 }: C
                 <div className="flex flex-col gap-3">
                     <div className="flex justify-between">
                         <div>
-                            <p>Progresso</p>
+                            <p>{progress}</p>
                         </div>
                         <div>
-                            <p>10%</p>
+                            <p>{progressvalue}</p>
                         </div>
                     </div>
                     <div>
-                        <Progress value={10} />
+                        <Progress value={progressvalueX} />
                     </div>
                     <div>
                         <Separator />

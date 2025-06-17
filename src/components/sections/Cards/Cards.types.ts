@@ -2,9 +2,11 @@
 export interface CardData {
     icon?: JSX.Element
     title: string
+    titleApp?: string
     text: string
-    iconsocial1?: React.ReactNode
-    iconsocial2?: React.ReactNode
+    progress?: string
+    progressValue?: string
+    progressValueX?: number
     iconBgColor?: string
     desc?: string
     img?: string
