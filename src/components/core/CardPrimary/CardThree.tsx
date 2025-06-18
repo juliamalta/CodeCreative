@@ -11,31 +11,33 @@ function CardThree({ text, icon, title, desc, titleApp, progress, progressvalue,
     return (
         <div className="rounded-2xl border-2 border-color-blue bg-white drop-shadow-2xl transition-transform hover:scale-105 lg:flex-col">
             <div className="flex flex-col gap-8 p-6">
-                <div className="flex justify-between">
+                <div className="">
                     <div>
-                        <div>
-                            <p className="text-xl font-semibold md:text-lg">{text}</p>
+                        <div className="flex justify-between">
+                            <div>
+                                <p className="text-xl font-semibold md:text-lg">{text}</p>
+                            </div>
+                            <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-color-studio to-color-persianBlue px-5 py-2">
+                                <p className="text-xs font-semibold text-white">{title}</p>
+                            </div>
                         </div>
                         <div>
                             <p className="text-sm font-medium text-color-studio">{titleApp}</p>
                         </div>
                     </div>
-                    <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-color-studio to-color-persianBlue px-5 py-2">
-                        <p className="text-xs font-semibold text-white">{title}</p>
-                    </div>
                 </div>
 
                 <div className="w-full">
-                    <p className="text-sm text-color-haiti">{desc}</p>
+                    <p className="text-sm font-normal text-color-storm">{desc}</p>
                 </div>
 
                 <div className="flex flex-col gap-3">
                     <div className="flex justify-between">
                         <div>
-                            <p>{progress}</p>
+                            <p className="text-xs text-color-storm">{progress}</p>
                         </div>
                         <div>
-                            <p>{progressvalue}</p>
+                            <p className="text-xs font-extrabold text-color-storm">{progressvalue}</p>
                         </div>
                     </div>
                     <div>

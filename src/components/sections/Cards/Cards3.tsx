@@ -13,7 +13,7 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
             <div className="container mx-auto items-center justify-center">
                 <div className="flex flex-col justify-center gap-2 text-center">
                     <BlurFade delay={0.15} direction="down" inView>
-                        <p className="tracking-tightl font-display text-3xl font-semibold leading-tight">{title}</p>
+                        <p className="text-3xl font-semibold">{title}</p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
                         <p className="mx-auto text-base font-normal text-color-cblue 2xl:w-1/2">{desc}</p>

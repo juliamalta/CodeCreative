@@ -6,23 +6,20 @@ import { FooterProps } from './Footer.types'
 function Footer({ info, rights }: FooterProps) {
     return (
         <section id="footer" className="overflow-hidden bg-color-haiti">
-            <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-24 md:flex-row">
+            <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-16 md:flex-row">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
                         <img className="w-full" src={logo.src} alt="" />
                     </Link>
                 </div>
                 <div>
-                    <p className="text-color-blue">
+                    <p className="text-color-cblue">
                         Transformamos ideias em soluções digitais<br></br> inovadoras. Desenvolvimento web, mobile
                         <br></br> e design digital de alta qualidade.
                     </p>
                 </div>
 
                 <div className="flex flex-col gap-3">
-                    <div>
-                        <p className="text-lg font-semibold text-white">Vamos conversar?</p>
-                    </div>
                     <div className="flex gap-2 md:justify-end">
                         <a
                             className="flex h-11 items-center justify-center rounded-xl bg-gradient-to-r from-color-studio to-color-persianBlue p-4 text-gray-400 hover:text-gray-400"
@@ -65,13 +62,9 @@ function Footer({ info, rights }: FooterProps) {
 
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
-                <div className="flex flex-wrap items-center justify-between border-t border-color-studio py-12">
+                <div className="flex flex-wrap items-center justify-center border-t border-color-persianBlue py-12">
                     <div className="mb-6">
-                        <p className="text-color-french">{rights}</p>
-                    </div>
-                    <div className="mb-6 flex gap-10">
-                        <p className="text-color-french">Termos de Uso </p>
-                        <p className="text-color-french">Política de Privacidade</p>
+                        <p className="text-center text-color-cblue">{rights}</p>
                     </div>
                 </div>
             </div>

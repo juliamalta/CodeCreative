@@ -12,9 +12,7 @@ function Card2({ cards, title, desc }: CardSectionProps) {
             <div className="container mx-auto items-center justify-center">
                 <div className="text-center">
                     <BlurFade delay={0.15} direction="down" inView>
-                        <p className="tracking-tightl mb-6 font-display text-2xl font-semibold leading-tight text-white">
-                            {title}
-                        </p>
+                        <p className="mb-6 text-3xl font-semibold text-white">{title}</p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
                         <p className="text-base text-color-cblue">{desc}</p>

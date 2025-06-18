@@ -1,7 +1,13 @@
 import { CiMobile1 } from 'react-icons/ci'
+import { FaRegHeart } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import { GoArrowUpRight } from 'react-icons/go'
+import { IoMdHeartEmpty } from 'react-icons/io'
+import { MdOutlineColorize } from 'react-icons/md'
+import { MdCode } from 'react-icons/md'
+import { MdOutlineGroups } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
+import { TbCurrentLocation } from 'react-icons/tb'
 import { TfiMedallAlt } from 'react-icons/tfi'
 
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
@@ -18,7 +24,7 @@ export default function Home() {
                 text="ideias em realidades"
                 desc="Somos uma agência especializada em desenvolvimento web, mobile e design digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio."
                 button1text="Solicitar Orçamento"
-                button2text="Ver nossos trabalho"
+                button2text="Ver nossos trabalhos"
             />
             <Cards1
                 title="Nossos serviços"
@@ -37,13 +43,13 @@ export default function Home() {
                         iconBgColor: '#C2F6FF',
                     },
                     {
-                        icon: <TbWorld size={30} color="#833ECC" />,
+                        icon: <MdOutlineColorize size={30} color="#833ECC" />,
                         title: 'Design Digital',
                         text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
                         iconBgColor: '#FFEDD5',
                     },
                     {
-                        icon: <TbWorld size={30} color="#833ECC" />,
+                        icon: <MdCode size={30} color="#833ECC" />,
                         title: 'Consultoria Tech',
                         text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
                         iconBgColor: '#DCFCE7',
@@ -60,12 +66,12 @@ export default function Home() {
                 desc="Os princípios que guiam nosso trabalho e relacionamento com clientes"
                 cards={[
                     {
-                        icon: <TbWorld size={30} color="#FFFFFF" />,
+                        icon: <TbCurrentLocation size={30} color="#FFFFFF" />,
                         title: 'Foco no Cliente',
                         text: 'Cada projeto é tratado com dedicação exclusiva, sempre priorizando as necessidades e objetivos do cliente.',
                     },
                     {
-                        icon: <TbWorld size={30} color="#FFFFFF" />,
+                        icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Trabalho em Equipe',
                         text: 'Nossa equipe multidisciplinar trabalha de forma integrada para entregar resultados excepcionais.',
                     },
@@ -75,7 +81,7 @@ export default function Home() {
                         text: 'Mantemos os mais altos padrões de qualidade em cada linha de código, cada detalhe visual e em cada etapa do processo de desenvolvimento.',
                     },
                     {
-                        icon: <TbWorld size={30} color="#FFFFFF" />,
+                        icon: <IoMdHeartEmpty size={30} color="#FFFFFF" />,
                         title: 'Paixão por Tecnologia',
                         text: 'Amamos o que fazemos, e isso se reflete na qualidade, inovação e comprometimento presentes em cada projeto que entregamos com paixão.',
                     },

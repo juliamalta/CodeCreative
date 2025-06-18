@@ -75,7 +75,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                                     <NavigationMenuLink asChild>
                                                         <Link
                                                             href={link}
-                                                            className="bg-color-haiti text-base text-color-blue">
+                                                            className="bg-color-haiti text-base text-color-blue hover:text-color-studio">
                                                             {text}
                                                         </Link>
                                                     </NavigationMenuLink>
