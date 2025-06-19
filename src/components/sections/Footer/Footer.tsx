@@ -3,7 +3,7 @@ import Link from 'next/link'
 import logo from '../../../../public/images/logoFooter.png'
 import { FooterProps } from './Footer.types'
 
-function Footer({ info, rights, desc }: FooterProps) {
+function Footer({ rights, desc }: FooterProps) {
     return (
         <section id="footer" className="overflow-hidden bg-color-haiti">
             <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-16 md:flex-row">
