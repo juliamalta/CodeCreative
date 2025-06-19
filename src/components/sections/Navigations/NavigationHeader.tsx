@@ -113,13 +113,13 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                 tabIndex={0}
                 className={`fixed -left-full top-0 duration-200 ease-in-out ${
                     isNavOpen && 'translate-x-full'
-                } size-full bg-secondary bg-opacity-50`}
+                } size-full bg-color-haiti bg-opacity-50`}
             />
             <div className="navbar-menu z-50">
                 <div
                     className={`fixed -left-[672px] top-0 duration-200 ease-in-out ${
                         isNavOpen && 'translate-x-[672px]'
-                    } bottom-0 w-4/6 max-w-xs bg-secondary`}>
+                    } bottom-0 w-4/6 max-w-xs bg-color-haiti`}>
                     <nav className="relative h-full overflow-y-auto p-6">
                         <div className="flex h-full flex-col justify-between">
                             <Link className="inline-block" href="/">

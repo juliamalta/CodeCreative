@@ -3,7 +3,7 @@ import Link from 'next/link'
 import logo from '../../../../public/images/logoFooter.png'
 import { FooterProps } from './Footer.types'
 
-function Footer({ info, rights }: FooterProps) {
+function Footer({ info, rights, desc }: FooterProps) {
     return (
         <section id="footer" className="overflow-hidden bg-color-haiti">
             <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-16 md:flex-row">
@@ -12,11 +12,8 @@ function Footer({ info, rights }: FooterProps) {
                         <img className="w-full" src={logo.src} alt="" />
                     </Link>
                 </div>
-                <div>
-                    <p className="text-color-cblue">
-                        Transformamos ideias em soluções digitais<br></br> inovadoras. Desenvolvimento web, mobile
-                        <br></br> e design digital de alta qualidade.
-                    </p>
+                <div className="flex justify-center">
+                    <p className="text-color-cblue w-2/5 text-sm">{desc}</p>
                 </div>
 
                 <div className="flex flex-col gap-3">
@@ -64,7 +61,7 @@ function Footer({ info, rights }: FooterProps) {
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center border-t border-color-persianBlue py-12">
                     <div className="mb-6">
-                        <p className="text-center text-color-cblue">{rights}</p>
+                        <p className="text-center text-sm text-color-cblue">{rights}</p>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@ export default function Home() {
             <HeroSection
                 title="Transformamos"
                 text="ideias em realidades"
-                desc="Somos uma agência especializada em desenvolvimento web, mobile e design digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio."
+                desc="Desenvolvimento website, mobile e design digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio."
                 button1text="Solicitar Orçamento"
                 button2text="Ver nossos trabalhos"
             />
@@ -39,26 +39,26 @@ export default function Home() {
                     {
                         icon: <CiMobile1 size={30} color="#833ECC" />,
                         title: 'Desenvolvimento Mobile',
-                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
+                        text: 'Apps nativos e híbridos para iOS e Android com performance excepcional.',
                         iconBgColor: '#C2F6FF',
                     },
                     {
                         icon: <MdOutlineColorize size={30} color="#833ECC" />,
                         title: 'Design Digital',
-                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
+                        text: 'Desing de interface e experiência do usuário (UI/UX) e materiais gráficos que convertem.',
                         iconBgColor: '#FFEDD5',
                     },
                     {
                         icon: <MdCode size={30} color="#833ECC" />,
                         title: 'Consultoria Tech',
-                        text: 'Sites responsivos, e-commerce e aplicações web modernas usando as tecnologias mais atuais.',
+                        text: 'Consultoria especializada em arquitetura de software e boas práticas.',
                         iconBgColor: '#DCFCE7',
                     },
                 ]}
             />
             <AboutUs1
                 title="Sobre a Code Creative"
-                text1="Somos uma agência digital especializada em transformar ideias em soluções tecnológicas inovadoras. Com mais de 3 anos no mercado, já entregamos mais de 50 projetos para clientes de diversos segmentos"
+                text1="Somos especializados em transformar ideias em soluções tecnológicas inovadoras. Com mais de 5 anos no mercado, já entregamos projetos para clientes de diversos segmentos."
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
@@ -78,7 +78,7 @@ export default function Home() {
                     {
                         icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
                         title: 'Qualidade Premium',
-                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código, cada detalhe visual e em cada etapa do processo de desenvolvimento.',
+                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e de design.',
                     },
                     {
                         icon: <IoMdHeartEmpty size={30} color="#FFFFFF" />,
@@ -96,17 +96,17 @@ export default function Home() {
                         title: 'Mobile',
                         titleApp: 'ProTracker',
                         text: 'Aplicativo para gestão de treinos',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        desc: 'Otimize seu tempo, personalize treinos. App essencial para personal trainers.',
                         progress: 'Progresso',
                         progressValue: '10%',
                         progressValueX: 10,
                     },
                     {
                         img: '/images/work1.png',
-                        title: 'Mobile',
+                        title: 'Web',
                         titleApp: 'PrimeFlix',
                         text: 'Gerenciador de séries e filmes',
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        desc: 'Acompanhe os episódios que você já assistiu e nunca mais se perca na sua maratona.',
                         progress: 'Progresso',
                         progressValue: '5%',
                         progressValueX: 5,

@@ -1,20 +1,20 @@
 export const metadataConfig = {
-    title: 'Code Creative',
-    description: 'A better way to build your next project',
+    title: 'Code Creative | Desenvolvimento web e mobile',
+    description: 'Desenvolvimento web, mobile e design digital de alta qualidade.',
     openGraph: {
-        siteName: 'Code Creative',
+        siteName: 'Code Creative | Desenvolvimento web e mobile',
         images: [
             {
                 url: '/img/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'BuildHero',
+                alt: 'Code Creative',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        site: '@buildhero',
+        site: '@CodeCreativebr',
     },
     icons: {
         icon: [
@@ -33,6 +33,6 @@ export const metadataConfig = {
     },
     sitemap: 'sitemap.xml',
     appleWebApp: {
-        title: 'BuildHero',
+        title: 'Code Creative',
     },
 }
