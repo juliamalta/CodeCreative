@@ -3,7 +3,7 @@ import Link from 'next/link'
 import logo from '../../../../public/images/logoFooter.png'
 import { FooterProps } from './Footer.types'
 
-function Footer({ rights, desc }: FooterProps) {
+function Footer({ rights }: FooterProps) {
     return (
         <section id="footer" className="overflow-hidden bg-color-haiti">
             <div className="md-gap-0 container flex w-full flex-col justify-between gap-10 py-16 md:flex-row">
@@ -12,9 +12,11 @@ function Footer({ rights, desc }: FooterProps) {
                         <img className="w-full" src={logo.src} alt="" />
                     </Link>
                 </div>
-                <div className="flex justify-center">
-                    <p className="w-2/5 text-sm text-color-cblue">{desc}</p>
-                </div>
+
+                <p className="text-sm text-color-cblue">
+                    Transformamos ideias em soluções digitais<br></br> inovadoras. Desenvolvimento web, mobile e design{' '}
+                    <br></br>digital de alta qualidade.
+                </p>
 
                 <div className="flex flex-col gap-3">
                     <div className="flex gap-2 md:justify-end">
