@@ -47,7 +47,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 />
                 {children}
                 <Footer
-                    info={infoData}
                     rights="© 2025 Code Creative. Todos os direitos reservados."
                     desc="Transformamos ideias em soluções digitais inovadoras. Desenvolvimento web, mobile e design digital de alta qualidade."
                 />

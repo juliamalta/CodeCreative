@@ -13,7 +13,7 @@ function Footer({ info, rights, desc }: FooterProps) {
                     </Link>
                 </div>
                 <div className="flex justify-center">
-                    <p className="text-color-cblue w-2/5 text-sm">{desc}</p>
+                    <p className="w-2/5 text-sm text-color-cblue">{desc}</p>
                 </div>
 
                 <div className="flex flex-col gap-3">
