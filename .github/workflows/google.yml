@@ -1,0 +1,3 @@
+- name: Inject Google Analytics ID
+  run: |
+    find . -type f -name "*.tsx" -exec sed -i '' "s|%GA_MEASUREMENT_ID%|${{ secrets.GA_MEASUREMENT_ID }}|g" {} +
