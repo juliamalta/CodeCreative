@@ -41,7 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className={cn('min-h-screen antialiased', spaceGrotesk.variable, inter.variable)}>
             <body className={inter.variable}>
-                <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
+                <GoogleAnalyticsClient gaMeasurementId="%GA_MEASUREMENT_ID%" />
                 <NavigationHeader
                     logo={LogoImage.src}
                     navs={configs.menu}
