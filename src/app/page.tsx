@@ -83,7 +83,7 @@ export default function Home() {
                     {
                         icon: <IoMdHeartEmpty size={30} color="#FFFFFF" />,
                         title: 'Paixão por Tecnologia',
-                        text: 'Amamos o que fazemos, e isso se reflete na qualidade, inovação e comprometimento presentes em cada projeto que entregamos com paixão.',
+                        text: 'Amamos o que fazemos, e isso se reflete na qualidade, inovação e comprometimento presentes em cada projeto que entregamos.',
                     },
                 ]}
             />
@@ -92,7 +92,6 @@ export default function Home() {
                 desc="Profissionais apaixonados por tecnologia e design"
                 cards={[
                     {
-                        img: '/images/work1.png',
                         title: 'Mobile',
                         titleApp: 'ProTracker',
                         text: 'Aplicativo para gestão de treinos',
@@ -102,7 +101,6 @@ export default function Home() {
                         progressValueX: 10,
                     },
                     {
-                        img: '/images/work1.png',
                         title: 'Web',
                         titleApp: 'PrimeFlix',
                         text: 'Gerenciador de séries e filmes',

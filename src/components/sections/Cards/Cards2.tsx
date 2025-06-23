@@ -10,12 +10,12 @@ function Card2({ cards, title, desc }: CardSectionProps) {
     return (
         <section id="Valores" className="bg-color-haiti py-24">
             <div className="container mx-auto items-center justify-center">
-                <div className="text-center">
+                <div className="flex flex-col justify-center gap-2 text-center">
                     <BlurFade delay={0.15} direction="down" inView>
-                        <p className="mb-6 text-3xl font-semibold text-white">{title}</p>
+                        <p className="text-3xl font-semibold text-white">{title}</p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-base text-color-cblue">{desc}</p>
+                        <p className="mx-auto text-base font-normal text-color-cblue 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
                 <div className="mx-auto mt-10">
