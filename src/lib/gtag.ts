@@ -1,6 +1,12 @@
-// lib/gtag.ts
+declare global {
+    interface Window {
+        gtag: (...args: any[]) => void
+    }
+}
 
-export const GA_MEASUREMENT_ID = 'G-322MDB8015' // 🔁 Substitua pelo seu ID GA4
+export {}
+
+export const GA_MEASUREMENT_ID = 'G-322MDB8015'
 
 export const pageview = (url: string) => {
     window.gtag('config', GA_MEASUREMENT_ID, {
