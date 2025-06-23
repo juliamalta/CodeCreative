@@ -58,7 +58,7 @@ export default function Home() {
             />
             <AboutUs1
                 title="Sobre a Code Creative"
-                text1="Somos especializados em transformar ideias em soluções tecnológicas inovadoras. Com mais de 5 anos no mercado, já entregamos projetos para clientes de diversos segmentos."
+                text1="Você tem uma ideia incrível mas não sabe como tirar do papel? Somos especializados em transformar ideias em soluções tecnológicas inovadoras. Com mais de 5 anos no mercado, já entregamos projetos para clientes de diversos segmentos."
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
@@ -95,7 +95,7 @@ export default function Home() {
                         title: 'Mobile',
                         titleApp: 'ProTracker',
                         text: 'Aplicativo para gestão de treinos',
-                        desc: 'Otimize seu tempo, personalize treinos. App essencial para personal trainers.',
+                        desc: 'Otimize seu tempo, personalize treinos. Aplicativo essencial para personal trainers.',
                         progress: 'Progresso',
                         progressValue: '10%',
                         progressValueX: 10,
@@ -113,7 +113,7 @@ export default function Home() {
             />
             <Contact
                 title="Pronto para iniciar nosso próximo projeto?"
-                text="Deixe nós colocar suas ideias em pratica com tecnologia e design excepcionais."
+                text="Deixe nós colocar suas ideias em prática. Solicite seu orçamento gratuito agora"
                 buttontext="Entre em contato"
             />
         </>
