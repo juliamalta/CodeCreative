@@ -15,7 +15,7 @@ function CardThree({ text, icon, title, desc, titleApp, progress, progressvalue,
                     <div>
                         <div className="flex justify-between">
                             <div>
-                                <p className="text-xl font-semibold md:text-lg">{text}</p>
+                                <p className="text-sm font-semibold lg:text-lg">{text}</p>
                             </div>
                             <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-color-studio to-color-persianBlue px-5 py-2">
                                 <p className="text-xs font-semibold text-white">{title}</p>
