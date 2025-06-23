@@ -1,7 +1,7 @@
 export const menuConfig = [
     {
         text: 'Início',
-        link: '/',
+        link: '#inicio',
     },
     {
         text: 'Sobre',
@@ -9,7 +9,7 @@ export const menuConfig = [
     },
     {
         text: 'Serviços',
-        link: '/',
+        link: '#inicio',
     },
     {
         text: 'Projetos',
