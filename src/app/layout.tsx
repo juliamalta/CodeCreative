@@ -2,17 +2,16 @@ import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Space_Grotesk, Inter } from 'next/font/google'
 import './globals.css'
-import Script from 'next/script'
-import { CiPhone, CiMail } from 'react-icons/ci'
+import { CiPhone } from 'react-icons/ci'
+import { CiMail } from 'react-icons/ci'
 
+import { GoogleAnalyticsClient } from '@/components/GoogleAnalyticsClient'
 import { Footer } from '@/components/sections/Footer'
 import NavigationHeader from '@/components/sections/Navigations'
 import { configs } from '@/configs'
-import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 import { cn } from '@/lib/utils'
 
 import LogoImage from '../../public/images/logo.png'
-import { Analytics } from './analytics'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -40,31 +39,14 @@ const infoData = [
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <html lang="pt-BR" className={cn('min-h-screen antialiased', spaceGrotesk.variable, inter.variable)}>
-            <head>
-                {/* Google Analytics Scripts */}
-                <Script
-                    strategy="afterInteractive"
-                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-                />
-                <Script id="gtag-init" strategy="afterInteractive">
-                    {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
-          `}
-                </Script>
-            </head>
+        <html lang="en" className={cn('min-h-screen antialiased', spaceGrotesk.variable, inter.variable)}>
             <body className={inter.variable}>
+                <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <NavigationHeader
                     logo={LogoImage.src}
                     navs={configs.menu}
                     buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSf7UDEd4o_ll21lRKERe2rf83vGASGW0e1vJukTut4rD1OuPg/viewform"
                 />
-                <Analytics /> {/* Tracking de rota */}
                 {children}
                 <Footer rights="© 2025 Code Creative. Todos os direitos reservados." />
             </body>
