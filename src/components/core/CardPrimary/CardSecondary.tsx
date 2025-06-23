@@ -5,7 +5,7 @@ function CardSecondary({ text, icon, title, iconBgColor }: CardProps) {
         <div className="transition-transform hover:scale-105">
             <div>
                 <div
-                    className="flex size-full items-center justify-center gap-4 rounded-2xl px-6 py-8"
+                    className="flex size-full h-32 items-center justify-center gap-4 rounded-2xl px-6 py-8"
                     style={{ backgroundColor: '#0E0D2B' }}>
                     <div>
                         <div className="flex size-11 items-center justify-center rounded-lg bg-gradient-to-r from-color-studio to-color-persianBlue">
