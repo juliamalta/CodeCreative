@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
 import { Button } from '@/components/ui/button'
@@ -23,8 +24,10 @@ function Contact({ title, text, buttontext }: ContactProps) {
 
                     <div className="flex flex-row items-center justify-center gap-4 sm:justify-normal">
                         <div>
-                            <Button variant="herobutton" size="hero">
-                                {buttontext} <ArrowRight className="ml-2 size-4" />
+                            <Button variant="herobutton" size="hero" asChild>
+                                <Link href="https://www.instagram.com/codecreativebr/">
+                                    {buttontext} <ArrowRight className="ml-2 size-4" />
+                                </Link>
                             </Button>
                         </div>
                     </div>
