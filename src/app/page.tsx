@@ -45,7 +45,7 @@ export default function Home() {
                     {
                         icon: <MdOutlineColorize size={30} color="#833ECC" />,
                         title: 'Design Digital',
-                        text: 'Desing de interface e experiência do usuário (UI/UX) e materiais gráficos que convertem.',
+                        text: 'Design de interface e experiência do usuário (UI/UX) e materiais gráficos que convertem.',
                         iconBgColor: '#FFEDD5',
                     },
                     {
