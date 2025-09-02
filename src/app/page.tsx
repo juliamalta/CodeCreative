@@ -102,12 +102,12 @@ export default function Home() {
                     },
                     {
                         title: 'Web',
-                        titleApp: 'PrimeFlix',
+                        titleApp: 'Streamly',
                         text: 'Gerenciador de séries e filmes',
                         desc: 'Acompanhe os episódios que você já assistiu e nunca mais se perca na sua maratona.',
                         progress: 'Progresso',
-                        progressValue: '5%',
-                        progressValueX: 5,
+                        progressValue: '20%',
+                        progressValueX: 20,
                     },
                 ]}
             />
