@@ -23,7 +23,7 @@ export default function Home() {
             <HeroSection
                 title={
                     <>
-                        Sua presença digital é elevada ao{' '}
+                        Elevamos sua presença digital{' '}
                         <span className="text-color-studio">nível de excelência.</span>
                     </>
                 }
