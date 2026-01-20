@@ -19,7 +19,7 @@ function CardWork({ title, description, img, tag }: CardWorkProps) {
                 </div>
                 <div className="flex flex-col gap-4">
                     <p className="text-lg font-semibold">{title}</p>
-                    <p className='text-color-storm'>{description}</p>
+                    <p className="text-color-storm">{description}</p>
                 </div>
             </div>
         </div>
