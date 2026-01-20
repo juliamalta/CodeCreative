@@ -15,8 +15,7 @@ const buttonVariants = cva(
                 secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
                 ghost: 'hover:bg-accent hover:text-accent-foreground',
                 link: 'text-primary underline-offset-4 hover:underline',
-                herobutton:
-                    'from-color-studio to-color-persianBlue hover:from-color-studio hover:to-color-persianBlue bg-gradient-to-r text-white',
+                herobutton: 'bg-color-studio hover:from-color-studio hover:to-color-persianBlue  text-white',
 
                 herobuttonsecondary:
                     'border-color-white bg-color-haiti hover:border-color-studio hover:text-color-studio border text-white',
@@ -25,7 +24,7 @@ const buttonVariants = cva(
                 default: 'h-10 px-4 py-2',
                 sm: 'h-9 rounded-md px-3',
                 lg: 'h-11 rounded-md px-8',
-                hero: 'h-16 p-3 sm:px-8 sm:py-5',
+                hero: 'h-14 p-3 sm:px-8 sm:py-5',
                 icon: 'size-10',
             },
         },

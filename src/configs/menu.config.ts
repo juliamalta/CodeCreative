@@ -15,8 +15,4 @@ export const menuConfig = [
         text: 'Projetos',
         link: '#trabalho',
     },
-    {
-        text: 'Contato',
-        link: '#footer',
-    },
 ]

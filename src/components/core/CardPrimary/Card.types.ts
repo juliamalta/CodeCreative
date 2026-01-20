@@ -1,7 +1,7 @@
 export type CardProps = {
     titleApp?: string
-    text: string
-    title: string
+    text?: string
+    title: string | React.ReactNode
     desc?: string
     icon?: React.ReactNode
     img?: string
@@ -9,4 +9,12 @@ export type CardProps = {
     progress?: string
     progressvalue?: string
     progressvalueX?: number
+    tag?: string[]
+}
+
+export type CardWorkProps = {
+    title: string
+    img?: string
+    description?: string
+    tag: string[]
 }

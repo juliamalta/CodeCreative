@@ -15,14 +15,19 @@ import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
 import Contact from '@/components/sections/Contact/Contact'
 import { HeroSection } from '@/components/sections/hero-section'
+import Faq1 from '@/components/sections/Faqs/Faq1'
 
 export default function Home() {
     return (
         <>
             <HeroSection
-                title="Transformamos"
-                text="ideias em realidades"
-                desc="Desenvolvimento website, mobile e design digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio."
+                title={
+                    <>
+                        Sua presença digital é elevada ao{' '}
+                        <span className="text-color-studio">nível de excelência.</span>
+                    </>
+                }
+                desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
                 button1text="Solicitar Orçamento"
                 button2text="Ver nossos trabalhos"
             />
@@ -57,63 +62,81 @@ export default function Home() {
                 ]}
             />
             <AboutUs1
-                title="Sobre a Code Creative"
-                text1="Você tem uma ideia incrível mas não sabe como tirar do papel? Somos especializados em transformar ideias em soluções tecnológicas inovadoras. Com mais de 5 anos no mercado, já entregamos projetos para clientes de diversos segmentos."
+                title="Transformando seu produto em realidade"
+                text1="Nascemos da união perfeita entre criatividade e tecnologia. Somos profissionais apaixonados por transformar ideias em experiências digitais marcantes. Com mais de 5 anos de expertise em design e domínio de desenvolvimento, dando vida a cada pixel com código limpo e funcionalidade impecável."
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
-                title="Nossos valores"
-                desc="Os princípios que guiam nosso trabalho e relacionamento com clientes"
+             titlePrimary='Serviços'
+                title="Soluções que Funcionam"
+                desc="Da interface que encanta aos sistemas que performam: criamos experiências digitais completas para seu negócio crescer."
                 cards={[
                     {
                         icon: <TbCurrentLocation size={30} color="#FFFFFF" />,
-                        title: 'Foco no Cliente',
-                        text: 'Cada projeto é tratado com dedicação exclusiva, sempre priorizando as necessidades e objetivos do cliente.',
+                        tag: ['Landing Page', 'Site Institucional','Aplivativos'],
+                        title: 'Desenvolvimento ',
+                        text: 'De sites a aplicativos, entregamos soluções digitais modernas, rápidas e escaláveis, projetadas para performance e impacto real.',
                     },
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
-                        title: 'Trabalho em Equipe',
-                        text: 'Nossa equipe multidisciplinar trabalha de forma integrada para entregar resultados excepcionais.',
-                    },
-                    {
-                        icon: <TfiMedallAlt size={30} color="#FFFFFF" />,
-                        title: 'Qualidade Premium',
-                        text: 'Mantemos os mais altos padrões de qualidade em cada linha de código e de design.',
-                    },
-                    {
-                        icon: <IoMdHeartEmpty size={30} color="#FFFFFF" />,
-                        title: 'Paixão por Tecnologia',
-                        text: 'Amamos o que fazemos, e isso se reflete na qualidade, inovação e comprometimento presentes em cada projeto que entregamos.',
+                        title: 'Design',
+                        tag: ['UI/UX', 'Landing Pages',],
+                        text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}
+                buttonText='Solicite um orçamento'
             />
             <Cards3
                 title="Nosso Trabalho"
                 desc="Profissionais apaixonados por tecnologia e design"
                 cards={[
                     {
-                        title: 'Mobile',
-                        titleApp: 'ProTracker',
-                        text: 'Aplicativo para gestão de treinos',
-                        desc: 'Otimize seu tempo, personalize treinos. Aplicativo essencial para personal trainers.',
-                        progress: 'Progresso',
-                        progressValue: '10%',
-                        progressValueX: 10,
+                        title: 'Pro Trackere',
+                        tag: ['Mobile', 'React Native'],
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
                     },
                     {
-                        title: 'Web',
-                        titleApp: 'Streamly',
-                        text: 'Gerenciador de séries e filmes',
-                        desc: 'Acompanhe os episódios que você já assistiu e nunca mais se perca na sua maratona.',
-                        progress: 'Progresso',
-                        progressValue: '20%',
-                        progressValueX: 20,
+                        title: 'Pro Tracker',
+                        tag: ['Mobile', 'React Native'],
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                    },
+                    {
+                        title: 'Pro Tracker',
+                        tag: ['Mobile', 'React Native'],
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                    },
+                    {
+                        title: 'Pro Tracker',
+                        tag: ['Mobile', 'React Native'],
+                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                    },
+                ]}
+            />
+            <Faq1
+                title={
+                    <>
+                        Perguntas frequentes <span className="text-color-studio">_</span>
+                    </>
+                }
+                description="Criar um texto para perguntas frequentes como uma forma de introdução para a sessão"
+                faqs={[
+                    {
+                        title: 'Quais tecnologias vocês utilizam?',
+                        answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
+                    },
+                    {
+                        title: 'Quais tecnologias vocês utilizam?',
+                        answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
+                    },
+                    {
+                        title: 'Quais tecnologias vocês utilizam?',
+                        answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
                     },
                 ]}
             />
             <Contact
-                title="Pronto para iniciar nosso próximo projeto?"
-                text="Deixe nós colocar suas ideias em prática. Solicite seu orçamento gratuito agora"
+                title="Está pronto para ver sua marca decolar?"
+                text="Toda grande solução digital começa com uma boa conversa. Conte sua ideia para a gente e vamos transformá-la na ferramenta que seu negócio precisa."
                 buttontext="Entre em contato"
             />
         </>

@@ -49,7 +49,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
     return (
         <section className="sticky top-0 z-50 bg-color-haiti">
-            <nav className="container flex items-center justify-between border-b-2 border-color-persianBlue py-6">
+            <nav className="container flex items-center justify-between border-b-2 border-color-studio py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
                         <Image width={172} height={73} src={logo} alt="logo" />
@@ -62,31 +62,30 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
                             return (
                                 <li key={`nav-desk-${index}`}>
-                                    {isLastItem ? (
-                                        <Button
-                                            className="rounded-md bg-gradient-to-r from-color-studio to-color-persianBlue px-6 py-2 text-white transition-all duration-300 ease-in-out hover:from-[#6f2db9] hover:to-[#2a2fa6]"
-                                            onClick={() => (window.location.href = link)}>
-                                            {text}
-                                        </Button>
-                                    ) : (
-                                        <NavigationMenu>
-                                            <NavigationMenuList>
-                                                <NavigationMenuItem>
-                                                    <NavigationMenuLink asChild>
-                                                        <Link
-                                                            href={link}
-                                                            className="bg-color-haiti text-base text-color-blue hover:text-color-studio">
-                                                            {text}
-                                                        </Link>
-                                                    </NavigationMenuLink>
-                                                </NavigationMenuItem>
-                                            </NavigationMenuList>
-                                        </NavigationMenu>
-                                    )}
+                                    <NavigationMenu>
+                                        <NavigationMenuList>
+                                            <NavigationMenuItem>
+                                                <NavigationMenuLink asChild>
+                                                    <Link
+                                                        href={link}
+                                                        className="bg-color-haiti text-base text-color-blue hover:text-color-studio">
+                                                        {text}
+                                                    </Link>
+                                                </NavigationMenuLink>
+                                            </NavigationMenuItem>
+                                        </NavigationMenuList>
+                                    </NavigationMenu>
                                 </li>
                             )
                         })}
                     </ul>
+                </div>
+                <div>
+                    <div className="hidden justify-end lg:flex">
+                        <Button className="rounded-full bg-color-studio px-6 py-2 text-white transition-all duration-300 ease-in-out hover:from-[#6f2db9] hover:to-[#2a2fa6]">
+                            Fale Conosco
+                        </Button>
+                    </div>
                 </div>
 
                 {/* Mobile Menu Button */}
