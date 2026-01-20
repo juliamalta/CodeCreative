@@ -13,7 +13,7 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
         <section id="trabalho" className="py-24">
             <AnimatedTechBackground />
             <div className="container mx-auto">
-                <div className="flex flex-col 2xl:flex-row justify-between gap-2">
+                <div className="flex flex-col justify-between gap-2 2xl:flex-row">
                     <BlurFade delay={0.15} direction="down" inView>
                         <p className="text-3xl font-semibold">{title}</p>
                     </BlurFade>
@@ -23,9 +23,9 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
                 </div>
                 <div className="mx-auto mt-10">
                     <Carousel>
-                        <CarouselContent className="flex ">
+                        <CarouselContent className="flex gap-8">
                             {cards.map((card, index) => (
-                                <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3 2xl:basis-1/2">
+                                <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/2 2xl:basis-1/2">
                                     <CardWork tag={card.tag ?? []} title={card.title} description={card.desc} />
                                 </CarouselItem>
                             ))}

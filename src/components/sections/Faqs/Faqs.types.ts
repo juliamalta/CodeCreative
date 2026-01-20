@@ -1,5 +1,5 @@
 export interface faqsData {
-    title: string 
+    title: string
     answer: string
 }
 

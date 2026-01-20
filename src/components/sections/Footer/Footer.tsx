@@ -17,9 +17,9 @@ function Footer({ rights }: FooterProps) {
                         </div>
 
                         <div className="flex flex-col gap-3">
-                            <div className="flex items-center  md:justify-end">
+                            <div className="flex items-center md:justify-end">
                                 <a
-                                    className="flex h-11 items-center justify-center rounded-xl gap-3"
+                                    className="flex h-11 items-center justify-center gap-3 rounded-xl"
                                     href="https://www.instagram.com/codecreativebr/">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
