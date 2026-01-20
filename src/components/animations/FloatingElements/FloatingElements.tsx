@@ -1,8 +1,8 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
 import { BookOpen, Pencil, Calculator, Globe2, Palette, Music2, Trophy, Atom, DivideIcon } from 'lucide-react'
+import React from 'react'
 
 interface FloatingElement {
     icon: any

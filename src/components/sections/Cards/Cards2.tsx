@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import * as React from 'react'
 
 import CardSecondary from '@/components/core/CardPrimary/CardSecondary'
@@ -6,7 +7,6 @@ import { AnimatedList } from '@/components/magicui/animated-list'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 
 function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProps) {
     return (

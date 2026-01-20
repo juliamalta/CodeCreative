@@ -3,9 +3,9 @@ import * as React from 'react'
 
 import { AnimatedTechBackground } from '@/components/animations/background/AnimatedTechBackground'
 import { CardThree } from '@/components/core/CardPrimary'
+import CardWork from '@/components/core/CardPrimary/Card-work'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
-import CardWork from '@/components/core/CardPrimary/Card-work'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
 function Cards3({ cards, title, desc }: CardSectionProps) {

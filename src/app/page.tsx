@@ -14,8 +14,8 @@ import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
 import Contact from '@/components/sections/Contact/Contact'
-import { HeroSection } from '@/components/sections/hero-section'
 import Faq1 from '@/components/sections/Faqs/Faq1'
+import { HeroSection } from '@/components/sections/hero-section'
 
 export default function Home() {
     return (
