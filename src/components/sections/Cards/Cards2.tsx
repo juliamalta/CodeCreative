@@ -8,12 +8,12 @@ import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-function Card2({ titlePrimary,cards, title, desc, buttonText }: CardSectionProps) {
+function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProps) {
     return (
         <section id="Valores" className="bg-color-haiti py-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="flex flex-col justify-center gap-2 text-center">
-                     <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
+                    <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
                     <BlurFade delay={0.15} direction="down" inView>
                         <p className="text-3xl font-semibold text-white">{title}</p>
                     </BlurFade>

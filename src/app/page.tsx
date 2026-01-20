@@ -67,24 +67,24 @@ export default function Home() {
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
-             titlePrimary='Serviços'
+                titlePrimary="Serviços"
                 title="Soluções que Funcionam"
                 desc="Da interface que encanta aos sistemas que performam: criamos experiências digitais completas para seu negócio crescer."
                 cards={[
                     {
                         icon: <TbCurrentLocation size={30} color="#FFFFFF" />,
-                        tag: ['Landing Page', 'Site Institucional','Aplivativos'],
+                        tag: ['Landing Page', 'Site Institucional', 'Aplivativos'],
                         title: 'Desenvolvimento ',
                         text: 'De sites a aplicativos, entregamos soluções digitais modernas, rápidas e escaláveis, projetadas para performance e impacto real.',
                     },
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Design',
-                        tag: ['UI/UX', 'Landing Pages',],
+                        tag: ['UI/UX', 'Landing Pages'],
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}
-                buttonText='Solicite um orçamento'
+                buttonText="Solicite um orçamento"
             />
             <Cards3
                 title="Nosso Trabalho"

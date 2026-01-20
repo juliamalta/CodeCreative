@@ -3,7 +3,7 @@ import imgWork from '../../../../public/images/img2.png'
 function CardWork({ title, description, img, tag }: CardWorkProps) {
     return (
         <div className="flex flex-col rounded-2xl">
-            <div className="h-80 overflow-hidden ">
+            <div className="h-80 overflow-hidden">
                 <img src={imgWork.src} alt="img" className="h-full w-full object-cover" />
             </div>
             <div className="flex flex-col gap-4 px-10 py-7">

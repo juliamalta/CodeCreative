@@ -2,7 +2,6 @@
 export interface CardData {
     icon?: JSX.Element
     title: string
-    
     titleApp?: string
     text?: string
     progress?: string
@@ -11,14 +10,13 @@ export interface CardData {
     iconBgColor?: string
     desc?: string
     img?: string
-    tag?:string[]
-    
+    tag?: string[]
 }
 
 export interface CardSectionProps {
     titlePrimary?: string
-    title?: string|React.ReactNode
+    title?: string | React.ReactNode
     desc?: string
-    buttonText?:string
+    buttonText?: string
     cards: CardData[]
 }
