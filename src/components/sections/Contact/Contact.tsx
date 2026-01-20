@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
 import { Button } from '@/components/ui/button'
 import imgbg from '../../../../public/images/bg.png'
-function Contact({ title, text, buttontext, img }: ContactProps) {
+function Contact({ title, text, buttontext }: ContactProps) {
     return (
         <section>
             <div className="h-80 overflow-hidden">
