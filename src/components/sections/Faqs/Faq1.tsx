@@ -1,9 +1,7 @@
 import Accordion from '@/components/core/Accordion/Accordion'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { FaqProps } from '@/components/sections/Faqs/Faqs.types'
-import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+
 
 function Faq1({ faqs, title, description }: FaqProps) {
     return (
