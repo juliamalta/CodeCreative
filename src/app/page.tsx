@@ -92,24 +92,14 @@ export default function Home() {
                 desc="Profissionais apaixonados por tecnologia e design"
                 cards={[
                     {
-                        title: 'Pro Trackere',
-                        tag: ['Mobile', 'React Native'],
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        title: 'Pro Tracker',
+                        tag: ['Aplicativo', 'React Native'],
+                        desc: 'Aplicativo que revoluciona a rotina de personal trainers com criação rápida de treinos personalizados e acompanhamento eficiente de alunos.',
                     },
                     {
-                        title: 'Pro Tracker',
-                        tag: ['Mobile', 'React Native'],
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
-                    },
-                    {
-                        title: 'Pro Tracker',
-                        tag: ['Mobile', 'React Native'],
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
-                    },
-                    {
-                        title: 'Pro Tracker',
-                        tag: ['Mobile', 'React Native'],
-                        desc: 'Loja online completa com sistema de pagamento integrado e painel administrativo.',
+                        title: 'Streamly',
+                        tag: ['Web', 'React JS'],
+                        desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona.',
                     },
                 ]}
             />
@@ -122,16 +112,20 @@ export default function Home() {
                 description="Criar um texto para perguntas frequentes como uma forma de introdução para a sessão"
                 faqs={[
                     {
-                        title: 'Quais tecnologias vocês utilizam?',
-                        answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
+                        title: 'Como funciona o processo de desenvolvimento?',
+                        answer: 'Nosso processo tem 5 etapas: 1) Briefing e análise, 2) Design e prototipação, 3) Desenvolvimento, 4) Testes e revisões, 5) Entrega e treinamento. O cliente acompanha todo o processo.',
+                    },
+                    {
+                        title: 'Vocês atendem empresas de todo o Vale do Aço?',
+                        answer: 'Sim! Atendemos presencialmente Ipatinga, Timóteo, Coronel Fabriciano, Santana do Paraíso e toda região metropolitana do Vale do Aço. Também trabalhamos de forma remota para clientes de outras cidades de Minas Gerais e Brasil.',
                     },
                     {
                         title: 'Quais tecnologias vocês utilizam?',
                         answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
                     },
                     {
-                        title: 'Quais tecnologias vocês utilizam?',
-                        answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
+                        title: 'Oferecem suporte após a entrega?',
+                        answer: 'Sim! Todo projeto inclui 30 dias de suporte gratuito após entrega. Oferecemos planos de suporte mensal incluindo: correção de bugs, atualizações de segurança, backup automático e suporte técnico prioritário via WhatsApp',
                     },
                 ]}
             />

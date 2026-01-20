@@ -7,10 +7,10 @@ function Faq1({ faqs, title, description }: FaqProps) {
         <div className="container flex flex-col justify-between gap-8 py-24 lg:flex-row">
             <div className="flex flex-col gap-8">
                 <BlurFade delay={0.15} direction="down" inView>
-                    <p className="w-2/3 text-4xl font-semibold">{title}</p>
+                    <p className="w-2/3 text-4xl font-semibold tex">{title}</p>
                 </BlurFade>
                 <div>
-                    <p className="w-full text-sm 2xl:w-2/4">{description}</p>
+                    <p className="w-full text-sm 2xl:w-2/4 text-color-storm">{description}</p>
                 </div>
             </div>
             <div className="w-full 2xl:w-2/3">

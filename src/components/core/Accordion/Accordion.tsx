@@ -15,7 +15,7 @@ function Accordion({ title, children }: AccordionProps) {
                 <h1 className="text-xl font-bold">{title}</h1>
                 {open ? <FaChevronUp color="#833ECC" size={20} /> : <FaChevronDown color="#833ECC" size={20} />}
             </div>
-            {open && <div>{children}</div>}
+            {open && <div className="text-color-storm">{children}</div>}
         </div>
     )
 }
