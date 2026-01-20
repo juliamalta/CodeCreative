@@ -8,7 +8,7 @@ import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
 
 import FeaturesImg1 from '../../../../public/images/about.png'
 
-function AboutUs1({ title, text1, text2, about }: AboutProps) {
+function AboutUs1({ title, text1, text2, about, titlePrimary }: AboutProps) {
     return (
         <section className="relative overflow-hidden py-32" id="sobre">
             <AnimatedTechBackground />
@@ -17,6 +17,9 @@ function AboutUs1({ title, text1, text2, about }: AboutProps) {
                 {/* Text & Features Section */}
                 <div className="flex flex-col gap-10 lg:w-1/3">
                     <div className="flex flex-col gap-6">
+                        <p className="text-base font-semibold text-color-studio">
+                            {titlePrimary} <span className="text-color-studio">_</span>
+                        </p>
                         <TypingAnimation className="text-3xl font-semibold text-black">{title}</TypingAnimation>
                     </div>
                     <div className="flex flex-col gap-8">
@@ -27,8 +30,8 @@ function AboutUs1({ title, text1, text2, about }: AboutProps) {
 
                 {/* Image Section */}
                 <div className="relative mt-10 md:mt-0">
-                    <div className="w-2/7 md:w-2/7">
-                        <img src={FeaturesImg1.src} alt="img" className="h-auto rounded-xl" />
+                    <div className="w-full">
+                        <img src={FeaturesImg1.src} alt="img" className="h-auto w-full rounded-xl" />
                     </div>
                 </div>
             </div>

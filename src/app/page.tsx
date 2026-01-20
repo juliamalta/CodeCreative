@@ -62,25 +62,26 @@ export default function Home() {
                 ]}
             />
             <AboutUs1
+                titlePrimary="SOBRE"
                 title="Transformando seu produto em realidade"
                 text1="Nascemos da união perfeita entre criatividade e tecnologia. Somos profissionais apaixonados por transformar ideias em experiências digitais marcantes. Com mais de 5 anos de expertise em design e domínio de desenvolvimento, dando vida a cada pixel com código limpo e funcionalidade impecável."
                 text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
             />
             <Cards2
-                titlePrimary="Serviços"
+                titlePrimary="SERVIÇOS"
                 title="Soluções que Funcionam"
                 desc="Da interface que encanta aos sistemas que performam: criamos experiências digitais completas para seu negócio crescer."
                 cards={[
                     {
                         icon: <TbCurrentLocation size={30} color="#FFFFFF" />,
-                        tag: ['Landing Page', 'Site Institucional', 'Aplivativos'],
+                        tag: ['Landing Page', 'Site Institucional', 'Aplicativos'],
                         title: 'Desenvolvimento ',
                         text: 'De sites a aplicativos, entregamos soluções digitais modernas, rápidas e escaláveis, projetadas para performance e impacto real.',
                     },
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Design',
-                        tag: ['UI/UX', 'Landing Pages'],
+                        tag: ['UI/UX', 'Landing Pages', 'Aplicativos'],
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}
