@@ -15,11 +15,9 @@ function AboutUs1({ title, text1, text2, about, titlePrimary }: AboutProps) {
 
             <div className="container mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row">
                 {/* Text & Features Section */}
-                <div className="flex flex-col gap-10 lg:w-1/3">
+                <div className="flex flex-col gap-10 lg:w-2/4">
                     <div className="flex flex-col gap-6">
-                        <p className="text-base font-semibold text-color-studio">
-                            {titlePrimary} <span className="text-color-studio">_</span>
-                        </p>
+                        <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
                         <TypingAnimation className="text-3xl font-semibold text-black">{title}</TypingAnimation>
                     </div>
                     <div className="flex flex-col gap-8">
