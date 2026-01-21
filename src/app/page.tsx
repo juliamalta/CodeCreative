@@ -23,7 +23,7 @@ export default function Home() {
             <HeroSection
                 title={
                     <>
-                        Elevamos sua presença digital ao <span className="text-color-studio">nível de excelência.</span>
+                        Elevamos sua presença digital ao <span className="text-color-studio">nível de excelência</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
