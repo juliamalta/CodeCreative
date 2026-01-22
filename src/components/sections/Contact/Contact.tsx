@@ -32,7 +32,7 @@ function Contact({ title, text, buttontext }: ContactProps) {
                                 href="https://wa.me/5531996398460"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="pointer-events-auto relative z-50 flex w-full items-center justify-center gap-3 rounded-full bg-color-studio px-5 py-3 text-sm font-semibold text-white transition hover:bg-color-studio sm:w-fit sm:text-base 2xl:text-base">
+                                className="pointer-events-auto relative  flex w-full items-center justify-center gap-3 rounded-full bg-color-studio px-5 py-3 text-sm font-semibold text-white transition hover:bg-color-studio sm:w-fit sm:text-base 2xl:text-base">
                                 <FaWhatsapp className="text-xl sm:text-2xl" />
                                 <span className="whitespace-nowrap">Entre em contato</span>
                             </a>

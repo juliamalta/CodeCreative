@@ -109,7 +109,7 @@ export default function Home() {
                         Perguntas frequentes <span className="text-color-studio">_</span>
                     </>
                 }
-                description="Criar um texto para perguntas frequentes como uma forma de introdução para a sessão"
+                description="Navegue pelos tópicos para encontrar a resposta que você precisa.Se não encontrou o que busca, entre em contato com nossa equipe."
                 faqs={[
                     {
                         title: 'Como funciona o processo de desenvolvimento?',
