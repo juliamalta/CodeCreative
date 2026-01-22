@@ -17,6 +17,7 @@ import {
 import { cn } from '@/lib/utils'
 
 import { NavigationHeaderProps } from './NavigationHeader.types'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
     ({ className, title, ...props }, ref) => {
@@ -82,9 +83,14 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                 </div>
                 <div>
                     <div className="hidden justify-end lg:flex">
-                        <Button className="rounded-full bg-color-studio px-6 py-2 text-white transition-all duration-300 ease-in-out hover:from-[#6f2db9] hover:to-[#2a2fa6]">
-                            Fale Conosco
-                        </Button>
+                        <a
+                            href="https://wa.me/5531996398460"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pointer-events-auto relative z-50 flex w-full items-center justify-center gap-3 rounded-full bg-color-studio px-5 py-3 text-sm font-semibold text-white transition hover:bg-color-studio sm:w-fit sm:text-base 2xl:text-base">
+                            <FaWhatsapp className="text-xl sm:text-2xl" />
+                            <span className="whitespace-nowrap">Fale conosco</span>
+                        </a>
                     </div>
                 </div>
 

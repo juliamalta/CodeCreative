@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
 import { Button } from '@/components/ui/button'
 import imgbg from '../../../../public/images/bg.png'
+import { FaWhatsapp } from 'react-icons/fa'
 function Contact({ title, text, buttontext }: ContactProps) {
     return (
         <section>
@@ -26,12 +27,15 @@ function Contact({ title, text, buttontext }: ContactProps) {
                     </div>
 
                     <div className="flex flex-row items-center justify-center gap-4 sm:justify-normal">
-                        <div>
-                            <Button variant="herobutton" size="hero" asChild className="rounded-full">
-                                <Link href="https://www.instagram.com/codecreativebr/">
-                                    {buttontext} <ArrowRight className="ml-2 size-4" />
-                                </Link>
-                            </Button>
+                        <div className="hidden justify-end lg:flex">
+                            <a
+                                href="https://wa.me/5531996398460"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="pointer-events-auto relative z-50 flex w-full items-center justify-center gap-3 rounded-full bg-color-studio px-5 py-3 text-sm font-semibold text-white transition hover:bg-color-studio sm:w-fit sm:text-base 2xl:text-base">
+                                <FaWhatsapp className="text-xl sm:text-2xl" />
+                                <span className="whitespace-nowrap">Entre em contato</span>
+                            </a>
                         </div>
                     </div>
                 </div>

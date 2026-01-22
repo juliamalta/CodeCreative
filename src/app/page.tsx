@@ -23,7 +23,8 @@ export default function Home() {
             <HeroSection
                 title={
                     <>
-                        Elevamos sua presença digital ao <span className="text-color-studio">nível de excelência</span>
+                        Elevamos sua presença digital ao{' '}
+                        <span className="font-bold text-color-studio">nível de excelência</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
@@ -64,7 +65,7 @@ export default function Home() {
                 titlePrimary="SOBRE"
                 title="Transformando seu produto em realidade"
                 text1="Nascemos da união perfeita entre criatividade e tecnologia. Somos profissionais apaixonados por transformar ideias em experiências digitais marcantes. Com mais de 5 anos de expertise em design e domínio de desenvolvimento, dando vida a cada pixel com código limpo e funcionalidade impecável."
-                text2="Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas que combinam design excepcional com desenvolvimento técnico de alta qualidade."
+                text2="Combinamos visão estratégica, experiência consolidada e a energia de quem está construindo algo novo. Acreditamos que cada projeto é único e merece uma solução sob medida. Por isso, trabalhamos lado a lado com nossos clientes para criar não apenas sites bonitos, mas ferramentas digitais que realmente geram resultados e fazem a diferença nos seus negócios."
             />
             <Cards2
                 titlePrimary="SERVIÇOS"
