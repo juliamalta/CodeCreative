@@ -13,7 +13,7 @@ function Faq1({ faqs, title, description }: FaqProps) {
                 <div>
                     <p className="w-full text-sm text-color-storm 2xl:w-2/4">{description}</p>
                 </div>
-                <div className="hidden  lg:flex">
+                <div className="hidden lg:flex">
                     <a
                         href="https://wa.me/5531996398460"
                         target="_blank"
