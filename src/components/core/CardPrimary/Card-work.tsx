@@ -1,11 +1,12 @@
 import { CardWorkProps } from '@/components/core/CardPrimary/Card.types'
 
 import imgWork from '../../../../public/images/img2.png'
+import Image from 'next/image'
 function CardWork({ title, description, img, tag }: CardWorkProps) {
     return (
         <div className="flex flex-col rounded-2xl">
             <div className="h-80 overflow-hidden">
-                <img src={imgWork.src} alt="img" className="size-full object-cover" />
+                <Image src={img!} alt="img" width={501} height={323} className="size-full object-cover" />
             </div>
             <div className="flex flex-col gap-4 px-10 py-7">
                 <div className="flex gap-2">

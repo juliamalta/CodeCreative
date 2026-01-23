@@ -26,7 +26,12 @@ function Cards3({ cards, title, desc }: CardSectionProps) {
                         <CarouselContent className="flex gap-8">
                             {cards.map((card, index) => (
                                 <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/2 2xl:basis-1/2">
-                                    <CardWork tag={card.tag ?? []} title={card.title} description={card.desc} />
+                                    <CardWork
+                                        tag={card.tag ?? []}
+                                        title={card.title}
+                                        description={card.desc}
+                                        img={card.img}
+                                    />
                                 </CarouselItem>
                             ))}
                         </CarouselContent>

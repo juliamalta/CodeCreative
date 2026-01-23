@@ -89,16 +89,18 @@ export default function Home() {
             />
             <Cards3
                 title="Nosso Trabalho"
-                desc="Profissionais apaixonados por tecnologia e design"
+                desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
                 cards={[
                     {
                         title: 'Pro Tracker',
-                        tag: ['Aplicativo', 'React Native'],
+                        img: '/images/img2.png',
+                        tag: ['MOBILE', 'REACT NATIVE','UX'],
                         desc: 'Aplicativo que revoluciona a rotina de personal trainers com criação rápida de treinos personalizados e acompanhamento eficiente de alunos.',
                     },
                     {
                         title: 'Streamly',
-                        tag: ['Web', 'React JS'],
+                        img: '/images/img1.png',
+                        tag: ['WEBSITE', 'REACT JS','UI DESIGN'],
                         desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona.',
                     },
                 ]}

@@ -18,5 +18,6 @@ export interface CardSectionProps {
     title?: string | React.ReactNode
     desc?: string
     buttonText?: string
+    img?: string
     cards: CardData[]
 }
