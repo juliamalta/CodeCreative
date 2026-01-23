@@ -24,7 +24,7 @@ function Faq1({ faqs, title, description }: FaqProps) {
                     </a>
                 </div>
             </div>
-            <div className="w-full ">
+            <div className="w-full">
                 {faqs.map((item, idx) => (
                     <Accordion key={idx} title={item.title}>
                         {item.answer}
