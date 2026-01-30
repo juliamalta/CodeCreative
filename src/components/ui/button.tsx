@@ -18,7 +18,7 @@ const buttonVariants = cva(
                 herobutton: 'bg-color-studio hover:from-color-studio hover:to-color-persianBlue  text-white',
 
                 herobuttonsecondary:
-                    'border-color-white bg-color-haiti hover:border-color-studio hover:text-color-studio border text-white',
+                    'border-color-white bg-color-haiti hover:border-color-studio hover:text-color-studio border text-color-blue border-2',
             },
             size: {
                 default: 'h-10 px-4 py-2',

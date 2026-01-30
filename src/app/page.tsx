@@ -21,6 +21,7 @@ export default function Home() {
     return (
         <>
             <HeroSection
+                titlePrimary="Desenvolvimento & Design"
                 title={
                     <>
                         Elevamos sua presença digital ao{' '}
@@ -88,7 +89,8 @@ export default function Home() {
                 buttonText="Solicite um orçamento"
             />
             <Cards3
-                title="Nosso Trabalho"
+                titlePrimary="Nossos Trabalhos"
+                title="Ideias que Ganharam Vida"
                 desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
                 cards={[
                     {

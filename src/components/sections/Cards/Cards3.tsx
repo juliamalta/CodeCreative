@@ -8,18 +8,26 @@ import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
-function Cards3({ cards, title, desc }: CardSectionProps) {
+function Cards3({ cards, title, desc, titlePrimary }: CardSectionProps) {
     return (
         <section id="trabalho" className="py-24">
             <AnimatedTechBackground />
             <div className="container mx-auto">
                 <div className="flex flex-col justify-between gap-2 2xl:flex-row">
-                    <BlurFade delay={0.15} direction="down" inView>
-                        <p className="text-3xl font-semibold">{title}</p>
-                    </BlurFade>
-                    <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="mx-auto text-base font-normal text-color-cblue">{desc}</p>
-                    </BlurFade>
+                    <div className="flex w-full flex-col gap-4">
+                        <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
+                        <BlurFade delay={0.15} direction="down" inView>
+                            <p className="text-3xl font-semibold">
+                                {title}
+                                <span className="text-color-studio">_</span>
+                            </p>
+                        </BlurFade>
+                    </div>
+                    <div className="2xl:w-2/6 2xl:text-right">
+                        <BlurFade delay={0.15 * 1.5} direction="down" inView>
+                            <p className="mx-auto text-base font-normal text-color-cblue">{desc}</p>
+                        </BlurFade>
+                    </div>
                 </div>
                 <div className="mx-auto mt-10">
                     <Carousel>
