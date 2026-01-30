@@ -8,7 +8,7 @@ import { HeroProps } from '@/components/sections/hero-section/hero-section.types
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Button } from '@/components/ui/button'
 
-export function HeroSection({ title, desc, button1text, button2text,titlePrimary }: HeroProps) {
+export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
         <>
             <section id="inicio" className="mx-auto bg-color-haiti pt-24">

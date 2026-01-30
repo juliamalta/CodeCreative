@@ -1,5 +1,5 @@
 export type HeroProps = {
-    titlePrimary:string
+    titlePrimary: string
     title: string | React.ReactNode
     desc: string
     button1text: string

@@ -15,7 +15,7 @@ function Contact({ title, text, buttontext }: ContactProps) {
             </div>
             <div className="flex flex-col bg-color-haiti py-6 sm:flex-row">
                 <div className="mx-auto flex flex-col items-center justify-center gap-5 p-5 py-24 sm:p-8 lg:p-16">
-                    <div className="flex lg:w-2/5 flex-col items-center justify-center gap-3">
+                    <div className="flex flex-col items-center justify-center gap-3 lg:w-2/5">
                         <div>
                             <h1 className="text-2xl font-semibold text-white sm:text-left sm:text-2xl lg:text-center lg:text-4xl">
                                 {title}
