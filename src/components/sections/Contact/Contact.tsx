@@ -28,7 +28,7 @@ function Contact({ title, text, buttontext }: ContactProps) {
                         </div>
                     </div>
                     <div className="flex flex-row items-center justify-center gap-4 sm:justify-normal">
-                        <div className="hidden justify-end lg:flex">
+                        <div className="justify-end lg:flex">
                             <a
                                 href="https://wa.me/5531996398460"
                                 target="_blank"
