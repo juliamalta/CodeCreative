@@ -20,7 +20,7 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                         <p className="sm:w-2/8 text-base text-color-cblue sm:text-base md:w-2/3 lg:w-2/5">{desc}</p>
                     </div>
                     <div className="flex justify-center gap-3">
-                        <InteractiveHoverButton className="border-color-studio bg-color-studio text-white hover:bg-white hover:text-color-studio text-sm">
+                        <InteractiveHoverButton className="border-color-studio bg-color-studio text-sm text-white hover:bg-white hover:text-color-studio">
                             {button1text}
                         </InteractiveHoverButton>
                         <Button variant="herobuttonsecondary" size="hero" asChild className="rounded-full">
