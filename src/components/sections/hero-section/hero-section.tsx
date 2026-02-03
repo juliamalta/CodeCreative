@@ -12,7 +12,7 @@ import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverBu
 export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
         <>
-            <section id="inicio" className="mx-auto bg-color-haiti pt-24">
+            <section id="inicio" className="mx-auto bg-color-haiti px-2 pt-24">
                 <div className="flex flex-col items-center justify-center gap-8 text-center">
                     <div className="flex flex-col items-center justify-center text-center">
                         <p className="text-base font-semibold text-color-scampi">{titlePrimary}</p>

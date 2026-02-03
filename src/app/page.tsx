@@ -82,7 +82,7 @@ export default function Home() {
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Design',
-                        tag: ['UI/UX', 'Landing Pages', 'Aplicativos'],
+                        tag: ['UI/UX', 'Websites'],
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}

@@ -107,76 +107,69 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
             </nav>
 
             {/* Mobile Menu Overlay */}
+            {/* Mobile Menu Overlay */}
             <div
-                onClick={() => toggleNavOpened()}
-                onKeyDown={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                        toggleNavOpened()
-                    }
-                }}
-                role="button"
-                tabIndex={0}
-                className={`fixed -left-full top-0 duration-200 ease-in-out ${
-                    isNavOpen && 'translate-x-full'
-                } size-full bg-color-haiti`}
+                onClick={() => setIsNavOpen(false)}
+                className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-200 ${
+                    isNavOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
+                }`}
             />
-            <div className="navbar-menu z-50">
-                <div
-                    className={`fixed -left-[672px] top-0 duration-200 ease-in-out ${
-                        isNavOpen && 'translate-x-[672px]'
-                    } bottom-0 w-4/6 max-w-xs bg-color-haiti`}>
-                    <nav className="relative h-full overflow-y-auto p-6">
-                        <div className="flex h-full flex-col justify-between">
-                            <Link className="inline-block" href="/">
-                                <Image width={172} height={73} src={logo} alt="logo" />
-                            </Link>
-                            <ul className="py-6">
-                                {navs?.map(({ text, link }, index) => {
-                                    const isLastItem = index === navs.length - 1
-                                    return (
-                                        <li key={`nav-mobile-${index}`}>
-                                            {isLastItem ? (
-                                                <Button
-                                                    className="rounded-md bg-purple-700 px-6 py-2 text-white transition-all duration-300 ease-in-out hover:bg-purple-800"
-                                                    onClick={() => (window.location.href = link)}>
-                                                    {text}
-                                                </Button>
-                                            ) : (
-                                                <Link
-                                                    href={link}
-                                                    scroll={false}
-                                                    onClick={(e) => {
-                                                        e.preventDefault()
-                                                        console.log('Clicou no link do menu mobile:', link)
-                                                        setIsNavOpen(false)
 
-                                                        const id = link.replace('#', '')
-                                                        const el = document.getElementById(id)
-                                                        if (el) {
-                                                            el.scrollIntoView({ behavior: 'smooth' })
-                                                        }
-                                                    }}
-                                                    className="block rounded-md px-4 py-3 font-medium text-gray-300 hover:bg-color-studio hover:text-white">
-                                                    {text}
-                                                </Link>
-                                            )}
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                            <div className="flex flex-wrap"></div>
-                        </div>
-                    </nav>
-                    <button className="navbar-close absolute right-3 top-5 p-4" onClick={() => setIsNavOpen(false)}>
+            {/* Mobile Menu */}
+            <div
+                className={`fixed bottom-0 left-0 top-0 z-50 w-4/6 max-w-xs transform bg-color-haiti transition-transform duration-300 ease-in-out ${
+                    isNavOpen ? 'translate-x-0' : '-translate-x-full'
+                }`}>
+                <nav className="relative flex h-full flex-col justify-between overflow-y-auto p-6">
+                    {/* Logo */}
+                    <Link href="/" className="mb-6 inline-block">
+                        <Image width={172} height={73} src={logo} alt="logo" />
+                    </Link>
+
+                    {/* Nav Links */}
+                    <ul className="flex flex-col gap-4">
+                        {navs?.map(({ text, link }, index) => {
+                            const isLastItem = index === navs.length - 1
+                            return (
+                                <li key={`nav-mobile-${index}`}>
+                                    {isLastItem ? (
+                                        <Button
+                                            className="rounded-md bg-purple-700 px-6 py-2 text-white hover:bg-purple-800"
+                                            onClick={() => (window.location.href = link)}>
+                                            {text}
+                                        </Button>
+                                    ) : (
+                                        <Link
+                                            href={link}
+                                            scroll={false}
+                                            onClick={(e) => {
+                                                e.preventDefault()
+                                                setIsNavOpen(false)
+                                                const id = link.replace('#', '')
+                                                const el = document.getElementById(id)
+                                                if (el) el.scrollIntoView({ behavior: 'smooth' })
+                                            }}
+                                            className="block rounded-md px-4 py-3 font-medium text-gray-300 hover:bg-color-studio hover:text-white">
+                                            {text}
+                                        </Link>
+                                    )}
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                    {/* Close Button */}
+                    <button className="absolute right-4 top-4 p-2" onClick={() => setIsNavOpen(false)}>
                         <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 fillRule="evenodd"
                                 clipRule="evenodd"
-                                d="M6.94004 5.99988L11.14 1.80655C11.2002 1.74195 11.2483 1.66656 11.2811 1.5839C11.3138 1.50124 11.3307 1.41294 11.3307 1.32384C11.3307 1.23475 11.3138 1.14645 11.2811 1.06379C11.2483 0.981133 11.2002 0.905743 11.14 0.841133C11.0143 0.715505 10.8443 0.642387 10.6667 0.642387C10.489 0.642387 10.319 0.715505 10.1934 0.841133L6.00004 5.04113L1.80671 0.841133C1.68108 0.715505 1.51101 0.642387 1.33337 0.642387C1.15573 0.642387 0.98566 0.715505 0.860037 0.841133C0.73441 0.96676 0.661293 1.13683 0.661293 1.31447C0.661293 1.49211 0.73441 1.66218 0.860037 1.78781L5.06004 5.99988L0.860037 10.1932C0.799837 10.2578 0.751686 10.3332 0.718922 10.4158C0.686159 10.4985 0.669311 10.5868 0.669311 10.6759C0.669311 10.765 0.686159 10.8532 0.718922 10.9359C0.751686 11.0186 0.799837 11.094 0.860037 11.1586C0.98566 11.2842 1.15573 11.3573 1.33337 11.3573C1.51101 11.3573 1.68108 11.2842 1.80671 11.1586L6.00004 6.95988L10.1934 11.1586C10.2579 11.2188 10.3333 11.2669 10.4159 11.2997C10.4986 11.3324 10.5869 11.3493 10.676 11.3493C10.7651 11.3493 10.8534 11.3324 10.936 11.2997C11.0187 11.2669 11.0941 11.2188 11.1543 11.1586C11.2145 11.094 11.2664 11.0186 11.2992 10.9359C11.332 10.8532 11.3489 10.765 11.3489 10.6759C11.3489 10.5868 11.332 10.4985 11.2992 10.4158C11.2664 10.3332 11.2145 10.2578 11.1543 10.1932L6.94004 5.99988Z"
-                                fill="#D2D2D2"></path>
+                                d="M6.94 6L11.14 1.806a.993.993 0 0 0-1.414-1.414L6 4.586 1.806.392A.993.993 0 0 0 .392 1.806L4.586 6 .392 10.194a.993.993 0 1 0 1.414 1.414L6 7.414l4.194 4.194a.993.993 0 1 0 1.414-1.414L7.414 6l4.194-4.194a.993.993 0 0 0-1.414-1.414L6 4.586 1.806.392A.993.993 0 0 0 .392 1.806L4.586 6 .392 10.194a.993.993 0 1 0 1.414 1.414L6 7.414l4.194 4.194a.993.993 0 1 0 1.414-1.414L7.414 6z"
+                                fill="#D2D2D2"
+                            />
                         </svg>
                     </button>
-                </div>
+                </nav>
             </div>
         </section>
     )
