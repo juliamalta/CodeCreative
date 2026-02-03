@@ -7,6 +7,7 @@ import { AuroraText } from '@/components/magicui/aurora-text'
 import { HeroProps } from '@/components/sections/hero-section/hero-section.types'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Button } from '@/components/ui/button'
+import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 
 export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
@@ -19,9 +20,9 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                         <p className="sm:w-2/8 text-base text-color-cblue sm:text-base md:w-2/3 lg:w-2/5">{desc}</p>
                     </div>
                     <div className="flex w-1/2 justify-center gap-3">
-                        <Button variant="herobutton" size="hero" className="rounded-full">
-                            {button1text} <ArrowRight className="ml-2 size-4" />
-                        </Button>
+                        <InteractiveHoverButton className="border-color-studio bg-color-studio text-white hover:bg-white hover:text-color-studio">
+                            {button1text}
+                        </InteractiveHoverButton>
                         <Button variant="herobuttonsecondary" size="hero" asChild className="rounded-full">
                             <Link href="#trabalho"> {button2text}</Link>
                         </Button>

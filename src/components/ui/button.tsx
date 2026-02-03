@@ -15,7 +15,7 @@ const buttonVariants = cva(
                 secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
                 ghost: 'hover:bg-accent hover:text-accent-foreground',
                 link: 'text-primary underline-offset-4 hover:underline',
-                herobutton: 'bg-color-studio hover:from-color-studio hover:to-color-persianBlue text-white',
+                herobutton: 'bg-color-studio hover:bg-white hover:text-color-studio  text-white',
 
                 herobuttonsecondary:
                     'border-color-white bg-color-haiti hover:border-color-studio hover:text-color-studio  text-color-blue border-2',
