@@ -184,7 +184,6 @@ export function SpotlightBackground({
             />
 
             {/* Vignette */}
-           
 
             {/* Content layer */}
             {children && <div className="relative z-10 h-full w-full">{children}</div>}
