@@ -21,7 +21,7 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                     </div>
                     <div className="flex justify-center gap-3">
                         <InteractiveHoverButton className="border-color-studio bg-color-studio text-sm text-white hover:bg-white hover:text-color-studio">
-                            {button1text}
+                            <Link href="https://www.instagram.com/codecreativebr/"> {button1text}</Link>
                         </InteractiveHoverButton>
                         <Button variant="herobuttonsecondary" size="hero" asChild className="rounded-full">
                             <Link href="#trabalho"> {button2text}</Link>
