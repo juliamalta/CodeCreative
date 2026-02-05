@@ -3,7 +3,9 @@ import axios from 'axios'
 const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 // VERIFICAÇÃO
-console.log('API_URL:', API_URL)
+if (!API_URL) {
+    console.warn(' NEXT_PUBLIC_API_URL não definida')
+}
 
 export const api = async (question) => {
     try {

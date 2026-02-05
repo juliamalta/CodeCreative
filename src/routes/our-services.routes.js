@@ -4,6 +4,6 @@ import { ourServices } from '../controllers/our-services.js'
 const router = express.Router()
 
 // POST /api/perguntar
-router.post('/perguntar', ourServices)
+router.post('api/perguntar', ourServices)
 
 export default router
