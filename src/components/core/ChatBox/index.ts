@@ -1,2 +1,2 @@
-export * from './ChatBox';
-export * from './ChatBox.type';
+export * from './ChatBox'
+export * from './ChatBox.type'
