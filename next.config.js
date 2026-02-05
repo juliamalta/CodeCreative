@@ -1,3 +1,4 @@
+//next
 const securityHeaders = [
     {
         key: 'Strict-Transport-Security',
