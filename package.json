@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "next dev",
         "server": "nodemon server.js",
+        "build": "yarn run build:ssr",
         "build:ssr": "next build",
         "start:ssr": "next start",
         "build:ftp": "cross-env NEXT_EXPORT=true next build",
