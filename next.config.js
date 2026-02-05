@@ -34,7 +34,7 @@ const nextConfig = {
     output: 'export',
 
     images: {
-        unoptimized: true, // <<< adicionar essa linha para desabilitar otimização
+        unoptimized: true, // desabilita otimização de imagens
     },
 
     async headers() {
@@ -47,4 +47,4 @@ const nextConfig = {
     },
 }
 
-module.exports = nextConfig
+export default nextConfig

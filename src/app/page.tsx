@@ -16,6 +16,7 @@ import Cards3 from '@/components/sections/Cards/Cards3'
 import Contact from '@/components/sections/Contact/Contact'
 import Faq1 from '@/components/sections/Faqs/Faq1'
 import { HeroSection } from '@/components/sections/hero-section'
+import Chat from '@/components/sections/Chat/Chat'
 
 export default function Home() {
     return (
@@ -32,6 +33,7 @@ export default function Home() {
                 button1text="Solicitar Orçamento"
                 button2text="Ver nossos trabalhos"
             />
+
             <Cards1
                 title="Nossos serviços"
                 desc="Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio"
@@ -138,6 +140,7 @@ export default function Home() {
                 text="Toda grande solução digital começa com uma boa conversa. Conte sua ideia para a gente e vamos transformá-la na ferramenta que seu negócio precisa."
                 buttontext="Entre em contato"
             />
+            <Chat />
         </>
     )
 }
