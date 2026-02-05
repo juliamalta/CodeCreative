@@ -1,16 +1,17 @@
-FROM node:20-slim AS builder
+FROM node:20-slim
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
-COPY . ./
-RUN yarn run build
 
-FROM node:20-slim AS production
-WORKDIR /app
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/yarn.lock ./yarn.lock
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
+# Copia package.json e yarn.lock primeiro
+COPY package.json yarn.lock ./
+
+# Instala dependências
+RUN yarn install --frozen-lockfile
+
+# Copia todo o projeto
+COPY . ./
+
+# Expõe a porta que o servidor usa
 EXPOSE 3001
-CMD ["yarn", "start"]
+
+# Comando para rodar o servidor Express
+CMD ["node", "server.js"]
