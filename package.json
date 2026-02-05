@@ -5,6 +5,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
+          "start": "node server.js",
         "server": "nodemon server.js",
         "build": "yarn run build:ssr",
         "build:ssr": "next build",
