@@ -11,7 +11,7 @@ app.use(
         origin: [
             'http://localhost:3000',
             'https://codecreative-5.onrender.com', // troque pelo domínio real
-            'https://codecreative.com.br',   
+            'https://www.codecreative.com.br',
         ],
         methods: ['GET', 'POST'],
         credentials: true,
