@@ -1,13 +1,17 @@
-import express from 'express'
-import ourServicesRoutes from './src/routes/our-services.routes.js'
 import cors from 'cors' // ← Importar cors
+import express from 'express'
+
+import ourServicesRoutes from './src/routes/our-services.routes.js'
 
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.use(express.json()) // para receber JSON no body
 app.use(
     cors({
-        origin: 'http://localhost:3000', // só permite seu frontend
+        origin: [
+            'http://localhost:3000',
+            'https://codecreative-5.onrender.com', // troque pelo domínio real
+        ],
         methods: ['GET', 'POST'],
         credentials: true,
     })
