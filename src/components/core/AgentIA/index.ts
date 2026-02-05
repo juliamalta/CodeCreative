@@ -1,2 +1,2 @@
-export * from './AgentIA';
-export * from './AgentIA.types';
+export * from './AgentIA'
+export * from './AgentIA.types'

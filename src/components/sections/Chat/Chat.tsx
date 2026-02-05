@@ -8,11 +8,9 @@ import { IoClose } from 'react-icons/io5'
 import AgentIA from '@/components/core/AgentIA/AgentIA'
 
 function Chat() {
-    const [open, setOpen] = useState(false)
-
     return (
         <>
-          <AgentIA/>
+            <AgentIA />
         </>
     )
 }
