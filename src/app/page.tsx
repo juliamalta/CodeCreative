@@ -142,7 +142,6 @@ export default function Home() {
                 buttontext="Entre em contato"
             />
             <Chat />
-            <TestEnv />
         </>
     )
 }
