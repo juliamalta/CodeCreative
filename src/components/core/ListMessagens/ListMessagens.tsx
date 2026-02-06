@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 function ListMessagens({ messagens }: MessagensProps) {
     return (
-        <div>
+        <div className='h-full w-full'>
             {messagens.map((msg) => (
                 <div
                     key={msg.id}
@@ -21,7 +21,7 @@ function ListMessagens({ messagens }: MessagensProps) {
                         />
                         <AvatarFallback>{msg.remetente === 'bot' ? 'CN' : 'U'}</AvatarFallback>
                     </Avatar>
-                    <p className="text-color-black">{msg.text}</p>
+                    <p className="text-color-black text-sm">{msg.text}</p>
                 </div>
             ))}
         </div>
