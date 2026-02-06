@@ -9,19 +9,22 @@ function ListMessagens({ messagens }: MessagensProps) {
             {messagens.map((msg) => (
                 <div
                     key={msg.id}
-                    className={`flex items-start gap-2 ${msg.remetente === 'bot' ? 'flex-row' : 'flex-row-reverse'}`}>
-                    <Avatar>
-                        <AvatarImage
-                            src={
-                                msg.remetente === 'bot'
-                                    ? 'https://github.com/shadcn.png'
-                                    : 'https://github.com/shadcn.png'
-                            }
-                            alt="avatar"
-                        />
-                        <AvatarFallback>{msg.remetente === 'bot' ? 'CN' : 'U'}</AvatarFallback>
+                    className={`flex items-start gap-2 ${msg.remetente === 'bot' ? 'flex-row' : 'flex-row-reverse items-center'}`}>
+                    <Avatar
+                        className={`h-8 w-8 items-center justify-center ${
+                            msg.remetente === 'bot' ? 'bg-blue-500 text-white' : 'border-2 bg-color-studio text-white'
+                        }`}>
+                        {msg.remetente === 'bot' ? (
+                            <AvatarImage src="https://github.com/shadcn.png" alt="Bot" />
+                        ) : (
+                            <AvatarImage src="https://github.com/shadcn.png" alt="Usuário" />
+                        )}
+                        <AvatarFallback>{msg.remetente === 'bot' ? 'CN' : 'You'}</AvatarFallback>
                     </Avatar>
-                    <p className="text-color-black text-sm">{msg.text}</p>
+                    <p
+                        className={`text-color-black text-md ${msg.remetente === 'bot' ? 'w-full rounded-sm border-2 bg-white p-2 shadow-sm' : 'my-3 w-full items-center rounded-sm bg-color-studio p-2 text-white shadow-xl'} `}>
+                        {msg.text}
+                    </p>
                 </div>
             ))}
         </div>

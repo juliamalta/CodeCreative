@@ -72,7 +72,7 @@ function AgentIA() {
                         </div>
                     </div>
 
-                    <div className="flex flex-1 flex-col overflow-hidden">
+                    <div className="flex flex-1 flex-col overflow-hidden p-2">
                         <div className="flex-1 overflow-y-auto p-2">
                             <ListMessagens messagens={mensagens} />
                         </div>
