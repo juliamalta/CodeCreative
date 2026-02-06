@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export const api = async (question) => {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL
-    console.log('API_URL dentro da função:', API_URL) // ✅ aqui também
+    const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://codecreative-5.onrender.com/api'
+    console.log('API_URL dentro da função:', API_URL)
     if (!API_URL) {
         console.warn(' NEXT_PUBLIC_API_URL não definida')
         throw new Error('NEXT_PUBLIC_API_URL não definida')
