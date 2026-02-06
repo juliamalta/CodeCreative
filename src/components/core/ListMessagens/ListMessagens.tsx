@@ -22,7 +22,7 @@ function ListMessagens({ messagens }: MessagensProps) {
                         <AvatarFallback>{msg.remetente === 'bot' ? 'CN' : 'You'}</AvatarFallback>
                     </Avatar>
                     <p
-                        className={`text-color-black text-md ${msg.remetente === 'bot' ? 'w-full rounded-sm border-2 bg-white p-2 shadow-sm' : 'my-3 w-full items-center rounded-sm bg-color-studio p-2 text-white shadow-xl'} `}>
+                        className={`text-color-black text-md ${msg.remetente === 'bot' ? 'w-full p-2' : 'my-3 w-full items-center rounded-sm bg-color-studio p-2 text-white shadow-xl'} `}>
                         {msg.text}
                     </p>
                 </div>
