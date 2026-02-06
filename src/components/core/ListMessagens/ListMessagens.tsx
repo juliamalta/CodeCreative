@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 function ListMessagens({ messagens }: MessagensProps) {
     return (
-        <div className='h-full w-full'>
+        <div className="h-full w-full">
             {messagens.map((msg) => (
                 <div
                     key={msg.id}
