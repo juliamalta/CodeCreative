@@ -17,6 +17,7 @@ import Contact from '@/components/sections/Contact/Contact'
 import Faq1 from '@/components/sections/Faqs/Faq1'
 import { HeroSection } from '@/components/sections/hero-section'
 import Chat from '@/components/sections/Chat/Chat'
+import TestEnv from '@/components/core/AgentIA/teste'
 
 export default function Home() {
     return (
@@ -141,6 +142,7 @@ export default function Home() {
                 buttontext="Entre em contato"
             />
             <Chat />
+            <TestEnv/>
         </>
     )
 }
