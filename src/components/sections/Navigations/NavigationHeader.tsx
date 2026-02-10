@@ -85,7 +85,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                             href="https://wa.me/5531996398460"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-color-purble pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
+                            className="pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full bg-color-purble px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
                             <FaWhatsapp className="text-xl sm:text-2xl" />
                             <span className="whitespace-nowrap text-sm">Fale conosco</span>
                         </a>

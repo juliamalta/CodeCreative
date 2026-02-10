@@ -42,7 +42,7 @@ function AgentIA() {
             <div className="fixed bottom-4 right-4 z-50">
                 <button
                     onClick={() => setOpen(!open)}
-                    className="bg-color-purble flex items-center justify-center rounded-full px-4 py-4 shadow-lg transition-colors">
+                    className="flex items-center justify-center rounded-full bg-color-purble px-4 py-4 shadow-lg transition-colors">
                     <div className="flex flex-row gap-3">
                         <BsChat size={22} color="white" />
                         <p className="text-white">Chat</p>

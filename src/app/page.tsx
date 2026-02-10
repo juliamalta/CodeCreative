@@ -27,7 +27,7 @@ export default function Home() {
                 title={
                     <>
                         Onde código encontra criatividade
-                        <span className="text-color-purble font-bold">,nasce a inovação</span>
+                        <span className="font-bold text-color-purble">,nasce a inovação</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."

@@ -9,7 +9,7 @@ function Footer({ rights }: FooterProps) {
         <section id="footer" className="overflow-hidden bg-color-wood">
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
-                <div className="border-color-purble flex flex-wrap items-center justify-center border-t">
+                <div className="flex flex-wrap items-center justify-center border-t border-color-purble">
                     <div className="md-gap-0 container flex w-full justify-between gap-10 py-12">
                         <div className="flex items-start">
                             <Link className="block max-w-max" href="/">
