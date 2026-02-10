@@ -414,5 +414,12 @@
     }
     body {
         @apply bg-background text-foreground;
+        @layer base {
+            html,
+            body {
+                overflow-x: hidden;
+                width: 100%;
+            }
+        }
     }
 }
