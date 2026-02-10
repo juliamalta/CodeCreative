@@ -18,6 +18,7 @@ import Faq1 from '@/components/sections/Faqs/Faq1'
 import { HeroSection } from '@/components/sections/hero-section'
 import Chat from '@/components/sections/Chat/Chat'
 import TestEnv from '@/components/core/AgentIA/teste'
+import { Highlighter } from '@/components/magicui/highligth'
 
 export default function Home() {
     return (
@@ -26,8 +27,10 @@ export default function Home() {
                 titlePrimary="Desenvolvimento & Design"
                 title={
                     <>
-                        Onde código encontra criatividade
-                        <span className="font-bold text-color-purble">,nasce a inovação</span>
+                        Onde código <br></br>encontra criatividade,
+                        <Highlighter action="underline" color="#7039B7" animationDuration={100}>
+                            <span className="font-bold text-color-purble">nasce a inovação</span>
+                        </Highlighter>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
