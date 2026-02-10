@@ -1,5 +1,5 @@
 import { CardProps } from '@/components/core/CardPrimary/Card.types'
-import img from "../../../../public/images/cardimh.png"
+import img from '../../../../public/images/cardimh.png'
 function CardSecondary({ text, icon, title, tag }: CardProps) {
     return (
         <div className="transition-transform hover:scale-105">
@@ -8,8 +8,8 @@ function CardSecondary({ text, icon, title, tag }: CardProps) {
                     className="flex size-full items-center justify-center gap-4 rounded-2xl p-12 shadow-sm md:h-60"
                     style={{ backgroundColor: '#FFFFFF' }}>
                     <div className="flex flex-col gap-5">
-                        <div className='flex gap-3 items-center'>
-                            <img src={img.src}/>
+                        <div className="flex items-center gap-3">
+                            <img src={img.src} />
                             <p className="whitespace-nowrap font-semibold text-color-wood 2xl:text-3xl">{title}</p>
                         </div>
                         <div>
