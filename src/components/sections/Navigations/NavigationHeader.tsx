@@ -50,7 +50,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
     return (
         <section className="sticky top-0 z-30 bg-color-wood">
-            <nav className="container flex items-center justify-between rounded-3xl py-6">
+            <nav className="container flex items-center justify-between border-b-2 border-color-boulder py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
                         <Image width={172} height={73} src={logo} alt="logo" />
