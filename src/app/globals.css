@@ -445,6 +445,9 @@
                 width: 100%;
                 min-height: 100vh;
             }
+            @screen sm {
+                overflow-x: hidden;
+            }
         }
     }
 }
