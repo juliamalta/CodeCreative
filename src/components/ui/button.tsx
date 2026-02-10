@@ -18,7 +18,7 @@ const buttonVariants = cva(
                 herobutton: 'bg-color-purble hover:bg-white hover:text-color-studio  text-white',
 
                 herobuttonsecondary:
-                    'border-color-white bg-color-wood hover:border-color-studio hover:text-color-studio  text-white border-2',
+                    'border-color-white bg-color-wood hover:border-color-studio hover:text-color-studio  text-white border-2 ',
             },
             size: {
                 default: 'h-10 px-4 py-2',

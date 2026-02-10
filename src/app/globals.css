@@ -6,9 +6,6 @@
     .text-balance {
         text-wrap: balance;
     }
-    .card-border-gradient {
-        background: linear-gradient(135deg, #833ecc, #3037be);
-    }
 }
 
 @layer base {
@@ -363,10 +360,10 @@
         --purple-heart-400: #b794ec;
         --purple-heart-500: #9b6be1;
         --purple-heart-600: #854bd2;
-        --purple-heart-700: #7039b7;/* color */
+        --purple-heart-700: #7039b7; /* color */
         --purple-heart-800: #5f3396;
         --purple-heart-900: #4e2a79;
-        --purple-heart-950: #331358; 
+        --purple-heart-950: #331358;
 
         --storm-dust-50: #f6f6f6;
         --storm-dust-100: #e7e7e7;
@@ -417,30 +414,5 @@
     }
     body {
         @apply bg-background text-foreground;
-    }
-}
-
-@theme inline {
-    @keyframes aurora {
-        0% {
-            background-position: 0% 50%;
-            transform: rotate(-5deg) scale(0.9);
-        }
-        25% {
-            background-position: 50% 100%;
-            transform: rotate(5deg) scale(1.1);
-        }
-        50% {
-            background-position: 100% 50%;
-            transform: rotate(-3deg) scale(0.95);
-        }
-        75% {
-            background-position: 50% 0%;
-            transform: rotate(3deg) scale(1.05);
-        }
-        100% {
-            background-position: 0% 50%;
-            transform: rotate(-5deg) scale(0.9);
-        }
     }
 }

@@ -10,7 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 function Cards3({ cards, title, desc, titlePrimary }: CardSectionProps) {
     return (
-        <section id="trabalho" className="py-24">
+        <section id="trabalho" className="py-16 sm:py-24">
             <AnimatedTechBackground />
             <div className="container mx-auto">
                 <div className="flex flex-col justify-between gap-2 2xl:flex-row">

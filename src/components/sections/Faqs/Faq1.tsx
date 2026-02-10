@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 function Faq1({ faqs, title, description }: FaqProps) {
     return (
-        <div className="container flex flex-col justify-between gap-8 py-24 lg:flex-row">
+        <div className="container flex flex-col justify-between gap-8 py-16 sm:py-24 lg:flex-row">
             <div className="flex flex-col gap-8">
                 <BlurFade delay={0.15} direction="down" inView>
                     <p className="tex w-2/3 text-4xl font-semibold">{title}</p>
