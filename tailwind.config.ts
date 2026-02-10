@@ -85,7 +85,9 @@ const config: Config = {
                     wood: 'var(--woodsmoke-950)',
                     chalk: 'var(--blue-chalk-100)',
                     gallery: 'var(--gallery-100)',
-                    purble:'var(--purple-heart-700)',
+                    purble: 'var(--purple-heart-700)',
+                    wild: 'var(--wild-sand-100)',
+                    boulder: 'var(--boulder-500)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

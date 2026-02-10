@@ -17,9 +17,11 @@ function AboutUs1({ title, text1, text2, about, titlePrimary }: AboutProps) {
                 <div className="flex flex-col gap-10 lg:w-2/3">
                     <div className="flex flex-col items-center gap-6">
                         <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
-                        <TypingAnimation duration={30} className="text-center text-3xl font-semibold text-black">
-                            {title}
-                        </TypingAnimation>
+                        <div className="w-full 2xl:w-2/5">
+                            <TypingAnimation duration={30} className="text-center text-4xl font-semibold text-black">
+                                {title}
+                            </TypingAnimation>
+                        </div>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-8">
                         <p className="text-center text-base font-normal text-color-storm">{text1}</p>

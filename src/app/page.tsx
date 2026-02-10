@@ -27,10 +27,8 @@ export default function Home() {
                 titlePrimary="Desenvolvimento & Design"
                 title={
                     <>
-                        Onde código <br></br>encontra criatividade,
-                        <Highlighter action="underline" color="#7039B7" animationDuration={100}>
-                            <span className="font-bold text-color-purble">nasce a inovação</span>
-                        </Highlighter>
+                        Onde código encontra criatividade,
+                        <span className="font-bold text-color-purble">nasce a inovação</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
@@ -87,7 +85,7 @@ export default function Home() {
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Design',
-                        tag: ['Landing Page', 'UI/UX', 'Websites'],
+                        tag: ['UI/UX', 'Websites'],
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}
@@ -113,11 +111,7 @@ export default function Home() {
                 ]}
             />
             <Faq1
-                title={
-                    <>
-                        Perguntas frequentes <span className="text-color-studio">_</span>
-                    </>
-                }
+                title={<>Perguntas frequentes</>}
                 description="Navegue pelos tópicos para encontrar a resposta que você precisa.Se não encontrou o que busca, entre em contato com nossa equipe."
                 faqs={[
                     {

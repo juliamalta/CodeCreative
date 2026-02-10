@@ -15,14 +15,14 @@ function Contact({ title, text, buttontext }: ContactProps) {
             </div>
             <div className="flex flex-col bg-color-wood py-6 sm:flex-row">
                 <div className="mx-auto flex flex-col items-center justify-center gap-5 p-5 py-24 sm:p-8 lg:p-16">
-                    <div className="flex flex-col items-center justify-center gap-3 lg:w-2/5">
+                    <div className="flex flex-col items-center justify-center gap-8 lg:w-2/5">
                         <div>
                             <h1 className="text-center text-2xl font-semibold text-white sm:text-2xl lg:text-4xl">
                                 {title}
                             </h1>
                         </div>
                         <div className="items-center">
-                            <p className="text-center text-sm font-normal text-white sm:text-base lg:text-base">
+                            <p className="text-center text-sm font-normal text-color-boulder sm:text-base lg:text-base">
                                 {text}
                             </p>
                         </div>

@@ -61,6 +61,18 @@
         --boston-blue-900: #253f54;
         --boston-blue-950: #132739;
 
+        --wild-sand-50: #fafafa;
+        --wild-sand-100: #f5f5f5; /* color */
+        --wild-sand-200: #e6e6e6;
+        --wild-sand-300: #d3d3d3;
+        --wild-sand-400: #a3a3a3;
+        --wild-sand-500: #727272;
+        --wild-sand-600: #535353;
+        --wild-sand-700: #404040;
+        --wild-sand-800: #272727;
+        --wild-sand-900: #1a1a1a;
+        --wild-sand-950: #0b0b0b; /* color */
+
         /* Brand colors secondary background */
         --san-juan-50: #f4f7fb;
         --san-juan-100: #e8eef6;
@@ -172,6 +184,18 @@
         --mischka-800: #5a5f73;
         --mischka-900: #4b4f5d;
         --mischka-950: #30323b;
+
+        --boulder-50: #fafafa;
+        --boulder-100: #f5f5f5;
+        --boulder-200: #e6e6e6;
+        --boulder-300: #d3d3d3;
+        --boulder-400: #a3a3a3;
+        --boulder-500: #787878;/* color */
+        --boulder-600: #535353;
+        --boulder-700: #404040;
+        --boulder-800: #272727;
+        --boulder-900: #1a1a1a;
+        --boulder-950: #0b0b0b; 
 
         --studio-50: #faf6fe;
         --studio-100: #f2ebfc;
