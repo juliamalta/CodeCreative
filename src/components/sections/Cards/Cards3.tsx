@@ -22,7 +22,7 @@ function Cards3({ cards, title, desc, titlePrimary }: CardSectionProps) {
                     </div>
                     <div className="2xl:w-2/6 2xl:text-right">
                         <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                            <p className="text-color-boulder mx-auto text-base font-normal">{desc}</p>
+                            <p className="mx-auto text-base font-normal text-color-boulder">{desc}</p>
                         </BlurFade>
                     </div>
                 </div>

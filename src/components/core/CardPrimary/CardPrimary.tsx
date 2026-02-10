@@ -10,7 +10,7 @@ function CardPrimary({ text, icon, title }: CardProps) {
                         <h1 className="text-lg font-semibold text-color-wood">{title}</h1>
                     </div>
                     <div className="w-full">
-                        <p className="text-color-boulder text-sm font-normal">{text}</p>
+                        <p className="text-sm font-normal text-color-boulder">{text}</p>
                     </div>
                 </div>
             </div>

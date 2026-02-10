@@ -12,9 +12,9 @@ function CardWork({ title, description, img, tag }: CardWorkProps) {
                 <div className="flex gap-2">
                     {tag.map((t, i) => (
                         <div
-                            className="border-color-boulder flex h-5 items-center justify-center whitespace-nowrap rounded-2xl border px-3 py-3"
+                            className="flex h-5 items-center justify-center whitespace-nowrap rounded-2xl border border-color-boulder px-3 py-3"
                             key={i}>
-                            <p className="text-color-boulder text-center">{t}</p>
+                            <p className="text-center text-color-boulder">{t}</p>
                         </div>
                     ))}
                 </div>

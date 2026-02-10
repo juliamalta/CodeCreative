@@ -18,7 +18,7 @@ function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProp
                         <p className="text-3xl font-semibold text-color-wood">{title}</p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="text-color-boulder mx-auto text-base font-normal 2xl:w-1/2">{desc}</p>
+                        <p className="mx-auto text-base font-normal text-color-boulder 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
                 <div className="mx-auto mt-10 flex flex-col">
