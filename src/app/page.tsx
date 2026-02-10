@@ -97,6 +97,12 @@ export default function Home() {
                 desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
                 cards={[
                     {
+                        title: 'Clínica Amparium',
+                        img: '/images/img3.png',
+                        tag: ['WEBSITE', 'UI DESIGN'],
+                        desc: 'Sem histórico digital estabelecido, precisava de uma plataforma que não apenas apresentasse seus serviços especializados, mas também educasse o público sobre a importância dos cuidados com a mente.',
+                    },
+                    {
                         title: 'Pro Tracker',
                         img: '/images/img2.png',
                         tag: ['MOBILE', 'REACT NATIVE', 'UX'],
