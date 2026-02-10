@@ -22,7 +22,9 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col gap-6">
                             <HyperText className="text-base font-semibold text-color-purble">{titlePrimary}</HyperText>
-                            <h1 className="font-regular w-full text-3xl text-white md:text-6xl lg:w-2/4">{title}</h1>
+                            <h1 className="font-regular w-full text-3xl text-white md:text-6xl lg:w-2/3 2xl:w-2/4">
+                                {title}
+                            </h1>
                             <p className="sm:w-2/8 text-base text-white sm:text-base md:w-2/3 lg:w-2/5">{desc}</p>
                         </div>
                         <div className="flex flex-col gap-3 sm:flex-row">
