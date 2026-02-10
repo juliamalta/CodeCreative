@@ -50,7 +50,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
     return (
         <section className="sticky top-0 z-30 bg-color-wood">
-            <nav className="container flex items-center justify-between border-b-2 border-color-boulder py-6">
+            <nav className="container flex items-center justify-between py-6 shadow-2xl">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
                         <Image width={172} height={73} src={logo} alt="logo" />
@@ -67,7 +67,9 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                         <NavigationMenuList>
                                             <NavigationMenuItem>
                                                 <NavigationMenuLink asChild>
-                                                    <Link href={link} className="text-base text-white">
+                                                    <Link
+                                                        href={link}
+                                                        className="text-base text-white hover:text-color-boulder">
                                                         {text}
                                                     </Link>
                                                 </NavigationMenuLink>
