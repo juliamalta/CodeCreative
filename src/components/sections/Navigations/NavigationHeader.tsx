@@ -49,8 +49,8 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
     }
 
     return (
-        <section className="sticky top-0 z-50 bg-color-haiti">
-            <nav className="container flex items-center justify-between border-b-2 border-color-studio py-6">
+        <section className="sticky top-0 z-30 bg-color-wood">
+            <nav className="container flex items-center justify-between rounded-3xl py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
                         <Image width={172} height={73} src={logo} alt="logo" />
@@ -67,9 +67,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                         <NavigationMenuList>
                                             <NavigationMenuItem>
                                                 <NavigationMenuLink asChild>
-                                                    <Link
-                                                        href={link}
-                                                        className="bg-color-haiti text-base text-color-blue hover:text-color-studio">
+                                                    <Link href={link} className="text-base text-white">
                                                         {text}
                                                     </Link>
                                                 </NavigationMenuLink>
@@ -87,7 +85,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                             href="https://wa.me/5531996398460"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full bg-color-studio px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
+                            className="bg-color-purble pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
                             <FaWhatsapp className="text-xl sm:text-2xl" />
                             <span className="whitespace-nowrap text-sm">Fale conosco</span>
                         </a>

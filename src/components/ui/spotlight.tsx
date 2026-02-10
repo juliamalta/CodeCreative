@@ -157,7 +157,7 @@ export function SpotlightBackground({
     return (
         <div
             ref={containerRef}
-            className={cn('w-full overflow-hidden bg-color-haiti', className)}
+            className={cn('w-full overflow-hidden bg-color-wood', className)}
             onMouseMove={handleMouseMove}
             onTouchMove={handleTouchMove}>
             {/* Spotlight layers */}

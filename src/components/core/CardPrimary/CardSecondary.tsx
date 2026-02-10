@@ -5,17 +5,17 @@ function CardSecondary({ text, icon, title, tag }: CardProps) {
         <div className="transition-transform hover:scale-105">
             <div>
                 <div
-                    className="flex size-full items-center justify-center gap-4 rounded-2xl border-2 border-color-studio p-12 md:h-60"
-                    style={{ backgroundColor: '#0E0D2B' }}>
+                    className="flex size-full items-center justify-center gap-4 rounded-2xl p-12 md:h-60 shadow-sm"
+                    style={{ backgroundColor: '#FFFFFF' }}>
                     <div className="flex flex-col gap-2">
                         <div>
-                            <p className="whitespace-nowrap font-semibold text-white 2xl:text-3xl">
+                            <p className="whitespace-nowrap font-semibold text-color-wood 2xl:text-3xl">
                                 {title}
                                 <span className="text-color-studio">_</span>
                             </p>
                         </div>
                         <div>
-                            <p className="text-sm text-color-cblue sm:text-xs 2xl:text-sm">{text}</p>
+                            <p className="text-sm text-color-wood sm:text-xs 2xl:text-sm">{text}</p>
                         </div>
                         <div className="mt-3 flex flex-wrap gap-4">
                             {tag?.map((t, i) => (

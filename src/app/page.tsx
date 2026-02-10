@@ -26,8 +26,8 @@ export default function Home() {
                 titlePrimary="Desenvolvimento & Design"
                 title={
                     <>
-                        Elevamos sua presença digital ao{' '}
-                        <span className="font-bold text-color-studio">nível de excelência</span>
+                        Onde código encontra criatividade
+                        <span className="text-color-purble font-bold">,nasce a inovação</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
@@ -35,6 +35,11 @@ export default function Home() {
                 button2text="Ver nossos trabalhos"
             />
 
+            <AboutUs1
+                titlePrimary="Sobre o Code Creative"
+                title="Transformando seu produto em realidade"
+                text1="Nascemos da união perfeita entre criatividade e tecnologia. Somos profissionais apaixonados por transformar ideias em experiências digitais marcantes. Com mais de 5 anos de expertise em design e domínio de desenvolvimento, dando vida a cada pixel com código limpo e funcionalidade impecável."
+            />
             <Cards1
                 title="Nossos serviços"
                 desc="Oferecemos soluções completas em tecnologia e design para impulsionar seu negócio"
@@ -65,14 +70,8 @@ export default function Home() {
                     },
                 ]}
             />
-            <AboutUs1
-                titlePrimary="SOBRE"
-                title="Transformando seu produto em realidade"
-                text1="Nascemos da união perfeita entre criatividade e tecnologia. Somos profissionais apaixonados por transformar ideias em experiências digitais marcantes. Com mais de 5 anos de expertise em design e domínio de desenvolvimento, dando vida a cada pixel com código limpo e funcionalidade impecável."
-                text2="Combinamos visão estratégica, experiência consolidada e a energia de quem está construindo algo novo. Acreditamos que cada projeto é único e merece uma solução sob medida. Por isso, trabalhamos lado a lado com nossos clientes para criar não apenas sites bonitos, mas ferramentas digitais que realmente geram resultados e fazem a diferença nos seus negócios."
-            />
             <Cards2
-                titlePrimary="SERVIÇOS"
+                titlePrimary="Conheça nossos serviços"
                 title="Soluções que Funcionam"
                 desc="Da interface que encanta aos sistemas que performam: criamos experiências digitais completas para seu negócio crescer."
                 cards={[

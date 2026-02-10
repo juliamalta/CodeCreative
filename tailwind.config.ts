@@ -82,6 +82,10 @@ const config: Config = {
                     scampi: 'var(--scampi-700)',
                     moon: 'var(--moon-raker-200)',
                     cblue: 'var(--chetwode-blue-500)',
+                    wood: 'var(--woodsmoke-950)',
+                    chalk: 'var(--blue-chalk-100)',
+                    gallery: 'var(--gallery-100)',
+                    purble:'var(--purple-heart-700)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

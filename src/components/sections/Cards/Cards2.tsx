@@ -10,15 +10,15 @@ import { Button } from '@/components/ui/button'
 
 function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProps) {
     return (
-        <section id="Valores" className="bg-color-haiti py-24">
+        <section id="Valores" className="bg-color-gallery py-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="flex flex-col justify-center gap-2 text-center">
                     <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>
                     <BlurFade delay={0.15} direction="down" inView>
-                        <p className="text-3xl font-semibold text-white">{title}</p>
+                        <p className="text-3xl font-semibold text-color-wood">{title}</p>
                     </BlurFade>
                     <BlurFade delay={0.15 * 1.5} direction="down" inView>
-                        <p className="mx-auto text-base font-normal text-color-cblue 2xl:w-1/2">{desc}</p>
+                        <p className="mx-auto text-base font-normal text-color-wood 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
                 <div className="mx-auto mt-10">

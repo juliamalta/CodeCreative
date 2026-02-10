@@ -1,18 +1,19 @@
 import Link from 'next/link'
 
-import logo from '../../../../public/images/logoFooter.png'
+import logo from '../../../../public/images/logo.png'
 import { FooterProps } from './Footer.types'
+import Image from 'next/image'
 
 function Footer({ rights }: FooterProps) {
     return (
-        <section id="footer" className="overflow-hidden bg-color-haiti">
+        <section id="footer" className="overflow-hidden bg-color-wood">
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
-                <div className="flex flex-wrap items-center justify-center border-t border-color-studio">
+                <div className="border-color-purble flex flex-wrap items-center justify-center border-t">
                     <div className="md-gap-0 container flex w-full justify-between gap-10 py-12">
                         <div className="flex items-start">
                             <Link className="block max-w-max" href="/">
-                                <img className="w-full" src={logo.src} alt="" />
+                                <Image width={172} height={73} src={logo} alt="logo" />
                             </Link>
                         </div>
 

@@ -13,18 +13,19 @@ import { SpotlightBackground } from '@/components/ui/spotlight'
 export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
         <>
-            <SpotlightBackground>
-                <section id="inicio" className="mx-auto px-2 pt-24">
-                    <div className="flex flex-col items-center justify-center gap-8 text-center">
-                        <div className="flex flex-col items-center justify-center text-center">
-                            <p className="text-base font-semibold text-color-scampi">{titlePrimary}</p>
-                            <h1 className="font-regular mb-6 w-full text-4xl text-white sm:w-2/3 md:text-6xl">
-                                {title}
-                            </h1>
-                            <p className="sm:w-2/8 text-base text-color-cblue sm:text-base md:w-2/3 lg:w-2/5">{desc}</p>
+            <section
+                id="inicio"
+                className="mx-auto bg-cover bg-center px-2 py-48"
+                style={{ backgroundImage: "url('/images/codebg.png')" }}>
+                <div className="container flex flex-col gap-8">
+                    <div className="flex flex-col gap-8">
+                        <div className="flex flex-col gap-6">
+                            <p className="text-base font-semibold text-white">{titlePrimary}</p>
+                            <h1 className="font-regular w-full text-3xl text-white md:text-6xl lg:w-2/4">{title}</h1>
+                            <p className="sm:w-2/8 text-base text-white sm:text-base md:w-2/3 lg:w-2/5">{desc}</p>
                         </div>
-                        <div className="flex justify-center gap-3">
-                            <InteractiveHoverButton className="border-color-studio bg-color-studio text-sm text-white hover:bg-white hover:text-color-studio">
+                        <div className="flex gap-3">
+                            <InteractiveHoverButton className="bg-color-purble border-color-studio text-sm text-white hover:bg-white hover:text-color-studio">
                                 <Link href="https://www.instagram.com/codecreativebr/"> {button1text}</Link>
                             </InteractiveHoverButton>
                             <Button variant="herobuttonsecondary" size="hero" asChild className="rounded-full text-sm">
@@ -32,8 +33,8 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                             </Button>
                         </div>
                     </div>
-                </section>
-            </SpotlightBackground>
+                </div>
+            </section>
         </>
     )
 }

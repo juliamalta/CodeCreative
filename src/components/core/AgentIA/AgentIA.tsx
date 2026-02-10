@@ -42,7 +42,7 @@ function AgentIA() {
             <div className="fixed bottom-4 right-4 z-50">
                 <button
                     onClick={() => setOpen(!open)}
-                    className="flex items-center justify-center rounded-full bg-color-studio px-4 py-4 shadow-lg transition-colors">
+                    className="bg-color-purble flex items-center justify-center rounded-full px-4 py-4 shadow-lg transition-colors">
                     <div className="flex flex-row gap-3">
                         <BsChat size={22} color="white" />
                         <p className="text-white">Chat</p>
@@ -54,7 +54,7 @@ function AgentIA() {
             {open && (
                 <div className="fixed bottom-24 right-4 z-50 flex h-[500px] w-80 max-w-full flex-col rounded-2xl bg-white shadow-lg">
                     {/* Header */}
-                    <div className="flex w-full items-center justify-between gap-4 rounded-t-2xl bg-color-studio p-4">
+                    <div className="flex w-full items-center justify-between gap-4 rounded-t-2xl bg-color-purble p-4">
                         <div className="flex items-center gap-4">
                             <button onClick={() => setOpen(false)}>
                                 <IoIosArrowBack color="white" size={20} />
