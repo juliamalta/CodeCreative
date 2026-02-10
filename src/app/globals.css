@@ -417,6 +417,7 @@
         @layer base {
             html,
             body {
+                font-family: var(--font-manrope);
                 width: 100%;
             }
         }

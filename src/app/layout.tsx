@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
-import { Space_Grotesk, Inter } from 'next/font/google'
+import { Space_Grotesk, Inter, Manrope } from 'next/font/google'
 import './globals.css'
 import { CiPhone } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
@@ -22,6 +22,10 @@ const inter = Inter({
     subsets: ['latin'],
     variable: '--font-inter',
 })
+const manrope = Manrope({
+    subsets: ['latin'],
+    variable: '--font-manrope',
+})
 
 export const metadata: Metadata = configs.metadata
 
@@ -39,8 +43,10 @@ const infoData = [
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <html lang="en" className={cn('min-h-screen w-full antialiased', spaceGrotesk.variable, inter.variable)}>
-            <body className={inter.variable}>
+        <html
+            lang="en"
+            className={cn('min-h-screen w-full antialiased', spaceGrotesk.variable, inter.variable, manrope.variable)}>
+            <body className={manrope.variable}>
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <NavigationHeader
                     logo={LogoImage.src}
