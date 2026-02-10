@@ -20,7 +20,7 @@ function CardSecondary({ text, icon, title, tag }: CardProps) {
                         <div className="mt-3 flex flex-wrap gap-4">
                             {tag?.map((t, i) => (
                                 <div
-                                    className="flex h-5 items-center justify-center rounded-2xl border border-color-studio p-3"
+                                    className="flex h-5 items-center justify-center rounded-2xl border border-color-purble p-3"
                                     key={i}>
                                     <p className="text-center text-sm text-color-studio">{t}</p>
                                 </div>

@@ -77,14 +77,14 @@ export default function Home() {
                 cards={[
                     {
                         icon: <TbCurrentLocation size={30} color="#FFFFFF" />,
-                        tag: ['Landing Page', 'Site Institucional', 'Aplicativos'],
+                        tag: ['Landing Page', 'Aplicativos', 'Site Institucional'],
                         title: 'Desenvolvimento ',
                         text: 'De sites a aplicativos, entregamos soluções digitais modernas, rápidas e escaláveis, projetadas para performance e impacto real.',
                     },
                     {
                         icon: <MdOutlineGroups size={30} color="#FFFFFF" />,
                         title: 'Design',
-                        tag: ['UI/UX', 'Websites'],
+                        tag: ['Landing Page', 'UI/UX', 'Websites'],
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}

@@ -115,7 +115,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
             {/* Mobile Menu */}
             <div
-                className={`fixed bottom-0 left-0 top-0 z-50 w-4/6 max-w-xs transform bg-color-haiti transition-transform duration-300 ease-in-out ${
+                className={`fixed bottom-0 left-0 top-0 z-50 w-4/6 max-w-xs transform bg-color-wood transition-transform duration-300 ease-in-out ${
                     isNavOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}>
                 <nav className="relative flex h-full flex-col justify-between overflow-y-auto p-6">

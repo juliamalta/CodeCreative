@@ -21,7 +21,7 @@ function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProp
                         <p className="mx-auto text-base font-normal text-color-wood 2xl:w-1/2">{desc}</p>
                     </BlurFade>
                 </div>
-                <div className="mx-auto mt-10">
+                <div className="mx-auto mt-10 flex flex-col">
                     <AnimatedList>
                         {cards.map((card, index) => (
                             <CardSecondary
