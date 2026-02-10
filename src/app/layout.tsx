@@ -43,10 +43,8 @@ const infoData = [
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <html
-            lang="en"
-            className={cn('min-h-screen w-full antialiased', spaceGrotesk.variable, inter.variable, manrope.variable)}>
-            <body className={manrope.variable}>
+        <html lang="en" className="scroll-smooth">
+            <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <NavigationHeader
                     logo={LogoImage.src}
