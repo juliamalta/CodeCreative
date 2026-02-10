@@ -443,10 +443,8 @@
             body {
                 font-family: var(--font-manrope);
                 width: 100%;
+                overflow-x: clip;
                 min-height: 100vh;
-            }
-            @screen sm {
-                overflow-x: hidden;
             }
         }
     }
