@@ -7,7 +7,7 @@ import { IoClose } from 'react-icons/io5'
 import ListMessagens from '@/components/core/ListMessagens/ListMessagens'
 import Chatbox from '@/components/core/ChatBox/ChatBox'
 import { api } from '../../../services/api.js'
-
+import avatarcode from '../../../../public/images/avatarcode.png'
 function AgentIA() {
     const [open, setOpen] = useState(false)
 
@@ -60,7 +60,7 @@ function AgentIA() {
                                 <IoIosArrowBack color="white" size={20} />
                             </button>
                             <Avatar>
-                                <AvatarImage src="https://github.com/shadcn.png" alt="Luna" />
+                                <AvatarImage src={avatarcode.src} alt="Luna" />
                                 <AvatarFallback>LN</AvatarFallback>
                             </Avatar>
                             <p className="font-semibold text-white">Luna</p>
