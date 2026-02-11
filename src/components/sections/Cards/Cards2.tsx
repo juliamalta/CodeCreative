@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 
 function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProps) {
     return (
-        <section id="Valores" className="bg-color-wild py-24">
+        <section id="serviços" className="bg-color-wild py-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="flex flex-col justify-center gap-2 text-center">
                     <p className="text-base font-semibold text-color-studio">{titlePrimary}</p>

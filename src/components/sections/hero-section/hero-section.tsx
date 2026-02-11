@@ -29,7 +29,7 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                         </div>
                         <div className="flex flex-col gap-3 sm:flex-row">
                             <InteractiveHoverButton className="border-color-studio bg-color-purble text-center text-sm text-white hover:bg-white hover:text-color-studio">
-                                <Link href="https://www.instagram.com/codecreativebr/"> {button1text}</Link>
+                                <Link href="https://wa.me/5531996398460"> {button1text}</Link>
                             </InteractiveHoverButton>
                             <Button variant="herobuttonsecondary" size="hero" asChild className="rounded-full text-sm">
                                 <Link href="#trabalho"> {button2text}</Link>

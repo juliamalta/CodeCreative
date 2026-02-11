@@ -28,7 +28,7 @@ export default function Home() {
                 title={
                     <>
                         Onde código encontra criatividade,
-                        <span className="font-bold text-color-purble">nasce a inovação</span>
+                        <span className="font-bold text-color-purble"> nasce a inovação</span>
                     </>
                 }
                 desc="Criamos experiências digitais sofisticadas, com design e tecnologia avançada, para marcas que querem se destacar com autoridade."
@@ -89,7 +89,7 @@ export default function Home() {
                         text: 'Criamos interfaces elegantes e experiências visuais marcantes, unindo UI/UX e materiais gráficos que encantam e convertem.',
                     },
                 ]}
-                buttonText="Solicite um orçamento"
+                buttonText="Solicitar Proposta Personalizada"
             />
             <Cards3
                 titlePrimary="Nossos Trabalhos"
@@ -145,7 +145,7 @@ export default function Home() {
             <Contact
                 title="Está pronto para ver sua marca decolar?"
                 text="Toda grande solução digital começa com uma boa conversa. Conte sua ideia para a gente e vamos transformá-la na ferramenta que seu negócio precisa."
-                buttontext="Entre em contato"
+                buttontext="Quero começar meu projeto"
             />
             <Chat />
         </>

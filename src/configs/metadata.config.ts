@@ -1,6 +1,7 @@
 export const metadataConfig = {
     title: 'Code Creative | Desenvolvimento web e mobile',
-    description: 'Desenvolvimento web, mobile e design digital de alta qualidade.',
+    description:
+        'Criamos experiências digitais que transformam visitantes em clientes. Design sofisticado + tecnologia avançada para marcas que querem se destacar. Fale conosco!.',
     openGraph: {
         siteName: 'Code Creative | Desenvolvimento web e mobile',
         images: [

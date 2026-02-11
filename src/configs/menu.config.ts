@@ -9,7 +9,7 @@ export const menuConfig = [
     },
     {
         text: 'Serviços',
-        link: '#Valores',
+        link: '#serviços',
     },
     {
         text: 'Projetos',

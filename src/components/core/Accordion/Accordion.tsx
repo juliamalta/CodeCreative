@@ -11,7 +11,7 @@ function Accordion({ title, children, accordion }: AccordionProps) {
 
     return (
         <div onClick={() => setOpen(!open)} className="mb-8 flex cursor-pointer flex-col gap-8">
-            <div className="flex justify-between border-b-2 pb-2">
+            <div className="flex justify-between border-b-2 pb-4">
                 <h1 className="text-xl font-bold">{title}</h1>
                 {open ? <FaChevronUp color="#7039B7" size={20} /> : <FaChevronDown color="#7039B7" size={20} />}
             </div>
