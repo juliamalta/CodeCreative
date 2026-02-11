@@ -1,6 +1,7 @@
 export interface faqsData {
     title: string
     answer: string
+    accordion?:boolean
 }
 
 export interface FaqProps {

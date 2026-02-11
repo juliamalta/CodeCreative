@@ -123,18 +123,22 @@ export default function Home() {
                     {
                         title: 'Como funciona o processo de desenvolvimento?',
                         answer: 'Nosso processo tem 5 etapas: 1) Briefing e análise, 2) Design e prototipação, 3) Desenvolvimento, 4) Testes e revisões, 5) Entrega e treinamento. O cliente acompanha todo o processo.',
+                        accordion: false,
                     },
                     {
                         title: 'Vocês atendem empresas de todo o Vale do Aço?',
                         answer: 'Sim! Atendemos presencialmente Ipatinga, Timóteo, Coronel Fabriciano, Santana do Paraíso e toda região metropolitana do Vale do Aço. Também trabalhamos de forma remota para clientes de outras cidades de Minas Gerais e Brasil.',
+                        accordion: true,
                     },
                     {
                         title: 'Quais tecnologias vocês utilizam?',
                         answer: 'Para aplicativos: React Native, desenvolvimento nativo iOS/Android. Para web: React, Next.js, Node.js. Design: Figma, Adobe Creative Suite. Banco de dados: Firebase e MongoDB. Mas sempre utilizamos as tecnologias mais atuais e adequadas para cada projeto.',
+                        accordion: true,
                     },
                     {
                         title: 'Oferecem suporte após a entrega?',
                         answer: 'Sim! Todo projeto inclui 30 dias de suporte gratuito após entrega. Oferecemos planos de suporte mensal incluindo: correção de bugs, atualizações de segurança, backup automático e suporte técnico prioritário via WhatsApp',
+                        accordion: true,
                     },
                 ]}
             />
