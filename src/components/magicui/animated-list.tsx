@@ -47,7 +47,7 @@ export const AnimatedList = React.memo(({ children, className, delay = 1000, ...
     return (
         <div
             className={cn(
-                'mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2',
+                'mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2',
                 className
             )}
             {...props}>
