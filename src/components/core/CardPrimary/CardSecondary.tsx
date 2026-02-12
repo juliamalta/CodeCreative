@@ -9,7 +9,7 @@ function CardSecondary({ text, icon, title, tag }: CardProps) {
                     style={{ backgroundColor: '#FFFFFF' }}>
                     <div className="flex flex-col gap-5">
                         <div className="flex items-center gap-3">
-                            <img src={img.src} />
+                            <img src={img.src} alt="logo" />
                             <p className="whitespace-nowrap font-semibold text-color-wood 2xl:text-3xl">{title}</p>
                         </div>
                         <div>
