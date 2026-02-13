@@ -18,6 +18,9 @@ app.use(
         credentials: true,
     })
 )
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok' })
+})
 // Rotas
 app.use('/api/question', ourServicesRoutes)
 
