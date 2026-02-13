@@ -12,6 +12,7 @@ import { configs } from '@/configs'
 import { cn } from '@/lib/utils'
 
 import LogoImage from '../../public/images/logo.png'
+import Pixel from '@/components/pixel'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className="scroll-smooth">
             <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
+                <Pixel/>
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <NavigationHeader
                     logo={LogoImage.src}
