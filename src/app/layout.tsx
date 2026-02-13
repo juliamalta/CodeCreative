@@ -46,7 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className="scroll-smooth">
             <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
-                <Pixel/>
+                <Pixel />
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <NavigationHeader
                     logo={LogoImage.src}
