@@ -1,26 +1,27 @@
 'use client'
 
 import Script from 'next/script'
+import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
-import { usePathname, useSearchParams } from 'next/navigation'
 
 declare global {
     interface Window {
-        fbq: any
+        fbq?: (...args: any[]) => void
     }
 }
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
-
 export default function Pixel() {
+    const PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
     const pathname = usePathname()
-    const searchParams = useSearchParams()
 
     useEffect(() => {
-        if (!window.fbq) return
-        console.log('PageView disparado', pathname)
-        window.fbq('track', 'PageView')
-    }, [pathname, searchParams])
+        if (window.fbq) {
+            console.log('PageView disparado:', pathname)
+            window.fbq('track', 'PageView')
+        }
+    }, [pathname])
+
+    if (!PIXEL_ID) return null
 
     return (
         <>
@@ -42,13 +43,13 @@ export default function Pixel() {
           `,
                 }}
             />
-
             <noscript>
                 <img
                     height="1"
                     width="1"
                     style={{ display: 'none' }}
                     src={`https://www.facebook.com/tr?id=${PIXEL_ID}&ev=PageView&noscript=1`}
+                    alt="Facebook Pixel"
                 />
             </noscript>
         </>
