@@ -8,7 +8,7 @@ import { MdCode } from 'react-icons/md'
 import { MdOutlineGroups } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
 import { TbCurrentLocation } from 'react-icons/tb'
-import { TfiMedallAlt } from 'react-icons/tfi'
+
 
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
