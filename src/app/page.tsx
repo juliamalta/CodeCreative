@@ -9,7 +9,6 @@ import { MdOutlineGroups } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
 import { TbCurrentLocation } from 'react-icons/tb'
 
-
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
 import Cards3 from '@/components/sections/Cards/Cards3'
