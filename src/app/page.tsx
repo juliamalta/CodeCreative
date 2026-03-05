@@ -113,6 +113,12 @@ export default function Home() {
                         tag: ['WEBSITE', 'REACT JS', 'UI DESIGN'],
                         desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona.',
                     },
+                    {
+                        title: 'Barber Academy',
+                        img: '/images/barber.png',
+                        tag: ['Landing Page', 'UI/UX'],
+                        desc: 'Landing page para curso presencial de barbearia. Design urbano, copy focado em conversão e estrutura pensada para transformar visitante em aluno',
+                    },
                 ]}
             />
             <Faq1
