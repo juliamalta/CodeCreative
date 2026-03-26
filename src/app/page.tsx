@@ -102,6 +102,18 @@ export default function Home() {
                         desc: 'Sem histórico digital estabelecido, precisava de uma plataforma que não apenas apresentasse seus serviços especializados, mas também educasse o público sobre a importância dos cuidados com a mente.',
                     },
                     {
+                        title: 'Barbearia',
+                        img: '/images/barber.png',
+                        tag: ['Landing Page', 'UI/UX'],
+                        desc: 'Landing page para curso presencial de barbearia. Design urbano, copy focado em conversão e estrutura pensada para transformar visitante em aluno',
+                    },
+                    {
+                        title: 'Dra. Anlles',
+                        img: '/images/site2.png',
+                        tag: ['WEBSITE', 'DESIGN'],
+                        desc: 'Site institucional que humaniza o atendimento em saúde mental, com design acolhedor, sistema de agendamento integrado e conteúdo educativo sobre bem-estar emocional.',
+                    },
+                    {
                         title: 'Pro Tracker',
                         img: '/images/img2.png',
                         tag: ['MOBILE', 'REACT NATIVE', 'UX'],
@@ -112,12 +124,6 @@ export default function Home() {
                         img: '/images/img1.png',
                         tag: ['WEBSITE', 'REACT JS', 'UI DESIGN'],
                         desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona.',
-                    },
-                    {
-                        title: 'Barbearia',
-                        img: '/images/barber.png',
-                        tag: ['Landing Page', 'UI/UX'],
-                        desc: 'Landing page para curso presencial de barbearia. Design urbano, copy focado em conversão e estrutura pensada para transformar visitante em aluno',
                     },
                 ]}
             />
