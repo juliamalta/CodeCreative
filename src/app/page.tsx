@@ -104,19 +104,19 @@ export default function Home() {
                         buttonText: 'Acessar Projeto',
                     },
                     {
-                        title: 'Barbearia',
-                        img: '/images/barber.png',
-                        tag: ['Landing Page', 'UI/UX'],
-                        desc: 'Landing page para curso presencial de barbearia. Design urbano, copy focado em conversão e estrutura pensada para transformar visitante em aluno',
-                        link: 'https://barber-academy-six.vercel.app/',
-                        buttonText: 'Acessar Projeto',
-                    },
-                    {
                         title: 'Dra. Anlles',
                         img: '/images/site2.png',
                         tag: ['WEBSITE', 'DESIGN'],
                         desc: 'Site institucional que humaniza o atendimento em saúde mental, com design acolhedor, sistema de agendamento integrado e conteúdo educativo sobre bem-estar emocional.',
                         link: 'https://www.draanlles.com.br/',
+                        buttonText: 'Acessar Projeto',
+                    },
+                    {
+                        title: 'Barbearia',
+                        img: '/images/barber.png',
+                        tag: ['Landing Page', 'UI/UX'],
+                        desc: 'Landing page para curso presencial de barbearia. Design urbano, copy focado em conversão e estrutura pensada para transformar visitante em aluno',
+                        link: 'https://barber-academy-six.vercel.app/',
                         buttonText: 'Acessar Projeto',
                     },
                     {
