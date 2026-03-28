@@ -36,6 +36,8 @@ function Cards3({ cards, title, desc, titlePrimary }: CardSectionProps) {
                                         title={card.title}
                                         description={card.desc}
                                         img={card.img}
+                                        link={card.link}
+                                        buttonText={card.buttonText!}
                                     />
                                 </CarouselItem>
                             ))}

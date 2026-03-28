@@ -11,6 +11,8 @@ export interface CardData {
     desc?: string
     img?: string
     tag?: string[]
+    link?: string
+    buttonText?: string
 }
 
 export interface CardSectionProps {

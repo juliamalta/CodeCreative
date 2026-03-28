@@ -2,7 +2,9 @@ import { CardWorkProps } from '@/components/core/CardPrimary/Card.types'
 
 import imgWork from '../../../../public/images/img2.png'
 import Image from 'next/image'
-function CardWork({ title, description, img, tag }: CardWorkProps) {
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+function CardWork({ title, description, img, tag, link, buttonText }: CardWorkProps) {
     return (
         <div className="flex flex-col rounded-2xl">
             <div className="h-80 overflow-hidden">
@@ -21,6 +23,13 @@ function CardWork({ title, description, img, tag }: CardWorkProps) {
                 <div className="flex flex-col gap-4">
                     <p className="text-2xl font-semibold">{title}</p>
                     <p className="text-color-storm">{description}</p>
+                    {link && (
+                        <div>
+                            <Button variant="herobutton" size="service" asChild className="rounded-full">
+                                <Link href={link!}>{buttonText!}</Link>
+                            </Button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

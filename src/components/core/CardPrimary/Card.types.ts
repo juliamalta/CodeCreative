@@ -17,4 +17,6 @@ export type CardWorkProps = {
     img?: string
     description?: string
     tag: string[]
+    link?: string
+    buttonText?: string
 }
