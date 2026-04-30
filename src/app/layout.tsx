@@ -14,6 +14,7 @@ import { cn } from '@/lib/utils'
 import LogoImage from '../../public/images/logo.png'
 import Pixel from '@/components/pixel'
 import { GTM } from '@/components/gtm'
+import { Contentsquare } from '@/components/contentSquare'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className="scroll-smooth">
             <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
+                <Contentsquare />
                 <Pixel />
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <GTM gtmId="G-322MDB8015" />
