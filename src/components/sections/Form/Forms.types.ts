@@ -1,7 +1,7 @@
 export interface ContactData {
     desc: string
     titleContact: string
-     icon?: JSX.Element
+    icon?: JSX.Element
 }
 
 export type FormsProps = {
