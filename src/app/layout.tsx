@@ -4,7 +4,7 @@ import { Space_Grotesk, Inter, Manrope } from 'next/font/google'
 import './globals.css'
 import { CiPhone } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
-import { Toaster } from "sonner"
+import { Toaster } from 'sonner'
 import { GoogleAnalyticsClient } from '@/components/GoogleAnalyticsClient'
 import { Footer } from '@/components/sections/Footer'
 import NavigationHeader from '@/components/sections/Navigations'

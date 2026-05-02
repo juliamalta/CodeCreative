@@ -98,7 +98,7 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                     <div className="flex flex-col gap-7 sm:flex-row">
                         {contact.map((item, index) => (
                             <div key={index} className="flex items-center gap-3">
-                                <div className="bg-color-masala rounded-full px-5 py-5" />
+                                <div className="rounded-full bg-color-masala px-5 py-5" />
                                 <div>
                                     <p className="text-xs text-white">{item.titleContact}</p>
                                     <p className="text-sm text-white">{item.desc}</p>
