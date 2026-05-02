@@ -4,7 +4,7 @@ import { Space_Grotesk, Inter, Manrope } from 'next/font/google'
 import './globals.css'
 import { CiPhone } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
-
+import { Toaster } from "sonner"
 import { GoogleAnalyticsClient } from '@/components/GoogleAnalyticsClient'
 import { Footer } from '@/components/sections/Footer'
 import NavigationHeader from '@/components/sections/Navigations'
@@ -59,6 +59,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 />
                 {children}
                 <Footer rights="© 2026 Code Creative. Todos os direitos reservados." />
+                <Toaster richColors position="top-right" />
             </body>
         </html>
     )

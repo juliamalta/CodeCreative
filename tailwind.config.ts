@@ -88,6 +88,7 @@ const config: Config = {
                     purble: 'var(--purple-heart-700)',
                     wild: 'var(--wild-sand-100)',
                     boulder: 'var(--boulder-500)',
+                    masala: 'var(--masala-700)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',

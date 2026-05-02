@@ -18,6 +18,7 @@ import { HeroSection } from '@/components/sections/hero-section'
 import Chat from '@/components/sections/Chat/Chat'
 import TestEnv from '@/components/core/AgentIA/teste'
 import { Highlighter } from '@/components/magicui/highligth'
+import { Forms1 } from '@/components/sections/Form/Forms1'
 
 export default function Home() {
     return (
@@ -157,6 +158,19 @@ export default function Home() {
                         answer: 'Sim! Todo projeto inclui 30 dias de suporte gratuito após entrega. Oferecemos planos de suporte mensal incluindo: correção de bugs, atualizações de segurança, backup automático e suporte técnico prioritário via WhatsApp',
                         accordion: true,
                     },
+                ]}
+            />
+            <Forms1
+                title={
+                    <>
+                        <span className="font-bold text-color-purble"> Vamos conversar </span>
+                        sobre seu projeto?
+                    </>
+                }
+                desc="Entraremos em contato com você. Receba um diagnóstico gratuito do seu site. Sem compromisso."
+                contact={[
+                    { titleContact: 'WhatsApp', desc: '(31) 9 9639-8460' },
+                    { titleContact: 'Instagram', desc: '@codecreative.br' },
                 ]}
             />
             <Contact
