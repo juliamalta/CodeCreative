@@ -8,6 +8,8 @@ import { MdCode } from 'react-icons/md'
 import { MdOutlineGroups } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
 import { TbCurrentLocation } from 'react-icons/tb'
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
 import { Cards1, Cards2 } from '@/components/sections/Cards'
@@ -169,8 +171,10 @@ export default function Home() {
                 }
                 desc="Entraremos em contato com você. Receba um diagnóstico gratuito do seu site. Sem compromisso."
                 contact={[
-                    { titleContact: 'WhatsApp', desc: '(31) 9 9639-8460' },
-                    { titleContact: 'Instagram', desc: '@codecreative.br' },
+                    { titleContact: 'WhatsApp', desc: '(31) 9 9639-8460' ,icon:<FaWhatsapp size={24} color="white"/>
+ },
+                    { titleContact: 'Instagram', desc: '@codecreative.br',icon:<FaInstagram size={24} color="white" />
+ },
                 ]}
             />
             <Contact

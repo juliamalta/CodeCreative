@@ -95,10 +95,12 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                         <p className="text-base text-white md:w-2/3">{desc}</p>
                     </div>
 
-                    <div className="flex flex-col gap-7 sm:flex-row">
+                    <div className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
                         {contact.map((item, index) => (
                             <div key={index} className="flex items-center gap-3">
-                                <div className="rounded-full bg-color-masala px-5 py-5" />
+                                <div className="rounded-full bg-color-masala px-5 py-5 transition-transform hover:scale-105 hover:border-[1px] hover:border-color-purble">
+                                    {item.icon}
+                                </div>
                                 <div>
                                     <p className="text-xs text-white">{item.titleContact}</p>
                                     <p className="text-sm text-white">{item.desc}</p>
@@ -119,7 +121,9 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                     name="fullName"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel className="text-black">Seu nome</FormLabel>
+                                            <FormLabel className="text-base font-semibold text-black">
+                                                Seu nome
+                                            </FormLabel>
                                             <FormControl>
                                                 <Input
                                                     className={fieldClass}
@@ -139,7 +143,9 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                         name="number"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-black">WhatsApp</FormLabel>
+                                                <FormLabel className="text-base font-semibold text-black">
+                                                    WhatsApp
+                                                </FormLabel>
                                                 <FormControl>
                                                     <Input
                                                         className={fieldClass}
@@ -161,7 +167,9 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                         name="company"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-black">Empresa</FormLabel>
+                                                <FormLabel className="text-base font-semibold text-black">
+                                                    Empresa
+                                                </FormLabel>
                                                 <FormControl>
                                                     <Input
                                                         className={fieldClass}
@@ -182,7 +190,9 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                         name="hasSite"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-black">Tem site hoje?</FormLabel>
+                                                <FormLabel className="text-base font-semibold text-black">
+                                                    Tem site hoje?
+                                                </FormLabel>
                                                 <FormControl>
                                                     <select {...field} className={fieldClass}>
                                                         <option value="">Selecione</option>
@@ -200,7 +210,9 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                         name="budget"
                                         render={({ field }) => (
                                             <FormItem>
-                                                <FormLabel className="text-black">Orçamento</FormLabel>
+                                                <FormLabel className="text-base font-semibold text-black">
+                                                    Orçamento
+                                                </FormLabel>
                                                 <FormControl>
                                                     <select {...field} className={fieldClass}>
                                                         <option value="">Selecione</option>
