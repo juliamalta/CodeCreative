@@ -91,7 +91,7 @@ export function Forms1({ title, desc, contact }: FormsProps) {
             <div className="container flex flex-col gap-10 lg:flex-row">
                 <div className="flex flex-col justify-center gap-8 lg:w-1/2">
                     <div className="flex flex-col gap-6">
-                        <h1 className="text-3xl font-semibold text-white sm:text-center md:text-6xl lg:text-left">
+                        <h1 className="text-3xl font-semibold text-white sm:text-center md:text-6xl lg:text-left 2xl:w-2/3">
                             {title}
                         </h1>
                         <p className="text-base text-color-boulder sm:text-center lg:text-left 2xl:w-2/3">{desc}</p>
