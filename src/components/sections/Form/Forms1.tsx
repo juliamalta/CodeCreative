@@ -37,7 +37,7 @@ export function Forms1({ title, desc, contact }: FormsProps) {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            let resumeURL = null
+            const resumeURL = null
 
             // Se futuramente quiser upload de arquivo:
             // if (values.resume) {
