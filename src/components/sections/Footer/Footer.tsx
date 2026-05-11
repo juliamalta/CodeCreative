@@ -11,7 +11,7 @@ function Footer({ rights }: FooterProps) {
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center border-t border-color-boulder">
-                    <div className="md-gap-0 container flex w-full items-center justify-between gap-10 py-12">
+                    <div className="md-gap-0 flex w-full items-center justify-between gap-10 py-12">
                         <div className="flex items-start">
                             <Link className="block max-w-max" href="/">
                                 <Image width={172} height={73} src={logo} alt="logo" />
