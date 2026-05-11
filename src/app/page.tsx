@@ -175,19 +175,17 @@ export default function Home() {
                         titleContact: 'WhatsApp',
                         desc: '(31) 9 9639-8460',
                         icon: <FaWhatsapp size={24} color="white" />,
+                        href: 'https://api.whatsapp.com/send/?phone=5531996398460&text&type=phone_number&app_absent=0',
                     },
                     {
                         titleContact: 'Instagram',
                         desc: '@codecreative.br',
                         icon: <FaInstagram size={24} color="white" />,
+                        href: 'https://instagram.com/codecreativebr',
                     },
                 ]}
             />
-            <Contact
-                title="Está pronto para ver sua marca decolar?"
-                text="Toda grande solução digital começa com uma boa conversa. Conte sua ideia para a gente e vamos transformá-la na ferramenta que seu negócio precisa."
-                buttontext="Quero começar meu projeto"
-            />
+
             <Chat />
         </>
     )

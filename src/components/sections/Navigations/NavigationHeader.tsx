@@ -84,11 +84,10 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                 <div>
                     <div className="hidden justify-end lg:flex">
                         <a
-                            href="https://wa.me/5531996398460"
+                            href="#contato"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full bg-color-purble px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
-                            <FaWhatsapp className="text-xl sm:text-2xl" />
                             <span className="whitespace-nowrap text-sm">Fale conosco</span>
                         </a>
                     </div>

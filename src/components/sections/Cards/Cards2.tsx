@@ -38,7 +38,7 @@ function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProp
                 <div className="mt-8 flex flex-row items-center justify-center">
                     <div>
                         <Button variant="herobutton" size="hero" asChild className="rounded-full">
-                            <Link href="https://wa.me/5531996398460">{buttonText}</Link>
+                            <Link href="#contato">{buttonText}</Link>
                         </Button>
                     </div>
                 </div>

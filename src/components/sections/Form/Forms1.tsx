@@ -19,7 +19,6 @@ export function Forms1({ title, desc, contact }: FormsProps) {
         number: z.string().min(8, 'Informe um número válido.'),
         company: z.string().min(2, 'Informe sua empresa.').optional(),
         hasSite: z.string().min(1, 'Selecione uma opção.'),
-        budget: z.string().min(1, 'Selecione um orçamento.'),
         resume: z.any().optional(),
     })
 
@@ -30,7 +29,6 @@ export function Forms1({ title, desc, contact }: FormsProps) {
             number: '',
             company: '',
             hasSite: '',
-            budget: '',
             resume: null,
         },
     })
@@ -49,7 +47,6 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                 number: values.number,
                 company: values.company,
                 hasSite: values.hasSite,
-                budget: values.budget,
                 resumeURL,
                 createdAt: new Date(),
             })
@@ -85,7 +82,7 @@ export function Forms1({ title, desc, contact }: FormsProps) {
 
     return (
         <section
-            id="inicio"
+            id="contato"
             className="mx-auto bg-cover bg-center px-2 py-16 sm:py-24"
             style={{ backgroundImage: "url('/images/codebg.png')" }}>
             <div className="container flex flex-col gap-10 lg:flex-row">
@@ -99,15 +96,22 @@ export function Forms1({ title, desc, contact }: FormsProps) {
 
                     <div className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
                         {contact.map((item, index) => (
-                            <div key={index} className="flex items-center gap-3">
-                                <div className="rounded-full bg-color-masala px-5 py-5 transition-transform hover:scale-105 hover:border-[1px] hover:border-color-purble">
-                                    {item.icon}
+                            <a
+                                key={index}
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-3">
+                                <div key={index} className="flex items-center gap-3">
+                                    <div className="rounded-full bg-color-masala px-5 py-5 transition-transform hover:scale-105 hover:border-[1px] hover:border-color-purble">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-white">{item.titleContact}</p>
+                                        <p className="text-sm text-white">{item.desc}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-xs text-white">{item.titleContact}</p>
-                                    <p className="text-sm text-white">{item.desc}</p>
-                                </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
@@ -186,7 +190,7 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                 </div>
 
                                 {/* SELECTS */}
-                                <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+                                <div className="grid grid-cols-1 gap-5 md:grid-cols-1">
                                     <FormField
                                         control={form.control}
                                         name="hasSite"
@@ -200,28 +204,6 @@ export function Forms1({ title, desc, contact }: FormsProps) {
                                                         <option value="">Selecione</option>
                                                         <option value="sim">Sim, tenho um site</option>
                                                         <option value="nao">Não</option>
-                                                    </select>
-                                                </FormControl>
-                                                <FormMessage />
-                                            </FormItem>
-                                        )}
-                                    />
-
-                                    <FormField
-                                        control={form.control}
-                                        name="budget"
-                                        render={({ field }) => (
-                                            <FormItem>
-                                                <FormLabel className="text-base font-semibold text-black">
-                                                    Orçamento
-                                                </FormLabel>
-                                                <FormControl>
-                                                    <select {...field} className={fieldClass}>
-                                                        <option value="">Selecione</option>
-                                                        <option value="ate_3k">Até R$ 3.000</option>
-                                                        <option value="3k_10k">R$ 3.000 - R$ 10.000</option>
-                                                        <option value="10k_30k">R$ 10.000 - R$ 30.000</option>
-                                                        <option value="30k_plus">R$ 30.000+</option>
                                                     </select>
                                                 </FormControl>
                                                 <FormMessage />
