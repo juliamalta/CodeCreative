@@ -43,6 +43,6 @@ export interface CardSectionProps {
     buttonText?: string
     img?: string
     cards?: CardData[]
-    icon?:JSX.Element
+    icon?: JSX.Element
     cardsHight?: CardHighData[]
 }
