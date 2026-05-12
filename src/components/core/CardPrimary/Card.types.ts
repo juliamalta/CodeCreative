@@ -20,3 +20,13 @@ export type CardWorkProps = {
     link?: string
     buttonText?: string
 }
+
+export type CardHigthligthProps = {
+    higthligth: boolean
+    text?: string
+    title: string | React.ReactNode
+    icon?: React.ReactNode
+    iconBgColor?: string
+    payment?: string
+    paymentTitle?: string
+}

@@ -1,6 +1,4 @@
 import { CardWorkProps } from '@/components/core/CardPrimary/Card.types'
-
-import imgWork from '../../../../public/images/img2.png'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'

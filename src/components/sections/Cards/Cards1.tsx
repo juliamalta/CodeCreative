@@ -1,16 +1,16 @@
 'use client'
 import * as React from 'react'
 
-import { CardPrimary } from '@/components/core/CardPrimary'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
+import CardPrimary from '@/components/core/CardPrimary/CardPrimary'
 
 function Card1({ cards, title, desc }: CardSectionProps) {
     return (
         <section id="Serviços" className="py-16 sm:pb-24">
             <div className="container mx-auto items-center justify-center">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
-                    {cards.map((card, index) => (
+                    {cards?.map((card, index) => (
                         <CardPrimary
                             key={index}
                             icon={card.icon}

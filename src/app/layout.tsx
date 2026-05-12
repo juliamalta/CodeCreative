@@ -6,15 +6,12 @@ import { CiPhone } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
 import { Toaster } from 'sonner'
 import { GoogleAnalyticsClient } from '@/components/GoogleAnalyticsClient'
-import { Footer } from '@/components/sections/Footer'
-import NavigationHeader from '@/components/sections/Navigations'
 import { configs } from '@/configs'
 import { cn } from '@/lib/utils'
-
-import LogoImage from '../../public/images/logo.png'
 import Pixel from '@/components/pixel'
 import { GTM } from '@/components/gtm'
 import { Contentsquare } from '@/components/contentSquare'
+import { RootProviders } from '@/app/RootProviders'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -52,13 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <Pixel />
                 <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
                 <GTM gtmId="G-322MDB8015" />
-                <NavigationHeader
-                    logo={LogoImage.src}
-                    navs={configs.menu}
-                    buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSf7UDEd4o_ll21lRKERe2rf83vGASGW0e1vJukTut4rD1OuPg/viewform"
-                />
-                {children}
-                <Footer rights="© 2026 Code Creative. Todos os direitos reservados." />
+                <RootProviders>{children}</RootProviders>
                 <Toaster richColors position="top-right" />
             </body>
         </html>

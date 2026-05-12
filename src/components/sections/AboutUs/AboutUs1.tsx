@@ -2,13 +2,10 @@
 
 import { withAnimation } from '@/common/hocs'
 import { AnimatedTechBackground } from '@/components/animations/background/AnimatedTechBackground'
-import { NumberTicker } from '@/components/magicui/number-ticker'
 import { TypingAnimation } from '@/components/magicui/typing-animation'
 import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
 
-import FeaturesImg1 from '../../../../public/images/about.png'
-
-function AboutUs1({ title, text1, text2, about, titlePrimary }: AboutProps) {
+function AboutUs1({ title, text1, text2, titlePrimary }: AboutProps) {
     return (
         <section className="relative overflow-hidden pt-16 sm:pt-24" id="sobre">
             <AnimatedTechBackground />

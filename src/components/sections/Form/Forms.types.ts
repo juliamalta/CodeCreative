@@ -2,7 +2,7 @@ export interface ContactData {
     desc: string
     titleContact: string
     icon?: JSX.Element
-    href: string
+    href?: string
 }
 
 export type FormsProps = {

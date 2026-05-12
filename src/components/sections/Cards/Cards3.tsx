@@ -2,7 +2,7 @@
 import * as React from 'react'
 
 import { AnimatedTechBackground } from '@/components/animations/background/AnimatedTechBackground'
-import { CardThree } from '@/components/core/CardPrimary'
+
 import CardWork from '@/components/core/CardPrimary/Card-work'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
@@ -29,7 +29,7 @@ function Cards3({ cards, title, desc, titlePrimary }: CardSectionProps) {
                 <div className="mx-auto mt-10">
                     <Carousel>
                         <CarouselContent className="flex gap-8">
-                            {cards.map((card, index) => (
+                            {cards?.map((card, index) => (
                                 <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/2 2xl:basis-1/2">
                                     <CardWork
                                         tag={card.tag ?? []}

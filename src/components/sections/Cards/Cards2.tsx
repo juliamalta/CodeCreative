@@ -23,7 +23,7 @@ function Card2({ titlePrimary, cards, title, desc, buttonText }: CardSectionProp
                 </div>
                 <div className="mx-auto mt-10 flex flex-col">
                     <AnimatedList>
-                        {cards.map((card, index) => (
+                        {cards?.map((card, index) => (
                             <CardSecondary
                                 tag={card.tag}
                                 key={index}

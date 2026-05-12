@@ -227,7 +227,7 @@
         --masala-300: #d4d3d3;
         --masala-400: #a4a2a2;
         --masala-500: #737171;
-        --masala-600: #535252;
+        --masala-600: #454545;
         --masala-700: #424141; /* color   */
         --masala-800: #272626;
         --masala-900: #1a1919;
@@ -373,7 +373,7 @@
         --blue-chalk-500: #a255f7;
         --blue-chalk-600: #8c33ea;
         --blue-chalk-700: #7722ce;
-        --blue-chalk-800: #6621a8;
+        --blue-chalk-800: #4C4354;
         --blue-chalk-900: #541c87;
         --blue-chalk-950: #370764;
 
@@ -412,6 +412,68 @@
         --storm-dust-800: #454545;
         --storm-dust-900: #3d3d3d;
         --storm-dust-950: #262626;
+
+        --maverick-50: #f9f8fa;
+        --maverick-100: #f4f1f6;
+        --maverick-200: #ebe6ee;
+        --maverick-300: #dbd1e1;
+        --maverick-400: #cfc2d6; /* color   */
+        --maverick-500: #af99b9;
+        --maverick-600: #9e80a7;
+        --maverick-700: #8b6e93;
+        --maverick-800: #745c7b;
+        --maverick-900: #614c66;
+        --maverick-950: #3f3144;
+
+        /* new colors from lp   */
+
+        --grape-50: #f0edff;
+        --grape-100: #e3deff;
+        --grape-200: #cfc4ff;
+        --grape-300: #b4a0ff;
+        --grape-400: #a17aff;
+        --grape-500: #945afa;
+        --grape-600: #8b3cef;
+        --grape-700: #7a2fd3;
+        --grape-800: #6229aa;
+        --grape-900: #502986;
+        --grape-950: #321951; /* color   */
+
+        --purple-heart-50: #f9f6fe;
+        --purple-heart-100: #f1ebfc;
+        --purple-heart-200: #e6dbf9;
+        --purple-heart-300: #d3bef4;
+        --purple-heart-400: #b794ec;
+        --purple-heart-500: #9c6be1;
+        --purple-heart-600: #854bd2;
+        --purple-heart-700: #7039b7; /* color   */
+        --purple-heart-800: #603396;
+        --purple-heart-900: #4f2a79;
+        --purple-heart-950: #331358;
+
+        --mauve-50: #faf5ff;
+        --mauve-100: #f2e8ff;
+        --mauve-200: #e6d4ff;
+        --mauve-300: #d1adff; /* color   */
+        --mauve-400: #ba82fe;
+        --mauve-500: #a053f9;
+        --mauve-600: #8a31ec;
+        --mauve-700: #7620d0;
+        --mauve-800: #651faa;
+        --mauve-900: #531b88;
+        --mauve-950: #370665;
+
+        --mine-shaft-50: #fafafa;
+        --mine-shaft-100: #f5f5f5;
+        --mine-shaft-200: #e6e6e6;
+        --mine-shaft-300: #d6d6d6;
+        --mine-shaft-400: #a5a5a5;
+        --mine-shaft-500: #767676;
+        --mine-shaft-600: #575757;
+        --mine-shaft-700: #434343;
+        --mine-shaft-800: #2a2a2a; /* color   */
+        --mine-shaft-900: #1a1a1a;
+        --mine-shaft-950: #0a0a0a;
     }
     .dark {
         --background: 240 10% 3.9%;

@@ -1,10 +1,5 @@
 import { Separator } from '@radix-ui/react-separator'
-import { ArrowRight } from 'lucide-react'
-import { FiGithub } from 'react-icons/fi'
-import { GoArrowUpRight } from 'react-icons/go'
-
 import { CardProps } from '@/components/core/CardPrimary/Card.types'
-import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
 
 function CardThree({ text, icon, title, desc, titleApp, progress, progressvalue, progressvalueX }: CardProps) {

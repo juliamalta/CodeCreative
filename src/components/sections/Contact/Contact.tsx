@@ -1,12 +1,7 @@
 'use client'
-
-import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
-import { Button } from '@/components/ui/button'
 import imgbg from '../../../../public/images/rodape.png'
-import { FaWhatsapp } from 'react-icons/fa'
 import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 function Contact({ title, text, buttontext }: ContactProps) {
     return (
@@ -14,7 +9,7 @@ function Contact({ title, text, buttontext }: ContactProps) {
             <div className="h-80 overflow-hidden">
                 <img src={imgbg.src} alt="img" className="size-full object-cover" />
             </div>
-            <div className="flex flex-col bg-color-wood py-6 sm:flex-row">
+            <div className="flex flex-col bg-[#191919] py-6 sm:flex-row">
                 <div className="mx-auto flex flex-col items-center justify-center gap-5 p-5 py-24 sm:p-8 lg:p-16">
                     <div className="flex flex-col items-center justify-center gap-8 lg:w-2/5">
                         <div>

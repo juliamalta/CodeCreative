@@ -2,9 +2,7 @@
 import { useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 import { FaChevronUp } from 'react-icons/fa'
-
 import { AccordionProps } from '@/components/core/Accordion/Accordion.types'
-import { CardProps } from '@/components/core/CardPrimary/Card.types'
 
 function Accordion({ title, children, accordion }: AccordionProps) {
     const [open, setOpen] = useState(accordion)

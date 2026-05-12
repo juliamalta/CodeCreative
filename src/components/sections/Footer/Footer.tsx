@@ -1,13 +1,11 @@
 import Link from 'next/link'
-
 import logo from '../../../../public/images/CodeCreative.png'
 import { FooterProps } from './Footer.types'
 import Image from 'next/image'
-import { FaInstagram } from 'react-icons/fa'
 
 function Footer({ rights }: FooterProps) {
     return (
-        <section id="footer" className="overflow-hidden bg-color-wood">
+        <section id="footer" className="overflow-hidden bg-[#191919]">
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center border-t border-color-boulder">
