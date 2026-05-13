@@ -34,6 +34,7 @@ const securityHeaders = [
 const isExport = process.env.NEXT_EXPORT === 'true'
 const nextConfig = {
     output: isExport ? 'export' : undefined,
+     trailingSlash: true,
     reactStrictMode: true,
     swcMinify: true,
     images: {
