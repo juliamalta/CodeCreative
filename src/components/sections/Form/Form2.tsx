@@ -110,16 +110,14 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                     </div>
 
                     <div className="flex w-full flex-col gap-6">
-                        <h1 className="text-center text-3xl font-normal text-white sm:text-4xl md:text-5xl lg:text-left 2xl:w-3/4 2xl:text-6xl">
+                        <h1 className="text-left text-4xl font-normal text-white md:text-5xl 2xl:w-3/4 2xl:text-6xl">
                             {title}
                         </h1>
 
-                        <p className="text-center text-base text-color-boulder sm:text-center lg:text-left 2xl:w-2/3">
-                            {desc}
-                        </p>
+                        <p className="text-left text-base text-color-boulder 2xl:w-2/3">{desc}</p>
                     </div>
 
-                    <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-center lg:justify-start">
+                    <div className="flex flex-row items-center gap-12 sm:flex-row sm:justify-center lg:justify-start">
                         {contact.map((item, index) => (
                             <div key={index} className="flex items-center gap-3">
                                 <div>{item.icon}</div>
@@ -134,10 +132,10 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                 </div>
 
                 {/* FORMULÁRIO */}
-                <div className="w-full 2xl:w-1/2">
+                <div className="w-full lg:w-2/3 2xl:w-1/2">
                     <div className="space-y-8 rounded-2xl border-[2px] border-color-woodsmoke2 bg-color-woodsmoke3 px-8 py-10 shadow-2xl backdrop-blur-xl">
                         <div>
-                            <p className="w-full text-center text-3xl font-bold text-white">
+                            <p className="w-full text-left text-2xl font-bold text-white">
                                 Quero meu orçamento gratuito
                             </p>
                         </div>

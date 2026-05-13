@@ -106,13 +106,10 @@ export function Forms3({ title, desc }: FormsProps) {
             {/* Fade inferior */}
             <div className="absolute bottom-0 left-0 z-[1] h-32 w-full bg-gradient-to-b from-transparent to-color-woodsmoke3" />
             <div className="container flex flex-col items-center justify-center gap-10">
-                <div className="flex flex-col items-center justify-center gap-8 lg:w-2/3">
-                    <div className="flex flex-col gap-6">
-                        <h1 className="items-center justify-center text-center text-4xl font-semibold text-white 2xl:text-5xl">
-                            {title}
-                        </h1>
-                        <p className="text-center text-base text-color-boulder">{desc}</p>
-                    </div>
+                <div className="flex flex-col items-center gap-6 md:w-2/3">
+                    <h1 className="text-4xl font-normal text-white md:text-center md:text-5xl 2xl:text-6xl">{title}</h1>
+
+                    <p className="text-base text-color-boulder">{desc}</p>
                 </div>
 
                 {/* FORMULÁRIO */}

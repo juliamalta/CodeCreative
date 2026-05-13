@@ -168,8 +168,7 @@ export default function Sales() {
                 title={
                     <>
                         Pronta para ter um site que
-                        <AuroraText>representa sua empresa</AuroraText>
-                        <br></br>de verdade?
+                        <span className="font-bold text-color-mauve"> representa sua empresa</span> de verdade?
                     </>
                 }
                 desc="Não perca mais clientes para a concorrência por causa de um site amador. Vamos construir algo incrível juntos hoje."
