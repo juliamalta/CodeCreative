@@ -7,7 +7,6 @@ import CardWorkSales from '@/components/core/CardPrimary/CardWorkSales'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-
 function Cards5({ cards, title, desc, titlePrimary, buttonText, icon }: CardSectionProps) {
     return (
         <section id="portifolio" className="bg-color-woodsmoke3 py-16 sm:py-24">

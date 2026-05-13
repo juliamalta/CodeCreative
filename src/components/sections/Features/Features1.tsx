@@ -3,7 +3,7 @@ import { FeaturesProps } from '@/components/sections/Features/Features.types'
 import CardFeatures from '@/components/core/CardFeatures/CardFeatures'
 import Link from 'next/link'
 import CardFeatures2 from '@/components/core/CardFeatures/CardFeatures2'
-function Features1({ title, text1, features,  features1 }: FeaturesProps) {
+function Features1({ title, text1, features, features1 }: FeaturesProps) {
     return (
         <section id="features">
             <div className="bg-color-woodsmoke3">
