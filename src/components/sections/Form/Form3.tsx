@@ -111,7 +111,7 @@ export function Forms3({ title, desc }: FormsProps) {
                         <h1 className="items-center justify-center text-center text-4xl font-semibold text-white 2xl:text-5xl">
                             {title}
                         </h1>
-                        <p className="text-base text-color-boulder sm:text-center">{desc}</p>
+                        <p className="text-center text-base text-color-boulder">{desc}</p>
                     </div>
                 </div>
 
