@@ -91,7 +91,7 @@ export default function Sales() {
                     {
                         title: 'Clínica Amparium',
                         img: '/images/img3.png',
-                        tag: ['Site com crescimento constante'],
+                        tag: ['SITE COM CRESCIMENTO CONSTANTE'],
                         desc: 'Site criado do zero para clínica que precisava transmitir credibilidade online',
                         link: ' https://www.amparium.com.br/',
                         buttonText: 'Acessar Projeto',
