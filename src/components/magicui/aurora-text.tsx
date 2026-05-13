@@ -16,7 +16,7 @@ export const AuroraText = memo(({ children, className = '', colors = ['#D1ADFF']
     }
 
     return (
-        <span className={`inline-block bg-clip-text text-transparent ${className}`} style={gradientStyle}>
+        <span className={`bg-clip-text text-transparent lg:inline-block ${className}`} style={gradientStyle}>
             {children}
         </span>
     )

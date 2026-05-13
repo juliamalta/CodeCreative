@@ -232,7 +232,9 @@ export function Forms3({ title, desc }: FormsProps) {
                                 </div>
 
                                 {/* BOTÃO */}
-                                <Button type="submit" className="w-full rounded-full bg-color-purble py-3">
+                                <Button
+                                    type="submit"
+                                    className="w-full rounded-full bg-color-purble py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:border-2 hover:border-color-purble hover:bg-white hover:text-color-purble hover:shadow-xl">
                                     Quero meu site exclusivo
                                 </Button>
                             </form>

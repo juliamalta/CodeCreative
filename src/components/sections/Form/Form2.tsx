@@ -8,7 +8,6 @@ import { addDoc, collection } from 'firebase/firestore'
 import { toast } from 'sonner'
 import { db } from '@/lib/firebase'
 import Image from 'next/image'
-import Link from 'next/link'
 import { FormsProps } from '@/components/sections/Form/Forms.types'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/form'
 import { Input } from '@/components/input'
@@ -109,11 +108,10 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col gap-6">
-                        <h1 className="text-left text-4xl font-normal text-white md:text-5xl 2xl:w-3/4 2xl:text-6xl">
+                    <div className="flex flex-col gap-6">
+                        <h1 className="text-left text-4xl font-normal leading-tight text-white md:text-5xl 2xl:w-3/4 2xl:text-6xl">
                             {title}
                         </h1>
-
                         <p className="text-left text-base text-color-boulder 2xl:w-2/3">{desc}</p>
                     </div>
 
@@ -258,7 +256,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                                 {/* BOTÃO */}
                                 <Button
                                     type="submit"
-                                    className="w-full rounded-full bg-color-purble py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-purple-500/40">
+                                    className="w-full rounded-full bg-color-purble py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:border-2 hover:border-color-purble hover:bg-white hover:text-color-purble hover:shadow-xl">
                                     Quero meu site exclusivo
                                 </Button>
                             </form>

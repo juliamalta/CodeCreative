@@ -22,7 +22,7 @@ export default function Sales() {
             <Forms2
                 title={
                     <>
-                        Seu negócio tem tudo para crescer.
+                        Seu negócio tem tudo para crescer.{' '}
                         <AuroraText className="font-bold">Só falta o site certo.</AuroraText>
                     </>
                 }
