@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import CardWorkSales from '@/components/core/CardPrimary/CardWorkSales'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+
 
 function Cards5({ cards, title, desc, titlePrimary, buttonText, icon }: CardSectionProps) {
     return (

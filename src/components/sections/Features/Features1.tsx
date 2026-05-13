@@ -3,18 +3,18 @@ import { FeaturesProps } from '@/components/sections/Features/Features.types'
 import CardFeatures from '@/components/core/CardFeatures/CardFeatures'
 import Link from 'next/link'
 import CardFeatures2 from '@/components/core/CardFeatures/CardFeatures2'
-function Features1({ title, text1, features, buttonText, features1 }: FeaturesProps) {
+function Features1({ title, text1, features,  features1 }: FeaturesProps) {
     return (
         <section id="features">
             <div className="bg-color-woodsmoke3">
                 <div className="container py-24">
                     <div className="flex flex-col justify-between gap-6 lg:flex-row">
-                        <div className="flex flex-col justify-between">
+                        <div className="mb-8 flex flex-col justify-between">
                             <div className="flex flex-col gap-6">
                                 <p className="w-full items-center justify-center text-center text-4xl font-semibold text-white lg:text-left 2xl:w-2/3 2xl:text-5xl">
                                     {title}
                                 </p>
-                                <p className="text-center text-base font-normal text-color-maverick md:text-left lg:w-2/3">
+                                <p className="w-full items-center justify-center text-center text-base font-normal text-color-maverick lg:w-2/3 lg:text-left">
                                     {text1}
                                 </p>
                             </div>
