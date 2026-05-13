@@ -27,13 +27,13 @@ function CardWorkSales({ title, description, img, tag }: CardWorkProps) {
                 <div className="absolute inset-0 bg-black/10 transition-all duration-500 group-hover:bg-black/0" />
             </div>
 
-            <div className="flex flex-1 flex-col gap-4 px-6 py-6">
+            <div className="flex flex-1 flex-col gap-4 p-8">
                 <div className="mt-2 flex flex-wrap gap-2">
                     {tag?.map((t, i) => (
                         <motion.div
                             key={i}
                             whileHover={tagHoverAnimation}
-                            className="flex h-8 items-center justify-center rounded-full px-3">
+                            className="flex h-8 items-center justify-center rounded-full">
                             <p className="text-xs font-bold text-color-mauve">{t}</p>
                         </motion.div>
                     ))}

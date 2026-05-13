@@ -122,7 +122,7 @@ export default function Sales() {
                 titlePrimary="Processo"
                 title={
                     <>
-                        Do briefing a entrega<br></br>
+                        Do briefing a entrega 
                         <AuroraText className="font-bold">em 15 dias</AuroraText>
                     </>
                 }

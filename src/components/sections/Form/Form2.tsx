@@ -131,7 +131,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
 
                 {/* FORMULÁRIO */}
                 <div className="w-full lg:w-2/3 2xl:w-1/2">
-                    <div className="space-y-8 rounded-2xl border-[2px] border-color-woodsmoke2 bg-color-woodsmoke3 px-8 py-10 shadow-2xl backdrop-blur-xl">
+                    <div className="space-y-8 rounded-2xl border-[2px] border-color-woodsmoke2 bg-color-woodsmoke3 p-10 shadow-2xl backdrop-blur-xl">
                         <div>
                             <p className="w-full text-left text-2xl font-bold text-white">
                                 Quero meu orçamento gratuito

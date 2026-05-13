@@ -8,9 +8,9 @@ function Features1({ title, text1, features, buttonText, features1 }: FeaturesPr
         <section id="features">
             <div className="bg-color-woodsmoke3">
                 <div className="container py-24">
-                    <div className="flex flex-col justify-between gap-12 lg:flex-row">
-                        <div className="flex flex-col gap-8">
-                            <div className="flex flex-col gap-10">
+                    <div className="flex flex-col justify-between gap-6 lg:flex-row">
+                        <div className="flex flex-col justify-between">
+                            <div className="flex flex-col gap-6">
                                 <p className="w-full items-center justify-center text-center text-4xl font-semibold text-white lg:text-left 2xl:w-2/3 2xl:text-5xl">
                                     {title}
                                 </p>
@@ -30,7 +30,7 @@ function Features1({ title, text1, features, buttonText, features1 }: FeaturesPr
                             </div>
                         </div>
                         <div className="flex flex-col gap-8 lg:flex-row">
-                            <div className="flex flex-col justify-center gap-8">
+                            <div className="flex flex-col justify-center gap-8 px-2">
                                 {features1.map((features, index) => (
                                     <CardFeatures2
                                         key={index}

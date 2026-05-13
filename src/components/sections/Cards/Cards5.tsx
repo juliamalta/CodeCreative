@@ -12,7 +12,7 @@ function Cards5({ cards, title, desc, titlePrimary, buttonText, icon }: CardSect
     return (
         <section id="portifolio" className="bg-color-woodsmoke3 py-16 sm:py-24">
             <div className="container mx-auto flex flex-col gap-8">
-                <div className="flex flex-col items-center justify-between gap-8">
+                <div className="flex flex-col items-center justify-between gap-6">
                     <div className="opacity-8 flex items-center gap-2 rounded-full bg-color-woodsmoke2 px-6 py-2">
                         <div>{icon}</div>
                         <div>

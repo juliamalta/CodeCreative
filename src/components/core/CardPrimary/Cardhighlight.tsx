@@ -13,8 +13,8 @@ function CardHighlight({ text, icon, title, payment, paymentTitle, higthligth }:
                     Mais vendido
                 </div>
             )}
-            <div className="mx-auto flex h-full flex-col justify-between">
-                <div className="flex w-full flex-col gap-5 rounded-lg px-6 py-5">
+            <div className="mx-auto flex h-full flex-col justify-between p-10">
+                <div className="flex w-full flex-col gap-5 rounded-lg ">
                     <div className="flex size-11 items-center justify-center rounded-xl bg-color-purble">{icon}</div>
 
                     <div>
@@ -26,7 +26,7 @@ function CardHighlight({ text, icon, title, payment, paymentTitle, higthligth }:
                     </div>
                 </div>
 
-                <div className="px-6 py-5">
+                <div className=" py-5">
                     <div className="mb-4 border-t border-color-gallery"></div>
 
                     <div className="w-full">
