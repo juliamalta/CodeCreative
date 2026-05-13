@@ -52,7 +52,7 @@ function Stepper({ steps }: StepperProps) {
                         {!isLast && (
                             <>
                                 {/* linha desktop fixa */}
-                                <div className="absolute left-1/2 top-16 hidden h-[2px] w-[calc(100%-2rem)] bg-gradient-to-r from-[#7E22CE] via-[#C084FC] to-[#7E22CE] lg:block" />
+                                <div className="absolute left-1/2 top-16 hidden h-[2px] w-[calc(100%-2rem)] bg-gradient-to-r from-[#7E22CE] via-[#C084FC] to-[#7E22CE] opacity-30 lg:block" />
 
                                 {/* linha mobile animada */}
                                 <motion.div
@@ -63,7 +63,7 @@ function Stepper({ steps }: StepperProps) {
                                         duration: 0.8,
                                         delay: index * 0.2,
                                     }}
-                                    className="absolute bottom-[-20px] left-1/2 h-10 w-[2px] origin-top -translate-x-1/2 bg-gradient-to-b from-[#7E22CE] via-[#C084FC] to-[#7E22CE] lg:hidden"
+                                    className="absolute bottom-[-20px] left-1/2 h-8 w-[2px] origin-top -translate-x-1/3 bg-gradient-to-b from-[#7E22CE] via-[#C084FC] to-[#7E22CE] opacity-30 lg:hidden"
                                 />
                             </>
                         )}
