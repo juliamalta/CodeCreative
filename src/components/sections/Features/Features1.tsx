@@ -11,7 +11,7 @@ function Features1({ title, text1, features, buttonText, features1 }: FeaturesPr
                     <div className="flex flex-col justify-between gap-12 lg:flex-row">
                         <div className="flex flex-col gap-8">
                             <div className="flex flex-col gap-10">
-                                <p className="w-full items-center justify-center text-center text-4xl font-semibold text-white md:text-left 2xl:w-2/3 2xl:text-5xl">
+                                <p className="w-full items-center justify-center text-center text-4xl font-semibold text-white lg:text-left 2xl:w-2/3 2xl:text-5xl">
                                     {title}
                                 </p>
                                 <p className="text-center text-base font-normal text-color-maverick md:text-left lg:w-2/3">
