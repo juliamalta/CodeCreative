@@ -48,8 +48,8 @@ function Cards5({ cards, title, desc, titlePrimary, buttonText, icon }: CardSect
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        <CarouselPrevious className="lg:hidden" />
+                        <CarouselNext className="lg:hidden" />
                     </Carousel>
                 </div>
                 <div className="flex items-center justify-center gap-2">

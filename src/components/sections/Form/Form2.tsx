@@ -105,9 +105,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                 <div className="flex flex-col justify-center gap-8 lg:w-2/3">
                     <div>
                         <div className="flex items-start">
-                            <Link className="block max-w-max" href="/">
-                                <Image width={252} height={73} src={logo} alt="logo" />
-                            </Link>
+                            <Image width={252} height={73} src={logo} alt="logo" />
                         </div>
                     </div>
 
@@ -136,7 +134,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                 </div>
 
                 {/* FORMULÁRIO */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full 2xl:w-1/2">
                     <div className="space-y-8 rounded-2xl border-[2px] border-color-woodsmoke2 bg-color-woodsmoke3 px-8 py-10 shadow-2xl backdrop-blur-xl">
                         <div>
                             <p className="w-full text-center text-3xl font-bold text-white">
