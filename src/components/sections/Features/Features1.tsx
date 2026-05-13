@@ -16,13 +16,13 @@ function Features1({ title, text1, features, buttonText, features1 }: FeaturesPr
                                 </p>
                                 <p className="text-base font-normal text-color-maverick lg:w-2/3">{text1}</p>
                             </div>
-                            <div className="flex flex-col justify-center gap-8">
-                                {features.map((features, index) => (
+                            <div className="hidden flex-col justify-center gap-8 lg:flex">
+                                {features.map((feature, index) => (
                                     <CardFeatures
                                         key={index}
-                                        title={features.title}
-                                        desc={features.desc}
-                                        icon={features.icon}
+                                        title={feature.title}
+                                        desc={feature.desc}
+                                        icon={feature.icon}
                                     />
                                 ))}
                             </div>
