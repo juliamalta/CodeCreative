@@ -18,7 +18,8 @@ export function Forms2({ title, desc, contact }: FormsProps) {
     const formSchema = z.object({
         fullName: z.string().min(2, 'O nome deve ter pelo menos 2 caracteres.'),
         number: z.string().min(8, 'Informe um número válido.'),
-        company: z.string().min(2, 'Informe sua empresa.').optional(),
+        project: z.string().min(2, 'Informe o tipo de projeto.').optional(),
+        hasSite: z.string().min(1, 'Informe uma opçao valida.'),
         period: z.string().min(1, 'Selecione uma opção.'),
         resume: z.any().optional(),
     })
@@ -28,7 +29,8 @@ export function Forms2({ title, desc, contact }: FormsProps) {
         defaultValues: {
             fullName: '',
             number: '',
-            company: '',
+            project: '',
+            hasSite: '',
             period: '',
             resume: null,
         },
@@ -41,7 +43,8 @@ export function Forms2({ title, desc, contact }: FormsProps) {
             await addDoc(collection(db, 'leadsSales'), {
                 fullName: values.fullName,
                 number: values.number,
-                company: values.company,
+                project: values.project,
+                hasSite: values.hasSite,
                 period: values.period,
                 resumeURL,
                 createdAt: new Date(),
@@ -133,9 +136,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                 <div className="w-full lg:w-2/3 2xl:w-1/2">
                     <div className="space-y-8 rounded-2xl border-[2px] border-color-woodsmoke2 bg-color-woodsmoke3 p-10 shadow-2xl backdrop-blur-xl">
                         <div>
-                            <p className="w-full text-left text-2xl font-bold text-white">
-                                Quero meu orçamento gratuito
-                            </p>
+                            <p className="w-full text-center text-2xl font-bold text-white">Receba análise gratuita</p>
                         </div>
                         <Form {...form}>
                             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -192,19 +193,21 @@ export function Forms2({ title, desc, contact }: FormsProps) {
 
                                     <FormField
                                         control={form.control}
-                                        name="company"
+                                        name="project"
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormLabel className="text-xs font-semibold text-color-maverick">
-                                                    TIPO DE NEGÓCIO
+                                                    QUAL PROJETO VOCÊ PRECISA?
                                                 </FormLabel>
 
                                                 <FormControl>
                                                     <select {...field} className={fieldClass}>
                                                         <option value="">Selecione</option>
                                                         <option value="ecommerce">E-commerce</option>
-                                                        <option value="institucional">Institucional</option>
-                                                        <option value="landingpage">Landing Page</option>
+                                                        <option value="Site Institucional">Site Institucional</option>
+                                                        <option value="Landing Page">Landing Page</option>
+                                                        <option value="Loja Virtual">Loja Virtual</option>
+                                                        <option value="Sistema Web">Sistema Web</option>
                                                     </select>
                                                 </FormControl>
 
@@ -213,6 +216,29 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                                         )}
                                     />
                                 </div>
+                                <FormField
+                                    control={form.control}
+                                    name="hasSite"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className="text-xs font-semibold text-color-maverick">
+                                                VOCÊ JÁ TEM UM SITE?
+                                            </FormLabel>
+
+                                            <FormControl>
+                                                <select {...field} className={fieldClass}>
+                                                    <option value="">Selecione</option>
+                                                    <option value="Sim,quero melhorar">Sim,quero melhorar</option>
+                                                    <option value="Ainda não tenho um site">
+                                                        Ainda não tenho um site
+                                                    </option>
+                                                </select>
+                                            </FormControl>
+
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
 
                                 {/* HORÁRIO */}
                                 <div className="w-full">
@@ -257,7 +283,7 @@ export function Forms2({ title, desc, contact }: FormsProps) {
                                 <Button
                                     type="submit"
                                     className="w-full rounded-full bg-color-purble py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:border-2 hover:border-color-purble hover:bg-white hover:text-color-purble hover:shadow-xl">
-                                    Quero meu site exclusivo
+                                    Receber diagnóstico gratuito
                                 </Button>
                             </form>
                         </Form>

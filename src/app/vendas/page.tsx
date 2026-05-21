@@ -123,7 +123,7 @@ export default function Sales() {
                 title={
                     <>
                         Do briefing a entrega<br></br>
-                        <span className="font-bold text-color-mauve">em 15 dias</span>
+                        <span className="font-bold text-color-mauve">a partir de 15 dias</span>
                     </>
                 }
                 text1="Desde a primeira linha de código ao design final, focamos no retorno real sobre o seu investimento digital."
@@ -155,7 +155,7 @@ export default function Sales() {
                         desc: 'Nada de templates genéricos. Criamos do zero para garantir que seu site seja único, rápido e altamente escalável.',
                     },
                     {
-                        title: 'Prazo Real de 15 Dias',
+                        title: 'Prazo Real a partir de 15 Dias',
                         desc: 'Compromisso inegociável. Cronograma transparente com entrega final garantida em contrato.',
                         isLast: true,
                     },
