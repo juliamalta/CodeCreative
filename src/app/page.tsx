@@ -116,6 +116,12 @@ export default function Home() {
                         buttonText: 'Acessar Projeto',
                     },
                     {
+                        title: 'Lab Manager Platform',
+                        img: '/images/LMP.png',
+                        tag: ['MOBILE', 'REACT NATIVE', 'UX'],
+                        desc: 'Aplicativo que garante que cada amostra quimica seja rastreada desde o recebimento até o descarte final.',
+                    },
+                    {
                         title: 'Pro Tracker',
                         img: '/images/img2.png',
                         tag: ['MOBILE', 'REACT NATIVE', 'UX'],
