@@ -131,7 +131,7 @@ export default function Home() {
                         title: 'Streamly',
                         img: '/images/img1.png',
                         tag: ['WEBSITE', 'REACT JS', 'UI DESIGN'],
-                        desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona.',
+                        desc: 'Plataforma web que organiza seu histórico de filmes e séries, garantindo que você nunca mais se perca na sua próxima maratona de filmes.',
                     },
                 ]}
             />
