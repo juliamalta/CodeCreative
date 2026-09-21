@@ -116,6 +116,14 @@ export default function Home() {
                         buttonText: 'Acessar Projeto',
                     },
                     {
+                        title: 'GoTrainers',
+                        img: '/images/site7.png',
+                        tag: ['WEB', 'NEXT.JS', 'SAAS'],
+                        link: 'https://www.gotrainers.com.br/',
+                        desc: 'Plataforma para personal trainers criarem e publicarem seu site profissional de forma rápida e personalizada.',
+                        buttonText: 'Acessar Projeto',
+                    },
+                    {
                         title: 'Lab Manager Platform',
                         img: '/images/LMP.png',
                         tag: ['MOBILE', 'REACT NATIVE', 'UX'],
