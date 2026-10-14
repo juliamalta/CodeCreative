@@ -1,3 +1,31 @@
-- name: Inject Google Analytics ID
-  run: |
-    find . -type f -name "*.tsx" -exec sed -i '' "s|%GA_MEASUREMENT_ID%|${{ secrets.GA_MEASUREMENT_ID }}|g" {} +
+name: Inject Google Analytics ID
+
+on:
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    inject-google-analytics:
+        name: Inject Google Analytics ID
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+              with:
+                  persist-credentials: false
+
+            - name: Replace Google Analytics placeholder
+              env:
+                  GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+              shell: bash
+              run: |
+                  set -euo pipefail
+                  if [[ ! "$GA_MEASUREMENT_ID" =~ ^G-[A-Z0-9-]+$ ]]; then
+                    echo "GA_MEASUREMENT_ID must use the expected GA4 format"
+                    exit 1
+                  fi
+                  while IFS= read -r -d '' file; do
+                    sed -i "s|%GA_MEASUREMENT_ID%|${GA_MEASUREMENT_ID}|g" "$file"
+                  done < <(find . -type f -name '*.tsx' -print0)
