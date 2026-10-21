@@ -92,6 +92,14 @@ export default function Home() {
                 desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
                 cards={[
                     {
+                        title: 'Sistema de Gestão de Produção',
+                        img: '/images/mgm.png',
+                        tag: ['SISTEMA WEB', 'ERP'],
+                        desc: 'Sistema web de gestão para confecção de uniformes, desenvolvido para centralizar o controle de clientes, orçamentos, pedidos, produção, estoque e financeiro. Oferece acompanhamento em tempo real, gestão de etapas produtivas e relatórios, proporcionando mais organização, eficiência e controle dos processos.',
+                        link: ' https://www.amparium.com.br/',
+                        buttonText: 'Acessar Projeto',
+                    },
+                    {
                         title: 'Clínica Amparium',
                         img: '/images/img3.png',
                         tag: ['WEBSITE', 'UI DESIGN'],
