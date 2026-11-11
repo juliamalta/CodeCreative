@@ -12,6 +12,7 @@ import Pixel from '@/components/pixel'
 import { GTM } from '@/components/gtm'
 import { Contentsquare } from '@/components/contentSquare'
 import { RootProviders } from '@/app/RootProviders'
+import GoogleAdsense from '@/components/GoogleAdsense'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -44,6 +45,9 @@ const infoData = [
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className="scroll-smooth">
+            <head>
+                <GoogleAdsense />
+            </head>
             <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
                 <Contentsquare />
                 <Pixel />
